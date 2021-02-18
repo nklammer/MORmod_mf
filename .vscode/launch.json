@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Local File",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}/sddc_osw_multifamily/ze_multifamily",
+            "program": "measures/ResidentialHotWaterFixtures/tests/ResidentialHotWaterFixtures_Test.rb"
+        },
+        {
+            "name": "Debug Local ResHotWaterFixtures_Test File",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}/sddc_osw_multifamily/ze_multifamily",
+            "program": "measures/ResidentialHotWaterFixtures/tests/ResidentialHotWaterFixtures_Test.rb",
+            "args": [
+                "-I", "c/path/to/gem",
+                "-e", "'puts $LOAD_PATH'"
+            ]
+
+        }
+
+    ]
+}
