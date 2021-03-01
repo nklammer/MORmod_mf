@@ -132,7 +132,15 @@ class ResidentialHotWaterFixtures < OpenStudio::Measure::ModelMeasure
     tot_s_gpd = 0
     tot_b_gpd = 0
     msgs = []
+
+    # set the d_sh var before looping
+    d_sh = d_sh
+
+
     units.each_with_index do |unit, unit_index|
+      # increment d_sh "day shift" for shifting to each unit_index
+      runner.registerInfo("The `d_sh` variable for this loop is at #{d_sh}")
+
       # Get unit beds/baths
       nbeds, nbaths = Geometry.get_unit_beds_baths(model, unit, runner)
       if nbeds.nil? or nbaths.nil?
@@ -149,6 +157,9 @@ class ResidentialHotWaterFixtures < OpenStudio::Measure::ModelMeasure
       if plant_loop.nil?
         return false
       end
+
+      runner.registerInfo("The unit (key) name that is being looped is #{unit.name.to_s}")
+      runner.registerInfo("The unit (value) name that is being looped is #{unit_index.to_i.to_s}") # unit_index is an integer that I want
 
       obj_name_sh = Constants.ObjectNameShower(unit.name.to_s)
       obj_name_s = Constants.ObjectNameSink(unit.name.to_s)
@@ -201,8 +212,10 @@ class ResidentialHotWaterFixtures < OpenStudio::Measure::ModelMeasure
       # Showers
       if sh_gpd > 0
 
+        runner.registerInfo(" The shower day shift for this loop is #{d_sh}") #remove
+
         # Create schedule
-        sch_sh = HotWaterSchedule.new(model, runner, Constants.ObjectNameShower + " schedule", Constants.ObjectNameShower + " temperature schedule", nbeds, d_sh, "Shower", mixed_use_t, create_sch_object = true, schedule_type_limits_name = Constants.ScheduleTypeLimitsFraction)
+        sch_sh = HotWaterSchedule.new(model, runner, Constants.ObjectNameShower + " schedule", Constants.ObjectNameShower + " temperature schedule", nbeds, d_sh, "Shower", mixed_use_t, create_sch_object = true, schedule_type_limits_name = Constants.ScheduleTypeLimitsFraction) # remove or look over
         if not sch_sh.validated?
           return false
         end
@@ -338,6 +351,10 @@ class ResidentialHotWaterFixtures < OpenStudio::Measure::ModelMeasure
       if sh_gpd > 0 or s_gpd > 0 or b_gpd > 0
         msgs << "Shower, sinks, and bath fixtures drawing #{sh_gpd.round(1)}, #{s_gpd.round(1)}, and #{b_gpd.round(1)} gal/day respectively have been added to plant loop '#{plant_loop.name}' and assigned to space '#{space.name.to_s}'."
       end
+
+      # increment days shift by 7 for each building unit
+      d_sh += 7
+
     end
 
     # Reporting

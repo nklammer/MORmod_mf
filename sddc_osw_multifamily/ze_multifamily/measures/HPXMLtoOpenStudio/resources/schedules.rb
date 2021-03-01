@@ -612,7 +612,7 @@ class HotWaterSchedule
 
     # Read data into minute array
     skippedheader = false
-    min_shift = 24 * 60 * (days_shift % 365) # For MF homes, shift each unit by an additional week
+    min_shift = 24 * 60 * (days_shift) # For MF homes, shift each unit by an additional week
     items = [0] * minutes_in_year
     File.open(minute_draw_profile).each do |line|
       linedata = line.strip.split(',')
