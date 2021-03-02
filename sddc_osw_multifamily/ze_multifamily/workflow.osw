@@ -315,6 +315,15 @@
       {
          "arguments" : 
          {
+            "__SKIP__" : false
+         },
+         "description" : "This is my new measure, I don't think it has any arguments.",
+         "measure_dir_name" : "EnableIdealAirLoadsForAllZones",
+         "name" : "Turn on Ideal Air Loads"
+      },
+      {
+         "arguments" : 
+         {
             "__SKIP__" : false,
             "swh_type" : "Waste Water Heat Pump 120F Supply and Electric Tank"
          },
