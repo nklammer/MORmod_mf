@@ -324,7 +324,7 @@
       {
          "arguments" : 
          {
-            "__SKIP__" : true,
+            "__SKIP__" : false,
             "swh_type" : "Waste Water Heat Pump 120F Supply and Electric Tank"
          },
          "description" : "This replaces water heaters in individual units with a central water system.",
