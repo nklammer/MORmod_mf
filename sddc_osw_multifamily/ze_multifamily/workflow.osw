@@ -325,7 +325,7 @@
          "arguments" : 
          {
             "__SKIP__" : false,
-            "swh_type" : "HPWH with Outdoor Condenser"
+            "swh_type" : "Waste Water Heat Pump 140F Supply"
          },
          "description" : "This replaces water heaters in individual units with a central water system.",
          "measure_dir_name" : "multifamily_central_wwhp",
@@ -354,7 +354,7 @@
 	      "arguments": {
 	        "__SKIP__": false,
 	        "meter_name": "InteriorLights:Electricity",
-	        "reporting_frequency": "timestep"
+	        "reporting_frequency": "hourly"
 	      },
 	      "measure_dir_name": "AddMeter"
 	    },
@@ -362,7 +362,7 @@
 	      "arguments": {
 	        "__SKIP__": false,
 	        "meter_name": "ExteriorLights:Electricity",
-	        "reporting_frequency": "timestep"
+	        "reporting_frequency": "hourly"
 	      },
 	      "measure_dir_name": "AddMeter"
 	    },
@@ -370,7 +370,7 @@
 	      "arguments": {
 	        "__SKIP__": false,
 	        "meter_name": "InteriorEquipment:Electricity",
-	        "reporting_frequency": "timestep"
+	        "reporting_frequency": "hourly"
 	      },
 	      "measure_dir_name": "AddMeter"
 	    },
@@ -378,7 +378,7 @@
 	      "arguments": {
 	        "__SKIP__": false,
 	        "meter_name": "Fans:Electricity",
-	        "reporting_frequency": "timestep"
+	        "reporting_frequency": "hourly"
 	      },
 	      "measure_dir_name": "AddMeter"
 	    },
@@ -386,7 +386,7 @@
 	      "arguments": {
 	        "__SKIP__": false,
 	        "meter_name": "Pumps:Electricity",
-	        "reporting_frequency": "timestep"
+	        "reporting_frequency": "hourly"
 	      },
 	      "measure_dir_name": "AddMeter"
 	    },
@@ -394,7 +394,7 @@
 	      "arguments": {
 	        "__SKIP__": false,
 	        "meter_name": "Heating:Electricity",
-	        "reporting_frequency": "timestep"
+	        "reporting_frequency": "hourly"
 	      },
 	      "measure_dir_name": "AddMeter"
 	    },
@@ -402,7 +402,7 @@
 	      "arguments": {
 	        "__SKIP__": false,
 	        "meter_name": "Cooling:Electricity",
-	        "reporting_frequency": "timestep"
+	        "reporting_frequency": "hourly"
 	      },
 	      "measure_dir_name": "AddMeter"
 	    },
@@ -410,7 +410,7 @@
 	      "arguments": {
 	        "__SKIP__": false,
 	        "meter_name": "HeatRecovery:Electricity",
-	        "reporting_frequency": "timestep"
+	        "reporting_frequency": "hourly"
 	      },
 	      "measure_dir_name": "AddMeter"
 	    },
@@ -418,7 +418,7 @@
 	      "arguments": {
 	        "__SKIP__": false,
 	        "meter_name": "WaterSystems:Electricity",
-	        "reporting_frequency": "timestep"
+	        "reporting_frequency": "hourly"
 	      },
 	      "measure_dir_name": "AddMeter"
 	    },
@@ -426,7 +426,7 @@
 	      "arguments": {
 	        "__SKIP__": false,
 	        "meter_name": "ElectricityProduced:Facility",
-	        "reporting_frequency": "timestep"
+	        "reporting_frequency": "hourly"
 	      },
 	      "measure_dir_name": "AddMeter"
 	    },      
