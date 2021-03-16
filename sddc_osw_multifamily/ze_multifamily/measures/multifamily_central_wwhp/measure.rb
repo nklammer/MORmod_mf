@@ -204,7 +204,7 @@ class MultifamilyCentralWasteWaterHeatPump < OpenStudio::Measure::ModelMeasure
                         'OS:EnergyManagementSystem:ConstructionIndexVariable']
     model.getModelObjects.each do |obj|
       next unless ems_object_types.include? obj.iddObject.name
-      if (obj.name.get.include? 'res_wh_Building') || (obj.name.get.include? 'res wh_Building') ||(obj.name.get.include? 'wastewater')
+      if (obj.name.get.include? 'res_wh_Building') || (obj.name.get.include? 'res wh_Building') || (obj.name.get.include? 'wastewater')
         obj.remove
       end
     end
