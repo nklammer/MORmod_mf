@@ -391,12 +391,12 @@
   OnMeter=InteriorLights:Electricity:Zone:COMMUNITY_RM [J]
   OnMeter=General:InteriorLights:Electricity [J]
 
- Meters for 1820,CORRIDOR CORRIDOR 5 LIGHTS:Lights Electric Energy [J]
+ Meters for 1820,CORRIDOR 1 CORRIDOR 5 LIGHTS:Lights Electric Energy [J]
   OnMeter=Electricity:Facility [J]
   OnMeter=Electricity:Building [J]
-  OnMeter=Electricity:Zone:CORRIDOR [J]
+  OnMeter=Electricity:Zone:CORRIDOR 1 [J]
   OnMeter=InteriorLights:Electricity [J]
-  OnMeter=InteriorLights:Electricity:Zone:CORRIDOR [J]
+  OnMeter=InteriorLights:Electricity:Zone:CORRIDOR 1 [J]
   OnMeter=General:InteriorLights:Electricity [J]
 
  Meters for 1845,CORRIDOR_2 CORRIDOR 5 LIGHTS:Lights Electric Energy [J]
@@ -7428,20 +7428,20 @@
   OnMeter=Cooling:EnergyTransfer:Zone:COMMUNITY_RM [J]
   OnMeter=General:Cooling:EnergyTransfer [J]
 
- Meters for 9604,CORRIDOR:Zone Air System Sensible Heating Energy [J]
+ Meters for 9604,CORRIDOR 1:Zone Air System Sensible Heating Energy [J]
   OnMeter=EnergyTransfer:Facility [J]
   OnMeter=EnergyTransfer:Building [J]
-  OnMeter=EnergyTransfer:Zone:CORRIDOR [J]
+  OnMeter=EnergyTransfer:Zone:CORRIDOR 1 [J]
   OnMeter=Heating:EnergyTransfer [J]
-  OnMeter=Heating:EnergyTransfer:Zone:CORRIDOR [J]
+  OnMeter=Heating:EnergyTransfer:Zone:CORRIDOR 1 [J]
   OnMeter=General:Heating:EnergyTransfer [J]
 
- Meters for 9629,CORRIDOR:Zone Air System Sensible Cooling Energy [J]
+ Meters for 9629,CORRIDOR 1:Zone Air System Sensible Cooling Energy [J]
   OnMeter=EnergyTransfer:Facility [J]
   OnMeter=EnergyTransfer:Building [J]
-  OnMeter=EnergyTransfer:Zone:CORRIDOR [J]
+  OnMeter=EnergyTransfer:Zone:CORRIDOR 1 [J]
   OnMeter=Cooling:EnergyTransfer [J]
-  OnMeter=Cooling:EnergyTransfer:Zone:CORRIDOR [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:CORRIDOR 1 [J]
   OnMeter=General:Cooling:EnergyTransfer [J]
 
  Meters for 9642,CORRIDOR_2:Zone Air System Sensible Heating Energy [J]
@@ -18997,7 +18997,7 @@
   BATHRM_2 BATHROOM LIGHTS:Lights Electric Energy
   COFFEE_SHOP COFFEE LIGHTS:Lights Electric Energy
   COMMUNITY_RM COMMUNITY LIGHTS:Lights Electric Energy
-  CORRIDOR CORRIDOR 5 LIGHTS:Lights Electric Energy
+  CORRIDOR 1 CORRIDOR 5 LIGHTS:Lights Electric Energy
   CORRIDOR_2 CORRIDOR 5 LIGHTS:Lights Electric Energy
   CORRIDOR_3 CORRIDOR 5 LIGHTS:Lights Electric Energy * 2  (Zone Multiplier = 2, Zone List Multiplier = 1)
   CORRIDOR_4 CORRIDOR 5 LIGHTS:Lights Electric Energy
@@ -20315,7 +20315,7 @@
   BATHRM_2 BATHROOM LIGHTS:Lights Electric Energy
   COFFEE_SHOP COFFEE LIGHTS:Lights Electric Energy
   COMMUNITY_RM COMMUNITY LIGHTS:Lights Electric Energy
-  CORRIDOR CORRIDOR 5 LIGHTS:Lights Electric Energy
+  CORRIDOR 1 CORRIDOR 5 LIGHTS:Lights Electric Energy
   CORRIDOR_2 CORRIDOR 5 LIGHTS:Lights Electric Energy
   CORRIDOR_3 CORRIDOR 5 LIGHTS:Lights Electric Energy * 2  (Zone Multiplier = 2, Zone List Multiplier = 1)
   CORRIDOR_4 CORRIDOR 5 LIGHTS:Lights Electric Energy
@@ -20681,7 +20681,7 @@
   BATHRM_2 BATHROOM LIGHTS:Lights Electric Energy
   COFFEE_SHOP COFFEE LIGHTS:Lights Electric Energy
   COMMUNITY_RM COMMUNITY LIGHTS:Lights Electric Energy
-  CORRIDOR CORRIDOR 5 LIGHTS:Lights Electric Energy
+  CORRIDOR 1 CORRIDOR 5 LIGHTS:Lights Electric Energy
   CORRIDOR_2 CORRIDOR 5 LIGHTS:Lights Electric Energy
   CORRIDOR_3 CORRIDOR 5 LIGHTS:Lights Electric Energy * 2  (Zone Multiplier = 2, Zone List Multiplier = 1)
   CORRIDOR_4 CORRIDOR 5 LIGHTS:Lights Electric Energy
@@ -21380,7 +21380,7 @@
   BATHRM_2 BATHROOM LIGHTS:Lights Electric Energy
   COFFEE_SHOP COFFEE LIGHTS:Lights Electric Energy
   COMMUNITY_RM COMMUNITY LIGHTS:Lights Electric Energy
-  CORRIDOR CORRIDOR 5 LIGHTS:Lights Electric Energy
+  CORRIDOR 1 CORRIDOR 5 LIGHTS:Lights Electric Energy
   CORRIDOR_2 CORRIDOR 5 LIGHTS:Lights Electric Energy
   CORRIDOR_3 CORRIDOR 5 LIGHTS:Lights Electric Energy * 2  (Zone Multiplier = 2, Zone List Multiplier = 1)
   CORRIDOR_4 CORRIDOR 5 LIGHTS:Lights Electric Energy
@@ -21422,11 +21422,11 @@
  For Meter=InteriorLights:Electricity:Zone:COMMUNITY_RM [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
   COMMUNITY_RM COMMUNITY LIGHTS:Lights Electric Energy
 
- For Meter=Electricity:Zone:CORRIDOR [J], ResourceType=Electricity, Group=Zone, contents are:
-  CORRIDOR CORRIDOR 5 LIGHTS:Lights Electric Energy
+ For Meter=Electricity:Zone:CORRIDOR 1 [J], ResourceType=Electricity, Group=Zone, contents are:
+  CORRIDOR 1 CORRIDOR 5 LIGHTS:Lights Electric Energy
 
- For Meter=InteriorLights:Electricity:Zone:CORRIDOR [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
-  CORRIDOR CORRIDOR 5 LIGHTS:Lights Electric Energy
+ For Meter=InteriorLights:Electricity:Zone:CORRIDOR 1 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  CORRIDOR 1 CORRIDOR 5 LIGHTS:Lights Electric Energy
 
  For Meter=Electricity:Zone:CORRIDOR_2 [J], ResourceType=Electricity, Group=Zone, contents are:
   CORRIDOR_2 CORRIDOR 5 LIGHTS:Lights Electric Energy
@@ -23332,8 +23332,8 @@
   COFFEE_SHOP:Zone Air System Sensible Cooling Energy
   COMMUNITY_RM:Zone Air System Sensible Heating Energy
   COMMUNITY_RM:Zone Air System Sensible Cooling Energy
-  CORRIDOR:Zone Air System Sensible Heating Energy
-  CORRIDOR:Zone Air System Sensible Cooling Energy
+  CORRIDOR 1:Zone Air System Sensible Heating Energy
+  CORRIDOR 1:Zone Air System Sensible Cooling Energy
   CORRIDOR_2:Zone Air System Sensible Heating Energy
   CORRIDOR_2:Zone Air System Sensible Cooling Energy
   CORRIDOR_3:Zone Air System Sensible Heating Energy * 2  (Zone Multiplier = 2, Zone List Multiplier = 1)
@@ -26923,8 +26923,8 @@
   COFFEE_SHOP:Zone Air System Sensible Cooling Energy
   COMMUNITY_RM:Zone Air System Sensible Heating Energy
   COMMUNITY_RM:Zone Air System Sensible Cooling Energy
-  CORRIDOR:Zone Air System Sensible Heating Energy
-  CORRIDOR:Zone Air System Sensible Cooling Energy
+  CORRIDOR 1:Zone Air System Sensible Heating Energy
+  CORRIDOR 1:Zone Air System Sensible Cooling Energy
   CORRIDOR_2:Zone Air System Sensible Heating Energy
   CORRIDOR_2:Zone Air System Sensible Cooling Energy
   CORRIDOR_3:Zone Air System Sensible Heating Energy * 2  (Zone Multiplier = 2, Zone List Multiplier = 1)
@@ -27036,7 +27036,7 @@
   BATHRM_2:Zone Air System Sensible Heating Energy
   COFFEE_SHOP:Zone Air System Sensible Heating Energy
   COMMUNITY_RM:Zone Air System Sensible Heating Energy
-  CORRIDOR:Zone Air System Sensible Heating Energy
+  CORRIDOR 1:Zone Air System Sensible Heating Energy
   CORRIDOR_2:Zone Air System Sensible Heating Energy
   CORRIDOR_3:Zone Air System Sensible Heating Energy * 2  (Zone Multiplier = 2, Zone List Multiplier = 1)
   CORRIDOR_4:Zone Air System Sensible Heating Energy
@@ -27119,7 +27119,7 @@
   BATHRM_2:Zone Air System Sensible Heating Energy
   COFFEE_SHOP:Zone Air System Sensible Heating Energy
   COMMUNITY_RM:Zone Air System Sensible Heating Energy
-  CORRIDOR:Zone Air System Sensible Heating Energy
+  CORRIDOR 1:Zone Air System Sensible Heating Energy
   CORRIDOR_2:Zone Air System Sensible Heating Energy
   CORRIDOR_3:Zone Air System Sensible Heating Energy * 2  (Zone Multiplier = 2, Zone List Multiplier = 1)
   CORRIDOR_4:Zone Air System Sensible Heating Energy
@@ -27199,7 +27199,7 @@
   BATHRM_2:Zone Air System Sensible Cooling Energy
   COFFEE_SHOP:Zone Air System Sensible Cooling Energy
   COMMUNITY_RM:Zone Air System Sensible Cooling Energy
-  CORRIDOR:Zone Air System Sensible Cooling Energy
+  CORRIDOR 1:Zone Air System Sensible Cooling Energy
   CORRIDOR_2:Zone Air System Sensible Cooling Energy
   CORRIDOR_3:Zone Air System Sensible Cooling Energy * 2  (Zone Multiplier = 2, Zone List Multiplier = 1)
   CORRIDOR_4:Zone Air System Sensible Cooling Energy
@@ -27282,7 +27282,7 @@
   BATHRM_2:Zone Air System Sensible Cooling Energy
   COFFEE_SHOP:Zone Air System Sensible Cooling Energy
   COMMUNITY_RM:Zone Air System Sensible Cooling Energy
-  CORRIDOR:Zone Air System Sensible Cooling Energy
+  CORRIDOR 1:Zone Air System Sensible Cooling Energy
   CORRIDOR_2:Zone Air System Sensible Cooling Energy
   CORRIDOR_3:Zone Air System Sensible Cooling Energy * 2  (Zone Multiplier = 2, Zone List Multiplier = 1)
   CORRIDOR_4:Zone Air System Sensible Cooling Energy
@@ -27792,15 +27792,15 @@
  For Meter=Cooling:EnergyTransfer:Zone:COMMUNITY_RM [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
   COMMUNITY_RM:Zone Air System Sensible Cooling Energy
 
- For Meter=EnergyTransfer:Zone:CORRIDOR [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
-  CORRIDOR:Zone Air System Sensible Heating Energy
-  CORRIDOR:Zone Air System Sensible Cooling Energy
+ For Meter=EnergyTransfer:Zone:CORRIDOR 1 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  CORRIDOR 1:Zone Air System Sensible Heating Energy
+  CORRIDOR 1:Zone Air System Sensible Cooling Energy
 
- For Meter=Heating:EnergyTransfer:Zone:CORRIDOR [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
-  CORRIDOR:Zone Air System Sensible Heating Energy
+ For Meter=Heating:EnergyTransfer:Zone:CORRIDOR 1 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  CORRIDOR 1:Zone Air System Sensible Heating Energy
 
- For Meter=Cooling:EnergyTransfer:Zone:CORRIDOR [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
-  CORRIDOR:Zone Air System Sensible Cooling Energy
+ For Meter=Cooling:EnergyTransfer:Zone:CORRIDOR 1 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  CORRIDOR 1:Zone Air System Sensible Cooling Energy
 
  For Meter=EnergyTransfer:Zone:CORRIDOR_2 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
   CORRIDOR_2:Zone Air System Sensible Heating Energy
