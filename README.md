@@ -1,13 +1,18 @@
 # THESIS
-Freezing thesis work in version Feb 18, 2021
+
 
 # VERSIONS
-OpenStudio 3.0.1
-EnergyPlus 9.3.0
+* OpenStudio 3.0.1
+* EnergyPlus 9.3.0
 
 # GEMS
-In Git Bash for Windows
-`$ unset GEM_PATH`
+This project counts on many local changes to published packages (or in Ruby parlance "gems"). For that reason it is suggested to rely on local resources inside this repository instead of external public gems.
+
+## openstudio-standards gem
+This workflow uses OpenStudio v3.0.1 which has `openstudio-standards-0.2.11` embedded. If one desires to access building performance standards ASHRAE `90.1-2016` or `90.1-2019`, a more recent `openstudio-standards-0.2.XX` will be required available from [rubygems.org](https://rubygems.org/gems/openstudio-standards).
+
+Due to a bug in OpenStudio Command Line Interface, the GEM_PATH path variable needs to be taken out of the environment before running.
+In Git Bash shell command for Windows `$ unset GEM_PATH`
 
 # EMS
 Trying to fix EMS error on other branch `dev-report-ideal`.
