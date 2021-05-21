@@ -1,5 +1,7 @@
 # THESIS
+This repository contains resources and documentation for Noah Klammer's 2021 MS thesis at the Univeristy of Colorado "Model Order Reduction for More Modular Buildings: Model-Cluster-Reduce for Modular Multifamily Buildings".
 
+This work was inspired by and heavily borrows from previous work done for the publication of the Zero Energy Design Guide for Multifamily buildings. A [related publication](https://www.nrel.gov/docs/fy20osti/77013.pdf) detailing the technical work is available for free.
 
 # VERSIONS
 * OpenStudio 3.0.1
