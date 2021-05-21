@@ -1,6 +1,7 @@
 */*/*/run
 */*/*/reports
 */*/*/out.osw
+*/*/test
 .bundle/install
 Gemfile.lock
 .DS_Store
