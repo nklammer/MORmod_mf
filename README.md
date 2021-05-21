@@ -24,3 +24,18 @@ Program Version,EnergyPlus, Version 9.3.0-baff08990c, YMD=2021.03.14 22:50,
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Terminated--Fatal Error Detected. 0 Warning; 2 Severe Errors; Elapsed Time=00hr 00min  1.32sec
+
+# THESIS
+Freezing thesis work in version Feb 18, 2021
+
+# GEMS
+In Git Bash for Windows
+`$ unset GEM_PATH`
+
+# BUILD
+Stable. 3/14/21
+
+# DOCUMENTATION
+Always run OpenStudio with Git Bash command `openstudio --verbose run -w path/to/workflow.osw --debug -- measures_only[optional]`. Include the `run.log` file and `eplusout.rdd` file in the commits.
+
+
