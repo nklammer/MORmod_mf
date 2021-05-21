@@ -15,9 +15,11 @@ Due to a bug in OpenStudio Command Line Interface, the GEM_PATH path variable ne
 In Git Bash shell command for Windows `$ unset GEM_PATH` and check for presence with bash line `$ env | grep GEM`.
 
 # EMS
+## Heat Pump Water Heater
+This specific workflow has an implementation of a heat pump water heater that requires some EnergyPlus Energy Management System (EMS) code.
 Trying to fix EMS error on other branch `dev-report-ideal`.
 `** Severe  ** <root>[EnergyManagementSystem:ProgramCallingManager][res wh_Building Unit 001 ProgramManager][programs][0] - Missing required property 'program_name'.`
-Matt D commit causes returns fail. https://github.com/NREL/OpenStudio-measures/commit/82086aaa083165d59a704f9696b14a674b8bf27a.
+Matt D [commit](https://github.com/NREL/OpenStudio-measures/commit/82086aaa083165d59a704f9696b14a674b8bf27a) causes returns fail.
 
 I think the equipment name `"res wh_Building Unit 001"` gets set in `ResidentialHotWaterHeaterHeatPump` or `ResidentialHotWaterFixtures`
 
