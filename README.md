@@ -4,6 +4,7 @@
 # VERSIONS
 * OpenStudio 3.0.1
 * EnergyPlus 9.3.0
+* Git Bash for Windows (a git-enabled shell) 3.2.57
 
 # GEMS
 This project counts on many local changes to published packages (or in Ruby parlance "gems"). For that reason it is suggested to rely on local resources inside this repository instead of external public gems.
