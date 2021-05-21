@@ -1,6 +1,10 @@
 # THESIS
 Freezing thesis work in version Feb 18, 2021
 
+# VERSIONS
+OpenStudio 3.0.1
+EnergyPlus 9.3.0
+
 # GEMS
 In Git Bash for Windows
 `$ unset GEM_PATH`
