@@ -8,6 +8,8 @@
 # GEMS
 This project counts on many local changes to published packages (or in Ruby parlance "gems"). For that reason it is suggested to rely on local resources inside this repository instead of external public gems.
 
+Many of the Measures are clones or derivatives of residential energy modeling code from the NREL `resstock` [repository](https://github.com/NREL/resstock). Learn more about ResStock [project](https://resstock.nrel.gov/) and [Residential Energy Modeling](https://www.nrel.gov/buildings/residential.html).
+
 ## openstudio-standards gem
 This workflow uses OpenStudio v3.0.1 which has `openstudio-standards-0.2.11` embedded. If one desires to access building performance standards ASHRAE `90.1-2016` or `90.1-2019`, a more recent `openstudio-standards-0.2.XX` will be required available from [rubygems.org](https://rubygems.org/gems/openstudio-standards).
 
@@ -36,15 +38,6 @@ Program Version,EnergyPlus, Version 9.3.0-baff08990c, YMD=2021.03.14 22:50,
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Terminated--Fatal Error Detected. 0 Warning; 2 Severe Errors; Elapsed Time=00hr 00min  1.32sec
 
-# THESIS
-Freezing thesis work in version Feb 18, 2021
-
-# GEMS
-In Git Bash for Windows
-`$ unset GEM_PATH`
-
-# BUILD
-Stable. 3/14/21
 
 # DOCUMENTATION
 Always run OpenStudio with Git Bash command `openstudio --verbose run -w path/to/workflow.osw --debug -- measures_only[optional]`. Include the `run.log` file and `eplusout.rdd` file in the commits.
