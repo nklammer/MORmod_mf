@@ -7,6 +7,7 @@ This work was inspired by and heavily borrows from previous work done for the pu
 * OpenStudio 3.0.1
 * EnergyPlus 9.3.0
 * Git Bash for Windows (a git-enabled shell) 3.2.57
+* approximately resstock-2.2.0
 
 # GEMS
 This project counts on many local changes to published packages (or in Ruby parlance "gems"). For that reason it is suggested to rely on local resources inside this repository instead of external public gems.
@@ -18,6 +19,8 @@ This workflow uses OpenStudio v3.0.1 which has `openstudio-standards-0.2.11` emb
 
 Due to a bug in OpenStudio Command Line Interface, the GEM_PATH path variable needs to be taken out of the environment before running.
 In Git Bash shell command for Windows `$ unset GEM_PATH` and check for presence with bash line `$ env | grep GEM`.
+
+## resstock gem
 
 # EMS
 ## Heat Pump Water Heater
