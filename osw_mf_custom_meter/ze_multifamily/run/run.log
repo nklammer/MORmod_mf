@@ -1,0 +1,1023 @@
+[10:54:56.097510 INFO] openstudio_2 = true
+[10:54:56.103285 INFO] openstudio_dir = C:/openstudio-3.0.1/bin
+[10:54:56.103404 INFO] Initializing directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run for simulation with options {:debug=>true, :preserve_run_dir=>false, :skip_expand_objects=>false, :skip_energyplus_preprocess=>false, :profile=>false, :targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :cleanup=>true, :energyplus_path=>nil, :verify_osw=>true, :weather_file=>nil, :fast=>false}
+[10:54:56.103430 INFO] Starting workflow in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run
+[10:54:56.103445 INFO] Current state: 'queued'
+[10:54:56.103481 INFO] Next state will be: 'initialization'
+[10:54:56.127180 DEBUG] RunInitialization passed the following options {:verify_osw=>true, :debug=>true, :preserve_run_dir=>false, :skip_expand_objects=>false, :skip_energyplus_preprocess=>false, :profile=>false, :targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :cleanup=>true, :energyplus_path=>nil, :weather_file=>nil, :fast=>false}
+[10:54:56.127328 DEBUG] RunInitialization passed the following registry {:openstudio_2=>true, :osw_path=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/workflow_from.osw>, :osw_dir=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily>, :run_dir=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run>, :log_targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :logger=>#<Logger:0x00000230a329daf8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00000230a329d8c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x00000230a329d800 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<MultiDelegator:0x00000230a329dc10 @targets=[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>]>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x00000230a329d6c0>>>}
+[10:54:56.127361 INFO] Calling perform in the RunInitialization class
+[10:54:56.127374 DEBUG] Registering that the workflow has started with the adapter
+[10:54:56.129185 DEBUG] Retrieved the workflow from the adapter
+[10:54:56.129283 DEBUG] osw_dir is C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily
+[10:54:56.696913 DEBUG] The root_dir for the datapoint is C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily
+[10:54:56.697759 DEBUG] Removing existing generated files directory: C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/generated_files
+[10:54:56.699988 DEBUG] Creating generated files directory: C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/generated_files
+[10:54:56.716604 DEBUG] Initialized runner
+[10:54:56.716706 INFO] Attempting to validate the measure workflow
+[10:54:56.720436 DEBUG] Validating step 0
+[10:54:56.750846 DEBUG] Validated step 0
+[10:54:56.750948 DEBUG] Validating step 1
+[10:54:56.796700 DEBUG] Validated step 1
+[10:54:56.796779 DEBUG] Validating step 2
+[10:54:56.828144 DEBUG] Validated step 2
+[10:54:56.828207 DEBUG] Validating step 3
+[10:54:56.847526 DEBUG] Validated step 3
+[10:54:56.847580 DEBUG] Validating step 4
+[10:54:56.858604 DEBUG] Validated step 4
+[10:54:56.858631 DEBUG] Validating step 5
+[10:54:56.866666 DEBUG] Validated step 5
+[10:54:56.866695 DEBUG] Validating step 6
+[10:54:56.872864 DEBUG] Validated step 6
+[10:54:56.872881 DEBUG] Validating step 7
+[10:54:56.879182 DEBUG] Validated step 7
+[10:54:56.879209 DEBUG] Validating step 8
+[10:54:56.884761 DEBUG] Validated step 8
+[10:54:56.884777 DEBUG] Validating step 9
+[10:54:56.890214 DEBUG] Validated step 9
+[10:54:56.890228 DEBUG] Validating step 10
+[10:54:56.896410 DEBUG] Validated step 10
+[10:54:56.896440 DEBUG] Validating step 11
+[10:54:56.901810 DEBUG] Validated step 11
+[10:54:56.901826 DEBUG] Validating step 12
+[10:54:56.907158 DEBUG] Validated step 12
+[10:54:56.907171 DEBUG] Validating step 13
+[10:54:56.913973 DEBUG] Validated step 13
+[10:54:56.914001 DEBUG] Validating step 14
+[10:54:56.920473 DEBUG] Validated step 14
+[10:54:56.920492 DEBUG] Validating step 15
+[10:54:56.927382 DEBUG] Validated step 15
+[10:54:56.927461 DEBUG] Validating step 16
+[10:54:56.934327 DEBUG] Validated step 16
+[10:54:56.934350 DEBUG] Validating step 17
+[10:54:56.940807 DEBUG] Validated step 17
+[10:54:56.940823 DEBUG] Validating step 18
+[10:54:56.947468 DEBUG] Validated step 18
+[10:54:56.947493 DEBUG] Validating step 19
+[10:54:56.953034 DEBUG] Validated step 19
+[10:54:56.953050 DEBUG] Validating step 20
+[10:54:56.958560 DEBUG] Validated step 20
+[10:54:56.958574 DEBUG] Validating step 21
+[10:54:56.965273 DEBUG] Validated step 21
+[10:54:56.965298 DEBUG] Validating step 22
+[10:54:56.971113 DEBUG] Validated step 22
+[10:54:56.971130 DEBUG] Validating step 23
+[10:54:56.978159 DEBUG] Validated step 23
+[10:54:56.978203 DEBUG] Validating step 24
+[10:54:56.983830 DEBUG] Validated step 24
+[10:54:56.983846 DEBUG] Validating step 25
+[10:54:56.990096 DEBUG] Validated step 25
+[10:54:56.990114 DEBUG] Validating step 26
+[10:54:56.997139 DEBUG] Validated step 26
+[10:54:56.997167 DEBUG] Validating step 27
+[10:54:57.003954 DEBUG] Validated step 27
+[10:54:57.003993 DEBUG] Validating step 28
+[10:54:57.011116 DEBUG] Validated step 28
+[10:54:57.011163 DEBUG] Validating step 29
+[10:54:57.017362 DEBUG] Validated step 29
+[10:54:57.017382 DEBUG] Validating step 30
+[10:54:57.022929 DEBUG] Validated step 30
+[10:54:57.022942 DEBUG] Validating step 31
+[10:54:57.029461 DEBUG] Validated step 31
+[10:54:57.029491 DEBUG] Validating step 32
+[10:54:57.034959 DEBUG] Validated step 32
+[10:54:57.034974 DEBUG] Validating step 33
+[10:54:57.040371 DEBUG] Validated step 33
+[10:54:57.040385 DEBUG] Validating step 34
+[10:54:57.046958 DEBUG] Validated step 34
+[10:54:57.046985 DEBUG] Validating step 35
+[10:54:57.052475 DEBUG] Validated step 35
+[10:54:57.052491 DEBUG] Validating step 36
+[10:54:57.057911 DEBUG] Validated step 36
+[10:54:57.057926 DEBUG] Validating step 37
+[10:54:57.064164 DEBUG] Validated step 37
+[10:54:57.064190 DEBUG] Validating step 38
+[10:54:57.069901 DEBUG] Validated step 38
+[10:54:57.069917 DEBUG] Validating step 39
+[10:54:57.075422 DEBUG] Validated step 39
+[10:54:57.075453 DEBUG] Validating step 40
+[10:54:57.089891 DEBUG] Validated step 40
+[10:54:57.089917 DEBUG] Validating step 41
+[10:54:57.096030 DEBUG] Validated step 41
+[10:54:57.096056 DEBUG] Validating step 42
+[10:54:57.101743 DEBUG] Validated step 42
+[10:54:57.101778 DEBUG] Validating step 43
+[10:54:57.107637 DEBUG] Validated step 43
+[10:54:57.107651 INFO] Validated the measure workflow
+[10:54:57.107657 DEBUG] Finding and loading the seed file
+[10:54:57.114319 INFO] Loading OSM model
+[10:54:57.114370 INFO] Reading in OSM model C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/in_upto.osm
+[10:55:19.461625 DEBUG] Getting the initial weather file
+[10:55:19.461806 DEBUG] No weather file specified in OSW, looking in model
+[10:55:19.472905 DEBUG] Searching for weather file #{weather_path}
+[10:55:19.474232 INFO] Current state: 'initialization'
+[10:55:19.474317 INFO] Next state will be: 'os_measures'
+[10:55:19.494354 DEBUG] RunOpenStudioMeasures passed the following options {:debug=>true, :preserve_run_dir=>false, :skip_expand_objects=>false, :skip_energyplus_preprocess=>false, :profile=>false, :targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :cleanup=>true, :energyplus_path=>nil, :verify_osw=>true, :weather_file=>nil, :fast=>false}
+[10:55:19.495903 DEBUG] RunOpenStudioMeasures passed the following registry {:openstudio_2=>true, :osw_path=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/workflow_from.osw>, :osw_dir=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily", :run_dir=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run>, :log_targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :logger=>#<Logger:0x00000230a329daf8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00000230a329d8c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x00000230a329d800 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<MultiDelegator:0x00000230a329dc10 @targets=[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>]>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x00000230a329d6c0>>>, :workflow=>{:file_paths=>["../../../weather", "../../../seeds", "../../../files"], :hash=>"40DFFF5D", :measure_paths=>["../../../.bundle/install/ruby/2.5.0/bundler/gems/build_stock/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/build_stock_resources/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-common-measures-gem-9a9d6d793603/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-ee-gem-ac6cf66d906f/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-model-articulation-gem-4bff8055ceb9/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/unmet_hours/lib/measures", "../../../measures"], :seed_file=>"../in_upto.osm", :steps=>[{:arguments=>{:__SKIP__=>true, :begin_day_of_month=>"1", :begin_month=>"1", :calendar_year=>"2019", :end_day_of_month=>"31", :end_month=>"12", :timesteps_per_hr=>"1"}, :measure_dir_name=>"ResidentialSimulationControls"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"HPXMLtoOpenStudio"}, {:arguments=>{:__SKIP__=>true, :floorplan_path=>"floorplan.json", :num_bathrooms=>"2", :num_bedrooms=>"0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3", :num_occupants=>"auto", :occupants_monthly_sch=>"1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0", :occupants_weekday_sch=>"1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00", :occupants_weekend_sch=>"1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00"}, :description=>"For Number of Bedrooms enter a value for each unit in order of building unit number. The unit number is extracted from the right side of the unit name separated from the name prefix by a space. Merging of floorspace.json with the OSM will happen in this measure and should NOT be done in the geometry editor tab of the OpenStudio Application.", :measure_dir_name=>"ResidentialGeometryCreateFromFloorspaceJS", :modeler_description=>"The example floorspace.json file used for this OSW organized unit number by number of bedrooms to make the number of bedrooms argument cleaner. Building Unit 112 for example is the 12th 1 Bedroom unit. This workflow is setup to work with OpenStudio 3.0.1 but not OpenStudio 3.1.0.", :name=>"ResidentialGeometryCreateFromFloorspaceJS"}, {:arguments=>{:__SKIP__=>true, :set_year=>"2019", :weather_file_name=>"USA_CA_Sacramento.Metro.AP.724839_TMY3.epw"}, :description=>"If the weather file argument is changed add an epw by that name to the files directory under the project folder along with a ddy and stat file that has the same name, other than the file extension.", :measure_dir_name=>"ChangeBuildingLocation", :name=>"ChangeBuildingLocation"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"ResidentialHotWaterHeaterHeatPump", :name=>"ResidentialHotWaterHeaterHeatPump"}, {:arguments=>{:__SKIP__=>true, :bath_mult=>"1", :plant_loop=>"auto", :schedule_day_shift=>"0", :shower_mult=>"1", :sink_mult=>"1"}, :measure_dir_name=>"ResidentialHotWaterFixtures", :name=>"ResidentialHotWaterFixtures"}, {:arguments=>{:__SKIP__=>true, :dist_ins=>"0", :dist_layout=>"trunk and branch", :pipe_mat=>"copper", :recirc_type=>"none", :space=>"interior"}, :measure_dir_name=>"ResidentialHotWaterDistribution", :name=>"ResidentialHotWaterDistribution"}, {:arguments=>{:__SKIP__=>true, :season_end_month=>"Dec", :season_start_month=>"Jan", :use_auto_season=>"false", :weekday_offset_magnitude=>"0", :weekday_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekday_setpoint=>"71.0", :weekend_offset_magnitude=>"0", :weekend_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekend_setpoint=>"71.0"}, :measure_dir_name=>"ResidentialHVACHeatingSetpoints", :name=>"ResidentialHVACHeatingSetpoints"}, {:arguments=>{:__SKIP__=>true, :season_end_month=>"Dec", :season_start_month=>"Jan", :use_auto_season=>"false", :weekday_offset_magnitude=>"0", :weekday_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekday_setpoint=>"76.0", :weekend_offset_magnitude=>"0", :weekend_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekend_setpoint=>"76.0"}, :measure_dir_name=>"ResidentialHVACCoolingSetpoints", :name=>"ResidentialHVACCoolingSetpoints"}, {:arguments=>{:__SKIP__=>true, :location=>"auto", :monthly_sch=>"0.837, 0.835, 1.084, 1.084, 1.084, 1.096, 1.096, 1.096, 1.096, 0.931, 0.925, 0.837", :mult=>"1", :rated_annual_energy=>"348", :weekday_sch=>"0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041", :weekend_sch=>"0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041"}, :measure_dir_name=>"ResidentialApplianceRefrigerator", :name=>"ResidentialApplianceRefrigerator"}, {:arguments=>{:__SKIP__=>true, :annual_cost=>"7", :cold_cycle=>"false", :drum_volume=>"4.5", :fill_sensor=>"false", :imef=>"2.92", :internal_heater=>"false", :location=>"auto", :mult_e=>"1", :mult_hw=>"1", :plant_loop=>"auto", :rated_annual_energy=>"75", :schedule_day_shift=>"0", :test_date=>"2013", :thermostatic_control=>"true"}, :measure_dir_name=>"ResidentialApplianceClothesWasher", :name=>"ResidentialApplianceClothesWasher"}, {:arguments=>{:__SKIP__=>true, :cef=>"5.2", :fuel_split=>"1.0", :fuel_type=>"electric", :location=>"auto", :mult=>"1.0"}, :measure_dir_name=>"ResidentialApplianceClothesDryer", :name=>"ResidentialApplianceClothesDryer"}, {:arguments=>{:__SKIP__=>true, :annual_gas_cost=>"18", :cold_inlet=>"false", :cold_use=>"0", :has_internal_heater=>"true", :location=>"auto", :mult_e=>"1", :mult_hw=>"1", :num_settings=>"12", :plant_loop=>"auto", :rated_annual_energy=>"199", :schedule_day_shift=>"0", :test_date=>"2017"}, :measure_dir_name=>"ResidentialApplianceDishwasher", :name=>"ResidentialApplianceDishwasher"}, {:arguments=>{:__SKIP__=>true, :cooktop_ef=>"0.84", :fuel_type=>"electric", :has_elec_ignition=>true, :location=>"auto", :monthly_sch=>"1.097, 1.097, 0.991, 0.987, 0.991, 0.890, 0.896, 0.896, 0.890, 1.085, 1.085, 1.097", :mult=>"1.0", :oven_ef=>"0.11", :weekday_sch=>"0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011", :weekend_sch=>"0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011"}, :measure_dir_name=>"ResidentialApplianceCookingRange", :name=>"ResidentialApplianceCookingRange"}, {:arguments=>{:__SKIP__=>true, :cfl_eff=>"55", :energy_use_interior=>"900", :hw_cfl=>"0", :hw_led=>"1.0", :hw_lfl=>"0", :in_eff=>"15", :led_eff=>"80", :lfl_eff=>"88", :monthly_sch=>"1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248", :mult=>"1", :option_type=>"Lamp Fractions", :pg_cfl=>"0", :pg_led=>"1.0", :pg_lfl=>"0", :sch_option_type=>"Calculated Lighting Schedule"}, :measure_dir_name=>"ResidentialLightingInterior", :name=>"ResidentialLightingInterior"}, {:arguments=>{:__SKIP__=>true, :energy_use=>"2000", :lat_frac=>"0.021", :monthly_sch=>"1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248", :mult=>"1", :option_type=>"Multiplier", :sens_frac=>"0.93", :weekday_sch=>"0.035, 0.033, 0.032, 0.031, 0.032, 0.033, 0.037, 0.042, 0.043, 0.043, 0.043, 0.044, 0.045, 0.045, 0.044, 0.046, 0.048, 0.052, 0.053, 0.05, 0.047, 0.045, 0.04, 0.036", :weekend_sch=>"0.035, 0.033, 0.032, 0.031, 0.032, 0.033, 0.037, 0.042, 0.043, 0.043, 0.043, 0.044, 0.045, 0.045, 0.044, 0.046, 0.048, 0.052, 0.053, 0.05, 0.047, 0.045, 0.04, 0.036"}, :measure_dir_name=>"ResidentialMiscPlugLoads", :name=>"ResidentialMiscPlugLoads"}, {:arguments=>{:__SKIP__=>true, :remove_adiabatic=>true}, :measure_dir_name=>"surface_matching_diagnostic", :name=>"surface_matching_diagnostic"}, {:arguments=>{:__SKIP__=>true, :relative_building_rotation=>0}, :measure_dir_name=>"RotateBuilding", :name=>"RotateBuilding"}, {:arguments=>{:__SKIP__=>true, :facade=>"All", :wwr=>"0.3"}, :measure_dir_name=>"SetWindowToWallRatioByFacade", :name=>"SetWindowToWallRatioByFacade"}, {:arguments=>{:__SKIP__=>true, :facade=>"South", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"South AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :facade=>"East", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"East AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :facade=>"West", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"West AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :building_story=>"Story 3", :multiplier_adj=>"2"}, :measure_dir_name=>"change_zone_multiplier_by_building_story"}, {:arguments=>{:__SKIP__=>true, :add_constructions=>true, :add_elevators=>true, :add_exterior_lights=>true, :add_hvac=>true, :add_space_type_loads=>true, :add_swh=>true, :add_thermostat=>true, :hvac_system_type=>"Minisplit Heat Pumps with ERVs", :onsite_parking_fraction=>"0.0", :wall_roof_construction_template=>"ZE AEDG Multifamily Recommendations", :window_construction_template=>"ZE AEDG Multifamily Recommendations"}, :measure_dir_name=>"zero_energy_multifamily", :name=>"zero_energy_multifamily"}, {:arguments=>{:__SKIP__=>true}, :description=>"This is my new measure, I don't think it has any arguments.", :measure_dir_name=>"EnableIdealAirLoadsForAllZones", :name=>"Turn on Ideal Air Loads"}, {:arguments=>{:__SKIP__=>true, :swh_type=>"Waste Water Heat Pump 120F Supply and Electric Tank"}, :description=>"This replaces water heaters in individual units with a central water system.", :measure_dir_name=>"multifamily_central_wwhp", :name=>"multifamily_central_wwhp"}, {:arguments=>{:__SKIP__=>true, :cell_efficiency=>"0.1976", :fraction_of_surface=>"0.75", :inverter_efficiency=>"0.96"}, :measure_dir_name=>"add_rooftop_pv", :name=>"add_rooftop_pv"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"view_model", :name=>"view_model"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"InteriorLights:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>true, :meter_name=>"ExteriorLights:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"InteriorEquipment:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Fans:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Pumps:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Heating:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Cooling:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"HeatRecovery:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"WaterSystems:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"ElectricityProduced:Facility", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>true, :custom_meter_name=>"ResFloors_Lights_Hourly", :fuel_type=>"Electricity", :file_path=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_multifamily_SAC/ze_multifamily/measures/meter_custom/tests/lights_res_only_hourly.csv", :add_output_meter=>true, :reporting_frequency=>"timestep"}, :description=>"This measure creates a Custom Meter to combine output variables and meters from a user-defined .csv file. This is helpful for combining energy use by floor, by space type, or for specific zones.", :measure_dir_name=>"meter_custom"}, {:arguments=>{:__SKIP__=>false, :fuel_type=>"Electricity", :add_output_meter=>true, :reporting_frequency=>"timestep"}, :description=>"This is my custom zone meter measure.", :measure_dir_name=>"meter_custom_zones"}, {:arguments=>{:zone_condition_section=>true}, :measure_dir_name=>"openstudio_results", :name=>"openstudio_results"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"envelope_and_internal_load_breakdown", :name=>"envelope_and_internal_load_breakdown"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"energy_use_by_standards_noPAT"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"d_view_export"}], :updated_at=>"20201119T092656Z"}, :datapoint=>nil, :analysis=>nil, :workflow_json=>#<OpenStudio::WorkflowJSON:0x00000230a30bc950 @__swigtype__="_p_openstudio__WorkflowJSON">, :root_dir=>#<OpenStudio::Path:0x00000230a30bc8b0 @__swigtype__="_p_openstudio__path">, :runner=>#<WorkflowRunner:0x00000230a3277740 @__swigtype__="_p_openstudio__measure__OSRunner", @multi_logger=#<Logger:0x00000230a329daf8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00000230a329d8c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x00000230a329d800 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<MultiDelegator:0x00000230a329dc10 @targets=[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>]>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x00000230a329d6c0>>>, @workflow_json=#<OpenStudio::WorkflowJSON:0x00000230a30bc950 @__swigtype__="_p_openstudio__WorkflowJSON">, @openstudio_2=true, @datapoint=nil, @analysis=nil, @halted=false, @use_os_halted=true>, :model=>#<OpenStudio::Model::Model:0x00000230a31a6758 @__swigtype__="_p_openstudio__model__Model">, :wf=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/files/USA_CA_Sacramento.Metro.AP.724839_TMY3.epw"}
+[10:55:19.496486 DEBUG] Calling perform in the RunOpenStudioMeasures class
+[10:55:19.620866 INFO] Beginning to execute OpenStudio measures.
+[10:55:19.620986 DEBUG] Finding measures of type ModelMeasure
+[10:55:19.630738 INFO] Found measure ResidentialSimulationControls of type ModelMeasure. Applying now.
+[10:55:19.632926 DEBUG] Starting apply_measure for ResidentialSimulationControls
+[10:55:19.639541 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/000_ResidentialSimulationControls
+[10:55:19.639945 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/000_ResidentialSimulationControls
+[10:55:19.640289 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialSimulationControls/measure.rb
+[10:55:19.940605 DEBUG] Iterating over arguments for workflow item 'ResidentialSimulationControls'
+[10:55:19.945455 INFO] Skipping measure 'ResidentialSimulationControls'
+[10:55:19.951287 INFO] Moving to the next workflow step.
+[10:55:19.980734 INFO] Found measure HPXMLTranslator of type ModelMeasure. Applying now.
+[10:55:19.981542 DEBUG] Starting apply_measure for HPXMLtoOpenStudio
+[10:55:19.995081 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/001_HPXMLtoOpenStudio
+[10:55:19.995509 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/001_HPXMLtoOpenStudio
+[10:55:19.995926 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/HPXMLtoOpenStudio/measure.rb
+[10:55:22.682451 DEBUG] Iterating over arguments for workflow item 'HPXMLtoOpenStudio'
+[10:55:22.682616 INFO] Skipping measure 'HPXMLtoOpenStudio'
+[10:55:22.685039 INFO] Moving to the next workflow step.
+[10:55:22.705809 INFO] Found measure ResidentialGeometryFromFloorspaceJS of type ModelMeasure. Applying now.
+[10:55:22.707200 DEBUG] Starting apply_measure for ResidentialGeometryCreateFromFloorspaceJS
+[10:55:22.722541 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/002_ResidentialGeometryCreateFromFloorspaceJS
+[10:55:22.723541 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/002_ResidentialGeometryCreateFromFloorspaceJS
+[10:55:22.724212 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialGeometryCreateFromFloorspaceJS/measure.rb
+[10:55:22.917393 DEBUG] Iterating over arguments for workflow item 'ResidentialGeometryCreateFromFloorspaceJS'
+[10:55:22.917576 INFO] Skipping measure 'ResidentialGeometryCreateFromFloorspaceJS'
+[10:55:22.919328 INFO] Moving to the next workflow step.
+[10:55:22.930256 INFO] Found measure ChangeBuildingLocation of type ModelMeasure. Applying now.
+[10:55:22.930807 DEBUG] Starting apply_measure for ChangeBuildingLocation
+[10:55:22.938760 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/003_ChangeBuildingLocation
+[10:55:22.939071 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/003_ChangeBuildingLocation
+[10:55:22.939382 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ChangeBuildingLocation/measure.rb
+[10:55:30.134515 DEBUG] Iterating over arguments for workflow item 'ChangeBuildingLocation'
+[10:55:30.134718 INFO] Skipping measure 'ChangeBuildingLocation'
+[10:55:30.136351 INFO] Moving to the next workflow step.
+[10:55:30.146315 INFO] Found measure ResidentialHotWaterHeaterHeatPump of type ModelMeasure. Applying now.
+[10:55:30.146920 DEBUG] Starting apply_measure for ResidentialHotWaterHeaterHeatPump
+[10:55:30.161693 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/004_ResidentialHotWaterHeaterHeatPump
+[10:55:30.162997 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/004_ResidentialHotWaterHeaterHeatPump
+[10:55:30.164377 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialHotWaterHeaterHeatPump/measure.rb
+[10:55:30.415354 DEBUG] Iterating over arguments for workflow item 'ResidentialHotWaterHeaterHeatPump'
+[10:55:30.415509 INFO] Skipping measure 'ResidentialHotWaterHeaterHeatPump'
+[10:55:30.417172 INFO] Moving to the next workflow step.
+[10:55:30.434518 INFO] Found measure ResidentialHotWaterFixtures of type ModelMeasure. Applying now.
+[10:55:30.436068 DEBUG] Starting apply_measure for ResidentialHotWaterFixtures
+[10:55:30.455738 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/005_ResidentialHotWaterFixtures
+[10:55:30.456520 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/005_ResidentialHotWaterFixtures
+[10:55:30.457175 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialHotWaterFixtures/measure.rb
+[10:55:30.609858 DEBUG] Iterating over arguments for workflow item 'ResidentialHotWaterFixtures'
+[10:55:30.610232 INFO] Skipping measure 'ResidentialHotWaterFixtures'
+[10:55:30.613916 INFO] Moving to the next workflow step.
+[10:55:30.642661 INFO] Found measure ResidentialHotWaterDistribution of type ModelMeasure. Applying now.
+[10:55:30.644811 DEBUG] Starting apply_measure for ResidentialHotWaterDistribution
+[10:55:30.666234 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/006_ResidentialHotWaterDistribution
+[10:55:30.667110 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/006_ResidentialHotWaterDistribution
+[10:55:30.667936 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialHotWaterDistribution/measure.rb
+[10:55:30.827399 DEBUG] Iterating over arguments for workflow item 'ResidentialHotWaterDistribution'
+[10:55:30.827516 INFO] Skipping measure 'ResidentialHotWaterDistribution'
+[10:55:30.828540 INFO] Moving to the next workflow step.
+[10:55:30.835027 INFO] Found measure ProcessHeatingSetpoints of type ModelMeasure. Applying now.
+[10:55:30.835505 DEBUG] Starting apply_measure for ResidentialHVACHeatingSetpoints
+[10:55:30.841387 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/007_ResidentialHVACHeatingSetpoints
+[10:55:30.841744 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/007_ResidentialHVACHeatingSetpoints
+[10:55:30.842084 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialHVACHeatingSetpoints/measure.rb
+[10:55:31.029580 DEBUG] Iterating over arguments for workflow item 'ResidentialHVACHeatingSetpoints'
+[10:55:31.029930 INFO] Skipping measure 'ResidentialHVACHeatingSetpoints'
+[10:55:31.033147 INFO] Moving to the next workflow step.
+[10:55:31.054692 INFO] Found measure ProcessCoolingSetpoints of type ModelMeasure. Applying now.
+[10:55:31.056037 DEBUG] Starting apply_measure for ResidentialHVACCoolingSetpoints
+[10:55:31.069156 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/008_ResidentialHVACCoolingSetpoints
+[10:55:31.069917 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/008_ResidentialHVACCoolingSetpoints
+[10:55:31.070667 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialHVACCoolingSetpoints/measure.rb
+[10:55:31.362508 DEBUG] Iterating over arguments for workflow item 'ResidentialHVACCoolingSetpoints'
+[10:55:31.362742 INFO] Skipping measure 'ResidentialHVACCoolingSetpoints'
+[10:55:31.365001 INFO] Moving to the next workflow step.
+[10:55:31.380298 INFO] Found measure ResidentialRefrigerator of type ModelMeasure. Applying now.
+[10:55:31.381451 DEBUG] Starting apply_measure for ResidentialApplianceRefrigerator
+[10:55:31.396560 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/009_ResidentialApplianceRefrigerator
+[10:55:31.397429 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/009_ResidentialApplianceRefrigerator
+[10:55:31.398283 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialApplianceRefrigerator/measure.rb
+[10:55:31.619643 DEBUG] Iterating over arguments for workflow item 'ResidentialApplianceRefrigerator'
+[10:55:31.619755 INFO] Skipping measure 'ResidentialApplianceRefrigerator'
+[10:55:31.620887 INFO] Moving to the next workflow step.
+[10:55:31.627655 INFO] Found measure ResidentialClothesWasher of type ModelMeasure. Applying now.
+[10:55:31.628173 DEBUG] Starting apply_measure for ResidentialApplianceClothesWasher
+[10:55:31.634915 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/010_ResidentialApplianceClothesWasher
+[10:55:31.635335 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/010_ResidentialApplianceClothesWasher
+[10:55:31.635760 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialApplianceClothesWasher/measure.rb
+[10:55:31.816584 DEBUG] Iterating over arguments for workflow item 'ResidentialApplianceClothesWasher'
+[10:55:31.816704 INFO] Skipping measure 'ResidentialApplianceClothesWasher'
+[10:55:31.817704 INFO] Moving to the next workflow step.
+[10:55:31.824130 INFO] Found measure ResidentialClothesDryer of type ModelMeasure. Applying now.
+[10:55:31.824625 DEBUG] Starting apply_measure for ResidentialApplianceClothesDryer
+[10:55:31.830629 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/011_ResidentialApplianceClothesDryer
+[10:55:31.831036 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/011_ResidentialApplianceClothesDryer
+[10:55:31.831381 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialApplianceClothesDryer/measure.rb
+[10:55:32.128006 DEBUG] Iterating over arguments for workflow item 'ResidentialApplianceClothesDryer'
+[10:55:32.128223 INFO] Skipping measure 'ResidentialApplianceClothesDryer'
+[10:55:32.130299 INFO] Moving to the next workflow step.
+[10:55:32.146101 INFO] Found measure ResidentialDishwasher of type ModelMeasure. Applying now.
+[10:55:32.147408 DEBUG] Starting apply_measure for ResidentialApplianceDishwasher
+[10:55:32.162727 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/012_ResidentialApplianceDishwasher
+[10:55:32.163297 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/012_ResidentialApplianceDishwasher
+[10:55:32.163900 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialApplianceDishwasher/measure.rb
+[10:55:32.304454 DEBUG] Iterating over arguments for workflow item 'ResidentialApplianceDishwasher'
+[10:55:32.304596 INFO] Skipping measure 'ResidentialApplianceDishwasher'
+[10:55:32.305527 INFO] Moving to the next workflow step.
+[10:55:32.312019 INFO] Found measure ResidentialCookingRange of type ModelMeasure. Applying now.
+[10:55:32.312471 DEBUG] Starting apply_measure for ResidentialApplianceCookingRange
+[10:55:32.318100 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/013_ResidentialApplianceCookingRange
+[10:55:32.318432 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/013_ResidentialApplianceCookingRange
+[10:55:32.318764 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialApplianceCookingRange/measure.rb
+[10:55:32.569976 DEBUG] Iterating over arguments for workflow item 'ResidentialApplianceCookingRange'
+[10:55:32.570616 INFO] Skipping measure 'ResidentialApplianceCookingRange'
+[10:55:32.572437 INFO] Moving to the next workflow step.
+[10:55:32.584149 INFO] Found measure ResidentialLightingInterior of type ModelMeasure. Applying now.
+[10:55:32.586209 DEBUG] Starting apply_measure for ResidentialLightingInterior
+[10:55:32.614162 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/014_ResidentialLightingInterior
+[10:55:32.624644 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/014_ResidentialLightingInterior
+[10:55:32.625599 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialLightingInterior/measure.rb
+[10:55:32.829043 DEBUG] Iterating over arguments for workflow item 'ResidentialLightingInterior'
+[10:55:32.829168 INFO] Skipping measure 'ResidentialLightingInterior'
+[10:55:32.830133 INFO] Moving to the next workflow step.
+[10:55:32.836574 INFO] Found measure ResidentialMiscElectricLoads of type ModelMeasure. Applying now.
+[10:55:32.837066 DEBUG] Starting apply_measure for ResidentialMiscPlugLoads
+[10:55:32.843242 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/015_ResidentialMiscPlugLoads
+[10:55:32.843586 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/015_ResidentialMiscPlugLoads
+[10:55:32.843923 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/ResidentialMiscPlugLoads/measure.rb
+[10:55:32.984971 DEBUG] Iterating over arguments for workflow item 'ResidentialMiscPlugLoads'
+[10:55:32.985106 INFO] Skipping measure 'ResidentialMiscPlugLoads'
+[10:55:32.986085 INFO] Moving to the next workflow step.
+[10:55:32.992610 INFO] Found measure SurfaceMatchingDiagnostic of type ModelMeasure. Applying now.
+[10:55:32.993090 DEBUG] Starting apply_measure for surface_matching_diagnostic
+[10:55:32.999069 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/016_surface_matching_diagnostic
+[10:55:32.999386 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/016_surface_matching_diagnostic
+[10:55:32.999704 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/surface_matching_diagnostic/measure.rb
+[10:55:33.140728 DEBUG] Iterating over arguments for workflow item 'surface_matching_diagnostic'
+[10:55:33.140822 INFO] Skipping measure 'surface_matching_diagnostic'
+[10:55:33.141812 INFO] Moving to the next workflow step.
+[10:55:33.148562 INFO] Found measure RotateBuilding of type ModelMeasure. Applying now.
+[10:55:33.149068 DEBUG] Starting apply_measure for RotateBuilding
+[10:55:33.156067 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/017_RotateBuilding
+[10:55:33.156486 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/017_RotateBuilding
+[10:55:33.156875 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/RotateBuilding/measure.rb
+[10:55:33.330607 DEBUG] Iterating over arguments for workflow item 'RotateBuilding'
+[10:55:33.330709 INFO] Skipping measure 'RotateBuilding'
+[10:55:33.331647 INFO] Moving to the next workflow step.
+[10:55:33.338071 INFO] Found measure SetWindowToWallRatioByFacade of type ModelMeasure. Applying now.
+[10:55:33.338574 DEBUG] Starting apply_measure for SetWindowToWallRatioByFacade
+[10:55:33.344634 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/018_SetWindowToWallRatioByFacade
+[10:55:33.344988 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/018_SetWindowToWallRatioByFacade
+[10:55:33.345308 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/SetWindowToWallRatioByFacade/measure.rb
+[10:55:33.495261 DEBUG] Iterating over arguments for workflow item 'SetWindowToWallRatioByFacade'
+[10:55:33.495389 INFO] Skipping measure 'SetWindowToWallRatioByFacade'
+[10:55:33.496845 INFO] Moving to the next workflow step.
+[10:55:33.506055 INFO] Found measure AddOverhangsByProjectionFactor of type ModelMeasure. Applying now.
+[10:55:33.506759 DEBUG] Starting apply_measure for AddOverhangsByProjectionFactor
+[10:55:33.516553 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/019_AddOverhangsByProjectionFactor
+[10:55:33.517704 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/019_AddOverhangsByProjectionFactor
+[10:55:33.519269 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddOverhangsByProjectionFactor/measure.rb
+[10:55:33.810999 DEBUG] Iterating over arguments for workflow item 'AddOverhangsByProjectionFactor'
+[10:55:33.811157 INFO] Skipping measure 'AddOverhangsByProjectionFactor'
+[10:55:33.813201 INFO] Moving to the next workflow step.
+[10:55:33.828206 INFO] Found measure AddOverhangsByProjectionFactor of type ModelMeasure. Applying now.
+[10:55:33.829332 DEBUG] Starting apply_measure for AddOverhangsByProjectionFactor
+[10:55:33.843789 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/020_AddOverhangsByProjectionFactor
+[10:55:33.844439 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/020_AddOverhangsByProjectionFactor
+[10:55:33.845077 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddOverhangsByProjectionFactor/measure.rb
+[10:55:34.035300 DEBUG] Iterating over arguments for workflow item 'AddOverhangsByProjectionFactor'
+[10:55:34.035529 INFO] Skipping measure 'AddOverhangsByProjectionFactor'
+[10:55:34.039321 INFO] Moving to the next workflow step.
+[10:55:34.067008 INFO] Found measure AddOverhangsByProjectionFactor of type ModelMeasure. Applying now.
+[10:55:34.069074 DEBUG] Starting apply_measure for AddOverhangsByProjectionFactor
+[10:55:34.089701 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/021_AddOverhangsByProjectionFactor
+[10:55:34.090669 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/021_AddOverhangsByProjectionFactor
+[10:55:34.091624 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddOverhangsByProjectionFactor/measure.rb
+[10:55:34.315493 DEBUG] Iterating over arguments for workflow item 'AddOverhangsByProjectionFactor'
+[10:55:34.315561 INFO] Skipping measure 'AddOverhangsByProjectionFactor'
+[10:55:34.316533 INFO] Moving to the next workflow step.
+[10:55:34.323511 INFO] Found measure ChangeZoneMultiplierByBuildingStory of type ModelMeasure. Applying now.
+[10:55:34.324023 DEBUG] Starting apply_measure for change_zone_multiplier_by_building_story
+[10:55:34.330602 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/022_change_zone_multiplier_by_building_story
+[10:55:34.341215 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/022_change_zone_multiplier_by_building_story
+[10:55:34.341934 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/change_zone_multiplier_by_building_story/measure.rb
+[10:55:34.548694 DEBUG] Iterating over arguments for workflow item 'change_zone_multiplier_by_building_story'
+[10:55:34.548784 INFO] Skipping measure 'change_zone_multiplier_by_building_story'
+[10:55:34.549647 INFO] Moving to the next workflow step.
+[10:55:34.556635 INFO] Found measure ZeroEnergyMultifamily of type ModelMeasure. Applying now.
+[10:55:34.557107 DEBUG] Starting apply_measure for zero_energy_multifamily
+[10:55:34.563409 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/023_zero_energy_multifamily
+[10:55:34.563728 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/023_zero_energy_multifamily
+[10:55:34.564067 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/zero_energy_multifamily/measure.rb
+[10:56:02.731218 DEBUG] Iterating over arguments for workflow item 'zero_energy_multifamily'
+[10:56:02.731337 INFO] Skipping measure 'zero_energy_multifamily'
+[10:56:02.732293 INFO] Moving to the next workflow step.
+[10:56:02.738101 INFO] Found measure EnableIdealAirLoadsForAllZones of type ModelMeasure. Applying now.
+[10:56:02.738563 DEBUG] Starting apply_measure for EnableIdealAirLoadsForAllZones
+[10:56:02.744347 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/024_EnableIdealAirLoadsForAllZones
+[10:56:02.744700 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/024_EnableIdealAirLoadsForAllZones
+[10:56:02.745031 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/EnableIdealAirLoadsForAllZones/measure.rb
+[10:56:02.926603 DEBUG] Iterating over arguments for workflow item 'EnableIdealAirLoadsForAllZones'
+[10:56:02.926722 INFO] Skipping measure 'EnableIdealAirLoadsForAllZones'
+[10:56:02.928172 INFO] Moving to the next workflow step.
+[10:56:02.936079 INFO] Found measure MultifamilyCentralWasteWaterHeatPump of type ModelMeasure. Applying now.
+[10:56:02.936651 DEBUG] Starting apply_measure for multifamily_central_wwhp
+[10:56:02.943006 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/025_multifamily_central_wwhp
+[10:56:02.943361 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/025_multifamily_central_wwhp
+[10:56:02.943716 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/multifamily_central_wwhp/measure.rb
+[10:56:03.106885 DEBUG] Iterating over arguments for workflow item 'multifamily_central_wwhp'
+[10:56:03.107120 INFO] Skipping measure 'multifamily_central_wwhp'
+[10:56:03.109679 INFO] Moving to the next workflow step.
+[10:56:03.125624 INFO] Found measure AddRooftopPV of type ModelMeasure. Applying now.
+[10:56:03.126344 DEBUG] Starting apply_measure for add_rooftop_pv
+[10:56:03.134385 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/026_add_rooftop_pv
+[10:56:03.134754 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/026_add_rooftop_pv
+[10:56:03.135160 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/add_rooftop_pv/measure.rb
+[10:56:03.297511 DEBUG] Iterating over arguments for workflow item 'add_rooftop_pv'
+[10:56:03.297627 INFO] Skipping measure 'add_rooftop_pv'
+[10:56:03.298764 INFO] Moving to the next workflow step.
+[10:56:03.307599 INFO] Found measure ViewModel of type ModelMeasure. Applying now.
+[10:56:03.308311 DEBUG] Starting apply_measure for view_model
+[10:56:03.318969 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/027_view_model
+[10:56:03.319595 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/027_view_model
+[10:56:03.320207 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/view_model/measure.rb
+[10:56:03.628158 DEBUG] Iterating over arguments for workflow item 'view_model'
+[10:56:03.628275 DEBUG] Calling measure.run for 'view_model'
+[10:56:04.484845 INFO] Used new ThreeScene translator.
+[10:56:05.067203 INFO] Report written to <a href='file:///C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/027_view_model/report.html'>report.html</a>.
+[10:56:05.067260 DEBUG] Finished measure.run for 'view_model'
+[10:56:12.163777 DEBUG] Running of measure 'view_model' completed. Post-processing measure output
+[10:56:12.186569 INFO] Moving to the next workflow step.
+[10:56:12.204257 INFO] Found measure AddMeter of type ModelMeasure. Applying now.
+[10:56:12.205599 DEBUG] Starting apply_measure for AddMeter
+[10:56:12.219654 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/028_AddMeter
+[10:56:12.220371 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/028_AddMeter
+[10:56:12.221056 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddMeter/measure.rb
+[10:56:12.318361 DEBUG] Iterating over arguments for workflow item 'AddMeter'
+[10:56:12.318458 INFO] Setting argument value 'meter_name' to 'InteriorLights:Electricity'
+[10:56:12.318499 INFO] Setting argument value 'reporting_frequency' to 'timestep'
+[10:56:12.318550 DEBUG] Calling measure.run for 'AddMeter'
+[10:56:12.321526 INFO] The model started with 6 meter objects.
+[10:56:12.324110 INFO] Adding meter for InteriorLights:Electricity reporting timestep
+[10:56:12.324218 INFO] The model finished with 7 meter objects.
+[10:56:12.324237 DEBUG] Finished measure.run for 'AddMeter'
+[10:56:14.001828 DEBUG] Running of measure 'AddMeter' completed. Post-processing measure output
+[10:56:14.016928 INFO] Moving to the next workflow step.
+[10:56:14.028310 INFO] Found measure AddMeter of type ModelMeasure. Applying now.
+[10:56:14.029184 DEBUG] Starting apply_measure for AddMeter
+[10:56:14.040383 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/029_AddMeter
+[10:56:14.041314 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/029_AddMeter
+[10:56:14.042459 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddMeter/measure.rb
+[10:56:14.190294 DEBUG] Iterating over arguments for workflow item 'AddMeter'
+[10:56:14.190367 INFO] Skipping measure 'AddMeter'
+[10:56:14.191251 INFO] Moving to the next workflow step.
+[10:56:14.197327 INFO] Found measure AddMeter of type ModelMeasure. Applying now.
+[10:56:14.197804 DEBUG] Starting apply_measure for AddMeter
+[10:56:14.203432 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/030_AddMeter
+[10:56:14.203746 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/030_AddMeter
+[10:56:14.204066 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddMeter/measure.rb
+[10:56:14.301932 DEBUG] Iterating over arguments for workflow item 'AddMeter'
+[10:56:14.302002 INFO] Setting argument value 'meter_name' to 'InteriorEquipment:Electricity'
+[10:56:14.302030 INFO] Setting argument value 'reporting_frequency' to 'timestep'
+[10:56:14.302067 DEBUG] Calling measure.run for 'AddMeter'
+[10:56:14.302426 INFO] The model started with 7 meter objects.
+[10:56:14.302454 WARN] A meter named InteriorEquipment:Electricity already exists. One will not be added to the model.
+[10:56:14.302487 INFO] The model finished with 7 meter objects.
+[10:56:14.302496 DEBUG] Finished measure.run for 'AddMeter'
+[10:56:17.274084 DEBUG] Running of measure 'AddMeter' completed. Post-processing measure output
+[10:56:17.279110 INFO] Moving to the next workflow step.
+[10:56:17.284223 INFO] Found measure AddMeter of type ModelMeasure. Applying now.
+[10:56:17.284611 DEBUG] Starting apply_measure for AddMeter
+[10:56:17.289672 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/031_AddMeter
+[10:56:17.300057 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/031_AddMeter
+[10:56:17.300776 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddMeter/measure.rb
+[10:56:17.427619 DEBUG] Iterating over arguments for workflow item 'AddMeter'
+[10:56:17.427693 INFO] Setting argument value 'meter_name' to 'Fans:Electricity'
+[10:56:17.427720 INFO] Setting argument value 'reporting_frequency' to 'timestep'
+[10:56:17.427760 DEBUG] Calling measure.run for 'AddMeter'
+[10:56:17.428092 INFO] The model started with 7 meter objects.
+[10:56:17.428258 INFO] Adding meter for Fans:Electricity reporting timestep
+[10:56:17.428285 INFO] The model finished with 8 meter objects.
+[10:56:17.428293 DEBUG] Finished measure.run for 'AddMeter'
+[10:56:19.236429 DEBUG] Running of measure 'AddMeter' completed. Post-processing measure output
+[10:56:19.240644 INFO] Moving to the next workflow step.
+[10:56:19.245913 INFO] Found measure AddMeter of type ModelMeasure. Applying now.
+[10:56:19.246314 DEBUG] Starting apply_measure for AddMeter
+[10:56:19.251541 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/032_AddMeter
+[10:56:19.251877 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/032_AddMeter
+[10:56:19.252188 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddMeter/measure.rb
+[10:56:19.357354 DEBUG] Iterating over arguments for workflow item 'AddMeter'
+[10:56:19.357428 INFO] Setting argument value 'meter_name' to 'Pumps:Electricity'
+[10:56:19.357457 INFO] Setting argument value 'reporting_frequency' to 'timestep'
+[10:56:19.357497 DEBUG] Calling measure.run for 'AddMeter'
+[10:56:19.357837 INFO] The model started with 8 meter objects.
+[10:56:19.358010 INFO] Adding meter for Pumps:Electricity reporting timestep
+[10:56:19.358037 INFO] The model finished with 9 meter objects.
+[10:56:19.358047 DEBUG] Finished measure.run for 'AddMeter'
+[10:56:20.959474 DEBUG] Running of measure 'AddMeter' completed. Post-processing measure output
+[10:56:20.963639 INFO] Moving to the next workflow step.
+[10:56:20.968713 INFO] Found measure AddMeter of type ModelMeasure. Applying now.
+[10:56:20.969101 DEBUG] Starting apply_measure for AddMeter
+[10:56:20.974144 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/033_AddMeter
+[10:56:20.974548 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/033_AddMeter
+[10:56:20.974845 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddMeter/measure.rb
+[10:56:21.095624 DEBUG] Iterating over arguments for workflow item 'AddMeter'
+[10:56:21.095704 INFO] Setting argument value 'meter_name' to 'Heating:Electricity'
+[10:56:21.095874 INFO] Setting argument value 'reporting_frequency' to 'timestep'
+[10:56:21.095922 DEBUG] Calling measure.run for 'AddMeter'
+[10:56:21.096260 INFO] The model started with 9 meter objects.
+[10:56:21.096288 WARN] A meter named Heating:Electricity already exists. One will not be added to the model.
+[10:56:21.096319 INFO] The model finished with 9 meter objects.
+[10:56:21.096328 DEBUG] Finished measure.run for 'AddMeter'
+[10:56:22.879261 DEBUG] Running of measure 'AddMeter' completed. Post-processing measure output
+[10:56:22.890949 INFO] Moving to the next workflow step.
+[10:56:22.900799 INFO] Found measure AddMeter of type ModelMeasure. Applying now.
+[10:56:22.901415 DEBUG] Starting apply_measure for AddMeter
+[10:56:22.908579 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/034_AddMeter
+[10:56:22.908990 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/034_AddMeter
+[10:56:22.909381 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddMeter/measure.rb
+[10:56:22.997351 DEBUG] Iterating over arguments for workflow item 'AddMeter'
+[10:56:22.997426 INFO] Setting argument value 'meter_name' to 'Cooling:Electricity'
+[10:56:22.997457 INFO] Setting argument value 'reporting_frequency' to 'timestep'
+[10:56:22.997500 DEBUG] Calling measure.run for 'AddMeter'
+[10:56:22.997827 INFO] The model started with 9 meter objects.
+[10:56:22.997853 WARN] A meter named Cooling:Electricity already exists. One will not be added to the model.
+[10:56:22.997883 INFO] The model finished with 9 meter objects.
+[10:56:22.997891 DEBUG] Finished measure.run for 'AddMeter'
+[10:56:24.727995 DEBUG] Running of measure 'AddMeter' completed. Post-processing measure output
+[10:56:24.732635 INFO] Moving to the next workflow step.
+[10:56:24.739118 INFO] Found measure AddMeter of type ModelMeasure. Applying now.
+[10:56:24.739783 DEBUG] Starting apply_measure for AddMeter
+[10:56:24.746250 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/035_AddMeter
+[10:56:24.746585 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/035_AddMeter
+[10:56:24.746914 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddMeter/measure.rb
+[10:56:24.826015 DEBUG] Iterating over arguments for workflow item 'AddMeter'
+[10:56:24.826084 INFO] Setting argument value 'meter_name' to 'HeatRecovery:Electricity'
+[10:56:24.826110 INFO] Setting argument value 'reporting_frequency' to 'timestep'
+[10:56:24.826160 DEBUG] Calling measure.run for 'AddMeter'
+[10:56:24.826454 INFO] The model started with 9 meter objects.
+[10:56:24.826479 WARN] A meter named HeatRecovery:Electricity already exists. One will not be added to the model.
+[10:56:24.826504 INFO] The model finished with 9 meter objects.
+[10:56:24.826511 DEBUG] Finished measure.run for 'AddMeter'
+[10:56:26.339413 DEBUG] Running of measure 'AddMeter' completed. Post-processing measure output
+[10:56:26.343732 INFO] Moving to the next workflow step.
+[10:56:26.349109 INFO] Found measure AddMeter of type ModelMeasure. Applying now.
+[10:56:26.349518 DEBUG] Starting apply_measure for AddMeter
+[10:56:26.354730 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/036_AddMeter
+[10:56:26.355106 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/036_AddMeter
+[10:56:26.355491 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddMeter/measure.rb
+[10:56:26.487178 DEBUG] Iterating over arguments for workflow item 'AddMeter'
+[10:56:26.487364 INFO] Setting argument value 'meter_name' to 'WaterSystems:Electricity'
+[10:56:26.487450 INFO] Setting argument value 'reporting_frequency' to 'timestep'
+[10:56:26.487568 DEBUG] Calling measure.run for 'AddMeter'
+[10:56:26.488453 INFO] The model started with 9 meter objects.
+[10:56:26.488519 WARN] A meter named WaterSystems:Electricity already exists. One will not be added to the model.
+[10:56:26.488608 INFO] The model finished with 9 meter objects.
+[10:56:26.488632 DEBUG] Finished measure.run for 'AddMeter'
+[10:56:28.062663 DEBUG] Running of measure 'AddMeter' completed. Post-processing measure output
+[10:56:28.067654 INFO] Moving to the next workflow step.
+[10:56:28.074238 INFO] Found measure AddMeter of type ModelMeasure. Applying now.
+[10:56:28.074753 DEBUG] Starting apply_measure for AddMeter
+[10:56:28.081239 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/037_AddMeter
+[10:56:28.081616 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/037_AddMeter
+[10:56:28.081981 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/AddMeter/measure.rb
+[10:56:28.194109 DEBUG] Iterating over arguments for workflow item 'AddMeter'
+[10:56:28.194272 INFO] Setting argument value 'meter_name' to 'ElectricityProduced:Facility'
+[10:56:28.194348 INFO] Setting argument value 'reporting_frequency' to 'timestep'
+[10:56:28.194446 DEBUG] Calling measure.run for 'AddMeter'
+[10:56:28.195233 INFO] The model started with 9 meter objects.
+[10:56:28.195308 WARN] A meter named ElectricityProduced:Facility already exists. One will not be added to the model.
+[10:56:28.195377 INFO] The model finished with 9 meter objects.
+[10:56:28.195399 DEBUG] Finished measure.run for 'AddMeter'
+[10:56:29.864896 DEBUG] Running of measure 'AddMeter' completed. Post-processing measure output
+[10:56:29.870028 INFO] Moving to the next workflow step.
+[10:56:29.875831 INFO] Found measure MeterCustom of type ModelMeasure. Applying now.
+[10:56:29.876249 DEBUG] Starting apply_measure for meter_custom
+[10:56:29.881337 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/038_meter_custom
+[10:56:29.881666 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/038_meter_custom
+[10:56:29.881974 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/meter_custom/measure.rb
+[10:56:30.005301 DEBUG] Iterating over arguments for workflow item 'meter_custom'
+[10:56:30.005440 INFO] Skipping measure 'meter_custom'
+[10:56:30.006684 INFO] Moving to the next workflow step.
+[10:56:30.014802 INFO] Found measure MeterCustom of type ModelMeasure. Applying now.
+[10:56:30.015443 DEBUG] Starting apply_measure for meter_custom_zones
+[10:56:30.023071 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/039_meter_custom_zones
+[10:56:30.023498 DEBUG] Apply measure running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/039_meter_custom_zones
+[10:56:30.023932 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/meter_custom_zones/measure.rb
+[10:56:30.241766 DEBUG] Iterating over arguments for workflow item 'meter_custom_zones'
+[10:56:30.241840 INFO] Setting argument value 'add_output_meter' to 'true'
+[10:56:30.241875 INFO] Setting argument value 'fuel_type' to 'Electricity'
+[10:56:30.241899 INFO] Setting argument value 'reporting_frequency' to 'timestep'
+[10:56:30.241944 DEBUG] Calling measure.run for 'meter_custom_zones'
+[10:56:30.254636 INFO] Creating custom meter called 'Meter 1 - 0_Bdrm_1_2 Electricity'.
+[10:56:30.268956 INFO] Zone 0_Bdrm_1_2 has an associated AirLoopHVAC 0_Bdrm_1_2 Central Air Source HP.
+[10:56:30.273407 INFO] Zone 0_Bdrm_1_2 has an associated DHW system and a building unit number of '001'.
+[10:56:30.274221 INFO] Added a custom meter object Meter 1 - 0_Bdrm_1_2 Electricity with 18 key-variable groups.
+[10:56:30.274579 INFO] Meter 1 - 0_Bdrm_1_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.274634 INFO] Creating custom meter called 'Meter 2 - 0_Bdrm_1_3 Electricity'.
+[10:56:30.277170 INFO] Zone 0_Bdrm_1_3 has an associated AirLoopHVAC 0_Bdrm_1_3 Central Air Source HP.
+[10:56:30.277733 INFO] Zone 0_Bdrm_1_3 has an associated DHW system and a building unit number of '005'.
+[10:56:30.278327 INFO] Added a custom meter object Meter 2 - 0_Bdrm_1_3 Electricity with 18 key-variable groups.
+[10:56:30.278370 INFO] Meter 2 - 0_Bdrm_1_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.278406 INFO] Creating custom meter called 'Meter 3 - 0_Bdrm_1_4 Electricity'.
+[10:56:30.280600 INFO] Zone 0_Bdrm_1_4 has an associated AirLoopHVAC 0_Bdrm_1_4 Central Air Source HP.
+[10:56:30.281116 INFO] Zone 0_Bdrm_1_4 has an associated DHW system and a building unit number of '009'.
+[10:56:30.282021 INFO] Added a custom meter object Meter 3 - 0_Bdrm_1_4 Electricity with 18 key-variable groups.
+[10:56:30.282083 INFO] Meter 3 - 0_Bdrm_1_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.282132 INFO] Creating custom meter called 'Meter 4 - 0_Bdrm_2_2 Electricity'.
+[10:56:30.284774 INFO] Zone 0_Bdrm_2_2 has an associated AirLoopHVAC 0_Bdrm_2_2 Central Air Source HP.
+[10:56:30.285397 INFO] Zone 0_Bdrm_2_2 has an associated DHW system and a building unit number of '002'.
+[10:56:30.286129 INFO] Added a custom meter object Meter 4 - 0_Bdrm_2_2 Electricity with 18 key-variable groups.
+[10:56:30.286177 INFO] Meter 4 - 0_Bdrm_2_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.286219 INFO] Creating custom meter called 'Meter 5 - 0_Bdrm_2_3 Electricity'.
+[10:56:30.288997 INFO] Zone 0_Bdrm_2_3 has an associated AirLoopHVAC 0_Bdrm_2_3 Central Air Source HP.
+[10:56:30.289581 INFO] Zone 0_Bdrm_2_3 has an associated DHW system and a building unit number of '006'.
+[10:56:30.290300 INFO] Added a custom meter object Meter 5 - 0_Bdrm_2_3 Electricity with 18 key-variable groups.
+[10:56:30.290344 INFO] Meter 5 - 0_Bdrm_2_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.290385 INFO] Creating custom meter called 'Meter 6 - 0_Bdrm_2_4 Electricity'.
+[10:56:30.293446 INFO] Zone 0_Bdrm_2_4 has an associated AirLoopHVAC 0_Bdrm_2_4 Central Air Source HP.
+[10:56:30.294122 INFO] Zone 0_Bdrm_2_4 has an associated DHW system and a building unit number of '010'.
+[10:56:30.294738 INFO] Added a custom meter object Meter 6 - 0_Bdrm_2_4 Electricity with 18 key-variable groups.
+[10:56:30.294780 INFO] Meter 6 - 0_Bdrm_2_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.294816 INFO] Creating custom meter called 'Meter 7 - 0_Bdrm_3_2 Electricity'.
+[10:56:30.297844 INFO] Zone 0_Bdrm_3_2 has an associated AirLoopHVAC 0_Bdrm_3_2 Central Air Source HP.
+[10:56:30.298377 INFO] Zone 0_Bdrm_3_2 has an associated DHW system and a building unit number of '003'.
+[10:56:30.298927 INFO] Added a custom meter object Meter 7 - 0_Bdrm_3_2 Electricity with 18 key-variable groups.
+[10:56:30.298966 INFO] Meter 7 - 0_Bdrm_3_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.298999 INFO] Creating custom meter called 'Meter 8 - 0_Bdrm_3_3 Electricity'.
+[10:56:30.301940 INFO] Zone 0_Bdrm_3_3 has an associated AirLoopHVAC 0_Bdrm_3_3 Central Air Source HP.
+[10:56:30.302538 INFO] Zone 0_Bdrm_3_3 has an associated DHW system and a building unit number of '007'.
+[10:56:30.303279 INFO] Added a custom meter object Meter 8 - 0_Bdrm_3_3 Electricity with 18 key-variable groups.
+[10:56:30.303317 INFO] Meter 8 - 0_Bdrm_3_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.303351 INFO] Creating custom meter called 'Meter 9 - 0_Bdrm_3_4 Electricity'.
+[10:56:30.306987 INFO] Zone 0_Bdrm_3_4 has an associated AirLoopHVAC 0_Bdrm_3_4 Central Air Source HP.
+[10:56:30.307590 INFO] Zone 0_Bdrm_3_4 has an associated DHW system and a building unit number of '011'.
+[10:56:30.308327 INFO] Added a custom meter object Meter 9 - 0_Bdrm_3_4 Electricity with 18 key-variable groups.
+[10:56:30.308370 INFO] Meter 9 - 0_Bdrm_3_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.308410 INFO] Creating custom meter called 'Meter 10 - 0_Bdrm_4_2 Electricity'.
+[10:56:30.310446 INFO] Zone 0_Bdrm_4_2 has an associated AirLoopHVAC 0_Bdrm_4_2 Central Air Source HP.
+[10:56:30.310978 INFO] Zone 0_Bdrm_4_2 has an associated DHW system and a building unit number of '004'.
+[10:56:30.311644 INFO] Added a custom meter object Meter 10 - 0_Bdrm_4_2 Electricity with 18 key-variable groups.
+[10:56:30.311683 INFO] Meter 10 - 0_Bdrm_4_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.311719 INFO] Creating custom meter called 'Meter 11 - 0_Bdrm_4_3 Electricity'.
+[10:56:30.314974 INFO] Zone 0_Bdrm_4_3 has an associated AirLoopHVAC 0_Bdrm_4_3 Central Air Source HP.
+[10:56:30.315505 INFO] Zone 0_Bdrm_4_3 has an associated DHW system and a building unit number of '008'.
+[10:56:30.316170 INFO] Added a custom meter object Meter 11 - 0_Bdrm_4_3 Electricity with 18 key-variable groups.
+[10:56:30.316208 INFO] Meter 11 - 0_Bdrm_4_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.316244 INFO] Creating custom meter called 'Meter 12 - 0_Bdrm_4_4 Electricity'.
+[10:56:30.319831 INFO] Zone 0_Bdrm_4_4 has an associated AirLoopHVAC 0_Bdrm_4_4 Central Air Source HP.
+[10:56:30.320363 INFO] Zone 0_Bdrm_4_4 has an associated DHW system and a building unit number of '012'.
+[10:56:30.320975 INFO] Added a custom meter object Meter 12 - 0_Bdrm_4_4 Electricity with 18 key-variable groups.
+[10:56:30.321014 INFO] Meter 12 - 0_Bdrm_4_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.321049 INFO] Creating custom meter called 'Meter 13 - 1_Bdrm_1_2 Electricity'.
+[10:56:30.324444 INFO] Zone 1_Bdrm_1_2 has an associated AirLoopHVAC 1_Bdrm_1_2 Central Air Source HP.
+[10:56:30.324934 INFO] Zone 1_Bdrm_1_2 has an associated DHW system and a building unit number of '101'.
+[10:56:30.325497 INFO] Added a custom meter object Meter 13 - 1_Bdrm_1_2 Electricity with 18 key-variable groups.
+[10:56:30.325534 INFO] Meter 13 - 1_Bdrm_1_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.325572 INFO] Creating custom meter called 'Meter 14 - 1_Bdrm_1_3 Electricity'.
+[10:56:30.327260 INFO] Zone 1_Bdrm_1_3 has an associated AirLoopHVAC 1_Bdrm_1_3 Central Air Source HP.
+[10:56:30.327741 INFO] Zone 1_Bdrm_1_3 has an associated DHW system and a building unit number of '108'.
+[10:56:30.328297 INFO] Added a custom meter object Meter 14 - 1_Bdrm_1_3 Electricity with 18 key-variable groups.
+[10:56:30.328333 INFO] Meter 14 - 1_Bdrm_1_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.328365 INFO] Creating custom meter called 'Meter 15 - 1_Bdrm_1_4 Electricity'.
+[10:56:30.331705 INFO] Zone 1_Bdrm_1_4 has an associated AirLoopHVAC 1_Bdrm_1_4 Central Air Source HP.
+[10:56:30.332317 INFO] Zone 1_Bdrm_1_4 has an associated DHW system and a building unit number of '115'.
+[10:56:30.332910 INFO] Added a custom meter object Meter 15 - 1_Bdrm_1_4 Electricity with 18 key-variable groups.
+[10:56:30.332947 INFO] Meter 15 - 1_Bdrm_1_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.332981 INFO] Creating custom meter called 'Meter 16 - 1_Bdrm_2_2 Electricity'.
+[10:56:30.336415 INFO] Zone 1_Bdrm_2_2 has an associated AirLoopHVAC 1_Bdrm_2_2 Central Air Source HP.
+[10:56:30.336901 INFO] Zone 1_Bdrm_2_2 has an associated DHW system and a building unit number of '102'.
+[10:56:30.337463 INFO] Added a custom meter object Meter 16 - 1_Bdrm_2_2 Electricity with 18 key-variable groups.
+[10:56:30.337500 INFO] Meter 16 - 1_Bdrm_2_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.337533 INFO] Creating custom meter called 'Meter 17 - 1_Bdrm_2_3 Electricity'.
+[10:56:30.341023 INFO] Zone 1_Bdrm_2_3 has an associated AirLoopHVAC 1_Bdrm_2_3 Central Air Source HP.
+[10:56:30.341523 INFO] Zone 1_Bdrm_2_3 has an associated DHW system and a building unit number of '109'.
+[10:56:30.342094 INFO] Added a custom meter object Meter 17 - 1_Bdrm_2_3 Electricity with 18 key-variable groups.
+[10:56:30.342131 INFO] Meter 17 - 1_Bdrm_2_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.342163 INFO] Creating custom meter called 'Meter 18 - 1_Bdrm_2_4 Electricity'.
+[10:56:30.346182 INFO] Zone 1_Bdrm_2_4 has an associated AirLoopHVAC 1_Bdrm_2_4 Central Air Source HP.
+[10:56:30.346648 INFO] Zone 1_Bdrm_2_4 has an associated DHW system and a building unit number of '116'.
+[10:56:30.347178 INFO] Added a custom meter object Meter 18 - 1_Bdrm_2_4 Electricity with 18 key-variable groups.
+[10:56:30.347213 INFO] Meter 18 - 1_Bdrm_2_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.347244 INFO] Creating custom meter called 'Meter 19 - 1_Bdrm_3_2 Electricity'.
+[10:56:30.351244 INFO] Zone 1_Bdrm_3_2 has an associated AirLoopHVAC 1_Bdrm_3_2 Central Air Source HP.
+[10:56:30.351834 INFO] Zone 1_Bdrm_3_2 has an associated DHW system and a building unit number of '103'.
+[10:56:30.352575 INFO] Added a custom meter object Meter 19 - 1_Bdrm_3_2 Electricity with 18 key-variable groups.
+[10:56:30.352624 INFO] Meter 19 - 1_Bdrm_3_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.352664 INFO] Creating custom meter called 'Meter 20 - 1_Bdrm_3_3 Electricity'.
+[10:56:30.358012 INFO] Zone 1_Bdrm_3_3 has an associated AirLoopHVAC 1_Bdrm_3_3 Central Air Source HP.
+[10:56:30.358640 INFO] Zone 1_Bdrm_3_3 has an associated DHW system and a building unit number of '110'.
+[10:56:30.359437 INFO] Added a custom meter object Meter 20 - 1_Bdrm_3_3 Electricity with 18 key-variable groups.
+[10:56:30.359479 INFO] Meter 20 - 1_Bdrm_3_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.359517 INFO] Creating custom meter called 'Meter 21 - 1_Bdrm_3_4 Electricity'.
+[10:56:30.364728 INFO] Zone 1_Bdrm_3_4 has an associated AirLoopHVAC 1_Bdrm_3_4 Central Air Source HP.
+[10:56:30.365318 INFO] Zone 1_Bdrm_3_4 has an associated DHW system and a building unit number of '117'.
+[10:56:30.366084 INFO] Added a custom meter object Meter 21 - 1_Bdrm_3_4 Electricity with 18 key-variable groups.
+[10:56:30.366127 INFO] Meter 21 - 1_Bdrm_3_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.366167 INFO] Creating custom meter called 'Meter 22 - 1_Bdrm_4_2 Electricity'.
+[10:56:30.368138 INFO] Zone 1_Bdrm_4_2 has an associated AirLoopHVAC 1_Bdrm_4_2 Central Air Source HP.
+[10:56:30.369099 INFO] Zone 1_Bdrm_4_2 has an associated DHW system and a building unit number of '104'.
+[10:56:30.369878 INFO] Added a custom meter object Meter 22 - 1_Bdrm_4_2 Electricity with 18 key-variable groups.
+[10:56:30.369921 INFO] Meter 22 - 1_Bdrm_4_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.369961 INFO] Creating custom meter called 'Meter 23 - 1_Bdrm_4_3 Electricity'.
+[10:56:30.375545 INFO] Zone 1_Bdrm_4_3 has an associated AirLoopHVAC 1_Bdrm_4_3 Central Air Source HP.
+[10:56:30.376146 INFO] Zone 1_Bdrm_4_3 has an associated DHW system and a building unit number of '111'.
+[10:56:30.376917 INFO] Added a custom meter object Meter 23 - 1_Bdrm_4_3 Electricity with 18 key-variable groups.
+[10:56:30.376959 INFO] Meter 23 - 1_Bdrm_4_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.376999 INFO] Creating custom meter called 'Meter 24 - 1_Bdrm_4_4 Electricity'.
+[10:56:30.379809 INFO] Zone 1_Bdrm_4_4 has an associated AirLoopHVAC 1_Bdrm_4_4 Central Air Source HP.
+[10:56:30.380436 INFO] Zone 1_Bdrm_4_4 has an associated DHW system and a building unit number of '118'.
+[10:56:30.381098 INFO] Added a custom meter object Meter 24 - 1_Bdrm_4_4 Electricity with 18 key-variable groups.
+[10:56:30.381140 INFO] Meter 24 - 1_Bdrm_4_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.381176 INFO] Creating custom meter called 'Meter 25 - 1_Bdrm_5_2 Electricity'.
+[10:56:30.385789 INFO] Zone 1_Bdrm_5_2 has an associated AirLoopHVAC 1_Bdrm_5_2 Central Air Source HP.
+[10:56:30.386513 INFO] Zone 1_Bdrm_5_2 has an associated DHW system and a building unit number of '105'.
+[10:56:30.387641 INFO] Added a custom meter object Meter 25 - 1_Bdrm_5_2 Electricity with 18 key-variable groups.
+[10:56:30.387690 INFO] Meter 25 - 1_Bdrm_5_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.387737 INFO] Creating custom meter called 'Meter 26 - 1_Bdrm_5_3 Electricity'.
+[10:56:30.392513 INFO] Zone 1_Bdrm_5_3 has an associated AirLoopHVAC 1_Bdrm_5_3 Central Air Source HP.
+[10:56:30.392977 INFO] Zone 1_Bdrm_5_3 has an associated DHW system and a building unit number of '112'.
+[10:56:30.393409 INFO] Added a custom meter object Meter 26 - 1_Bdrm_5_3 Electricity with 18 key-variable groups.
+[10:56:30.393434 INFO] Meter 26 - 1_Bdrm_5_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.393457 INFO] Creating custom meter called 'Meter 27 - 1_Bdrm_5_4 Electricity'.
+[10:56:30.396445 INFO] Zone 1_Bdrm_5_4 has an associated AirLoopHVAC 1_Bdrm_5_4 Central Air Source HP.
+[10:56:30.396715 INFO] Zone 1_Bdrm_5_4 has an associated DHW system and a building unit number of '119'.
+[10:56:30.397039 INFO] Added a custom meter object Meter 27 - 1_Bdrm_5_4 Electricity with 18 key-variable groups.
+[10:56:30.397059 INFO] Meter 27 - 1_Bdrm_5_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.397077 INFO] Creating custom meter called 'Meter 28 - 1_Bdrm_6_2 Electricity'.
+[10:56:30.399666 INFO] Zone 1_Bdrm_6_2 has an associated AirLoopHVAC 1_Bdrm_6_2 Central Air Source HP.
+[10:56:30.399972 INFO] Zone 1_Bdrm_6_2 has an associated DHW system and a building unit number of '106'.
+[10:56:30.400354 INFO] Added a custom meter object Meter 28 - 1_Bdrm_6_2 Electricity with 18 key-variable groups.
+[10:56:30.400372 INFO] Meter 28 - 1_Bdrm_6_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.400389 INFO] Creating custom meter called 'Meter 29 - 1_Bdrm_6_3 Electricity'.
+[10:56:30.404116 INFO] Zone 1_Bdrm_6_3 has an associated AirLoopHVAC 1_Bdrm_6_3 Central Air Source HP.
+[10:56:30.404638 INFO] Zone 1_Bdrm_6_3 has an associated DHW system and a building unit number of '113'.
+[10:56:30.405277 INFO] Added a custom meter object Meter 29 - 1_Bdrm_6_3 Electricity with 18 key-variable groups.
+[10:56:30.405296 INFO] Meter 29 - 1_Bdrm_6_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.405312 INFO] Creating custom meter called 'Meter 30 - 1_Bdrm_6_4 Electricity'.
+[10:56:30.407679 INFO] Zone 1_Bdrm_6_4 has an associated AirLoopHVAC 1_Bdrm_6_4 Central Air Source HP.
+[10:56:30.407898 INFO] Zone 1_Bdrm_6_4 has an associated DHW system and a building unit number of '120'.
+[10:56:30.408171 INFO] Added a custom meter object Meter 30 - 1_Bdrm_6_4 Electricity with 18 key-variable groups.
+[10:56:30.408186 INFO] Meter 30 - 1_Bdrm_6_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.408200 INFO] Creating custom meter called 'Meter 31 - 1_Bdrm_7_2 Electricity'.
+[10:56:30.410449 INFO] Zone 1_Bdrm_7_2 has an associated AirLoopHVAC 1_Bdrm_7_2 Central Air Source HP.
+[10:56:30.410632 INFO] Zone 1_Bdrm_7_2 has an associated DHW system and a building unit number of '107'.
+[10:56:30.410846 INFO] Added a custom meter object Meter 31 - 1_Bdrm_7_2 Electricity with 18 key-variable groups.
+[10:56:30.410859 INFO] Meter 31 - 1_Bdrm_7_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.410871 INFO] Creating custom meter called 'Meter 32 - 1_Bdrm_7_3 Electricity'.
+[10:56:30.412688 INFO] Zone 1_Bdrm_7_3 has an associated AirLoopHVAC 1_Bdrm_7_3 Central Air Source HP.
+[10:56:30.412862 INFO] Zone 1_Bdrm_7_3 has an associated DHW system and a building unit number of '114'.
+[10:56:30.413070 INFO] Added a custom meter object Meter 32 - 1_Bdrm_7_3 Electricity with 18 key-variable groups.
+[10:56:30.413083 INFO] Meter 32 - 1_Bdrm_7_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.413094 INFO] Creating custom meter called 'Meter 33 - 1_Bdrm_7_4 Electricity'.
+[10:56:30.414486 INFO] Zone 1_Bdrm_7_4 has an associated AirLoopHVAC 1_Bdrm_7_4 Central Air Source HP.
+[10:56:30.414661 INFO] Zone 1_Bdrm_7_4 has an associated DHW system and a building unit number of '121'.
+[10:56:30.414871 INFO] Added a custom meter object Meter 33 - 1_Bdrm_7_4 Electricity with 18 key-variable groups.
+[10:56:30.414884 INFO] Meter 33 - 1_Bdrm_7_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.414895 INFO] Creating custom meter called 'Meter 34 - 2_Bdrm_1_2 Electricity'.
+[10:56:30.416386 INFO] Zone 2_Bdrm_1_2 has an associated AirLoopHVAC 2_Bdrm_1_2 Central Air Source HP.
+[10:56:30.416542 INFO] Zone 2_Bdrm_1_2 has an associated DHW system and a building unit number of '201'.
+[10:56:30.427398 INFO] Added a custom meter object Meter 34 - 2_Bdrm_1_2 Electricity with 18 key-variable groups.
+[10:56:30.427443 INFO] Meter 34 - 2_Bdrm_1_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.427477 INFO] Creating custom meter called 'Meter 35 - 2_Bdrm_1_3 Electricity'.
+[10:56:30.430704 INFO] Zone 2_Bdrm_1_3 has an associated AirLoopHVAC 2_Bdrm_1_3 Central Air Source HP.
+[10:56:30.431118 INFO] Zone 2_Bdrm_1_3 has an associated DHW system and a building unit number of '204'.
+[10:56:30.431643 INFO] Added a custom meter object Meter 35 - 2_Bdrm_1_3 Electricity with 18 key-variable groups.
+[10:56:30.431669 INFO] Meter 35 - 2_Bdrm_1_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.431695 INFO] Creating custom meter called 'Meter 36 - 2_Bdrm_1_4 Electricity'.
+[10:56:30.434239 INFO] Zone 2_Bdrm_1_4 has an associated AirLoopHVAC 2_Bdrm_1_4 Central Air Source HP.
+[10:56:30.434624 INFO] Zone 2_Bdrm_1_4 has an associated DHW system and a building unit number of '207'.
+[10:56:30.435174 INFO] Added a custom meter object Meter 36 - 2_Bdrm_1_4 Electricity with 18 key-variable groups.
+[10:56:30.435215 INFO] Meter 36 - 2_Bdrm_1_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.435241 INFO] Creating custom meter called 'Meter 37 - 2_Bdrm_2_2 Electricity'.
+[10:56:30.439246 INFO] Zone 2_Bdrm_2_2 has an associated AirLoopHVAC 2_Bdrm_2_2 Central Air Source HP.
+[10:56:30.439608 INFO] Zone 2_Bdrm_2_2 has an associated DHW system and a building unit number of '202'.
+[10:56:30.440059 INFO] Added a custom meter object Meter 37 - 2_Bdrm_2_2 Electricity with 18 key-variable groups.
+[10:56:30.440087 INFO] Meter 37 - 2_Bdrm_2_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.440110 INFO] Creating custom meter called 'Meter 38 - 2_Bdrm_2_3 Electricity'.
+[10:56:30.443607 INFO] Zone 2_Bdrm_2_3 has an associated AirLoopHVAC 2_Bdrm_2_3 Central Air Source HP.
+[10:56:30.443883 INFO] Zone 2_Bdrm_2_3 has an associated DHW system and a building unit number of '205'.
+[10:56:30.444221 INFO] Added a custom meter object Meter 38 - 2_Bdrm_2_3 Electricity with 18 key-variable groups.
+[10:56:30.444240 INFO] Meter 38 - 2_Bdrm_2_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.444258 INFO] Creating custom meter called 'Meter 39 - 2_Bdrm_2_4 Electricity'.
+[10:56:30.447206 INFO] Zone 2_Bdrm_2_4 has an associated AirLoopHVAC 2_Bdrm_2_4 Central Air Source HP.
+[10:56:30.447437 INFO] Zone 2_Bdrm_2_4 has an associated DHW system and a building unit number of '208'.
+[10:56:30.447718 INFO] Added a custom meter object Meter 39 - 2_Bdrm_2_4 Electricity with 18 key-variable groups.
+[10:56:30.447735 INFO] Meter 39 - 2_Bdrm_2_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.447749 INFO] Creating custom meter called 'Meter 40 - 2_Bdrm_3_2 Electricity'.
+[10:56:30.448936 INFO] Zone 2_Bdrm_3_2 has an associated AirLoopHVAC 2_Bdrm_3_2 Central Air Source HP.
+[10:56:30.449169 INFO] Zone 2_Bdrm_3_2 has an associated DHW system and a building unit number of '203'.
+[10:56:30.449451 INFO] Added a custom meter object Meter 40 - 2_Bdrm_3_2 Electricity with 18 key-variable groups.
+[10:56:30.449468 INFO] Meter 40 - 2_Bdrm_3_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.449482 INFO] Creating custom meter called 'Meter 41 - 2_Bdrm_3_3 Electricity'.
+[10:56:30.450156 INFO] Zone 2_Bdrm_3_3 has an associated AirLoopHVAC 2_Bdrm_3_3 Central Air Source HP.
+[10:56:30.450379 INFO] Zone 2_Bdrm_3_3 has an associated DHW system and a building unit number of '206'.
+[10:56:30.450662 INFO] Added a custom meter object Meter 41 - 2_Bdrm_3_3 Electricity with 18 key-variable groups.
+[10:56:30.450678 INFO] Meter 41 - 2_Bdrm_3_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.450743 INFO] Creating custom meter called 'Meter 42 - 2_Bdrm_3_4 Electricity'.
+[10:56:30.452427 INFO] Zone 2_Bdrm_3_4 has an associated AirLoopHVAC 2_Bdrm_3_4 Central Air Source HP.
+[10:56:30.452775 INFO] Zone 2_Bdrm_3_4 has an associated DHW system and a building unit number of '209'.
+[10:56:30.453182 INFO] Added a custom meter object Meter 42 - 2_Bdrm_3_4 Electricity with 18 key-variable groups.
+[10:56:30.453202 INFO] Meter 42 - 2_Bdrm_3_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.453220 INFO] Creating custom meter called 'Meter 43 - 3_Bdrm_1_3 Electricity'.
+[10:56:30.456744 INFO] Zone 3_Bdrm_1_3 has an associated AirLoopHVAC 3_Bdrm_1_3 Central Air Source HP.
+[10:56:30.457011 INFO] Zone 3_Bdrm_1_3 has an associated DHW system and a building unit number of '302'.
+[10:56:30.457392 INFO] Added a custom meter object Meter 43 - 3_Bdrm_1_3 Electricity with 18 key-variable groups.
+[10:56:30.457410 INFO] Meter 43 - 3_Bdrm_1_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.457427 INFO] Creating custom meter called 'Meter 44 - 3_Bdrm_1_4 Electricity'.
+[10:56:30.460453 INFO] Zone 3_Bdrm_1_4 has an associated AirLoopHVAC 3_Bdrm_1_4 Central Air Source HP.
+[10:56:30.460748 INFO] Zone 3_Bdrm_1_4 has an associated DHW system and a building unit number of '303'.
+[10:56:30.461053 INFO] Added a custom meter object Meter 44 - 3_Bdrm_1_4 Electricity with 18 key-variable groups.
+[10:56:30.461070 INFO] Meter 44 - 3_Bdrm_1_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.461086 INFO] Creating custom meter called 'Meter 45 - 3_Bdrm_2_2 Electricity'.
+[10:56:30.463684 INFO] Zone 3_Bdrm_2_2 has an associated AirLoopHVAC 3_Bdrm_2_2 Central Air Source HP.
+[10:56:30.463889 INFO] Zone 3_Bdrm_2_2 has an associated DHW system and a building unit number of '301'.
+[10:56:30.464143 INFO] Added a custom meter object Meter 45 - 3_Bdrm_2_2 Electricity with 18 key-variable groups.
+[10:56:30.464178 INFO] Meter 45 - 3_Bdrm_2_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.464223 INFO] Creating custom meter called 'Meter 46 - Bathrm_1 Electricity'.
+[10:56:30.464757 INFO] Zone Bathrm_1 has an associated AirLoopHVAC Bathrm_1 Central Air Source HP.
+[10:56:30.465093 INFO] Added a custom meter object Meter 46 - Bathrm_1 Electricity with 11 key-variable groups.
+[10:56:30.465110 INFO] Meter 46 - Bathrm_1 Electricity reporting at frequency 'timestep'.
+[10:56:30.465124 INFO] Creating custom meter called 'Meter 47 - Bathrm_2 Electricity'.
+[10:56:30.465479 INFO] Zone Bathrm_2 has an associated AirLoopHVAC Bathrm_2 Central Air Source HP.
+[10:56:30.465840 INFO] Added a custom meter object Meter 47 - Bathrm_2 Electricity with 11 key-variable groups.
+[10:56:30.465856 INFO] Meter 47 - Bathrm_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.465870 INFO] Creating custom meter called 'Meter 48 - Coffee_Shop Electricity'.
+[10:56:30.466338 INFO] Zone Coffee_Shop has an associated AirLoopHVAC Coffee_Shop Central Air Source HP.
+[10:56:30.466790 INFO] Added a custom meter object Meter 48 - Coffee_Shop Electricity with 11 key-variable groups.
+[10:56:30.466813 INFO] Meter 48 - Coffee_Shop Electricity reporting at frequency 'timestep'.
+[10:56:30.466833 INFO] Creating custom meter called 'Meter 49 - Community_Rm Electricity'.
+[10:56:30.467562 INFO] Zone Community_Rm has an associated AirLoopHVAC Community_Rm Central Air Source HP.
+[10:56:30.468114 INFO] Added a custom meter object Meter 49 - Community_Rm Electricity with 11 key-variable groups.
+[10:56:30.468138 INFO] Meter 49 - Community_Rm Electricity reporting at frequency 'timestep'.
+[10:56:30.468158 INFO] Creating custom meter called 'Meter 50 - Corridor Electricity'.
+[10:56:30.471952 INFO] Creating custom meter called 'Meter 51 - Corridor_2 Electricity'.
+[10:56:30.475933 INFO] Creating custom meter called 'Meter 52 - Corridor_3 Electricity'.
+[10:56:30.479978 INFO] Creating custom meter called 'Meter 53 - Corridor_4 Electricity'.
+[10:56:30.483480 INFO] Creating custom meter called 'Meter 54 - Elevator_1 Electricity'.
+[10:56:30.487414 INFO] Creating custom meter called 'Meter 55 - Elevator_1_2 Electricity'.
+[10:56:30.492872 INFO] Creating custom meter called 'Meter 56 - Elevator_1_3 Electricity'.
+[10:56:30.498337 INFO] Creating custom meter called 'Meter 57 - Elevator_1_4 Electricity'.
+[10:56:30.500884 INFO] Creating custom meter called 'Meter 58 - Elevator_2 Electricity'.
+[10:56:30.503446 INFO] Creating custom meter called 'Meter 59 - Elevator_2_2 Electricity'.
+[10:56:30.505963 INFO] Creating custom meter called 'Meter 60 - Elevator_2_3 Electricity'.
+[10:56:30.508283 INFO] Creating custom meter called 'Meter 61 - Elevator_2_4 Electricity'.
+[10:56:30.510316 INFO] Creating custom meter called 'Meter 62 - Garbage 1 Electricity'.
+[10:56:30.512211 INFO] Creating custom meter called 'Meter 63 - Gym 1 Electricity'.
+[10:56:30.512663 INFO] Zone Gym 1 has an associated AirLoopHVAC Gym 1 Central Air Source HP.
+[10:56:30.512967 INFO] Added a custom meter object Meter 63 - Gym 1 Electricity with 11 key-variable groups.
+[10:56:30.512980 INFO] Meter 63 - Gym 1 Electricity reporting at frequency 'timestep'.
+[10:56:30.512993 INFO] Creating custom meter called 'Meter 64 - Lobby_Entry Electricity'.
+[10:56:30.514860 INFO] Creating custom meter called 'Meter 65 - Lt_Retail_1 Electricity'.
+[10:56:30.515415 INFO] Zone Lt_Retail_1 has an associated AirLoopHVAC Lt_Retail_1 Central Air Source HP.
+[10:56:30.515703 INFO] Added a custom meter object Meter 65 - Lt_Retail_1 Electricity with 11 key-variable groups.
+[10:56:30.515715 INFO] Meter 65 - Lt_Retail_1 Electricity reporting at frequency 'timestep'.
+[10:56:30.515726 INFO] Creating custom meter called 'Meter 66 - Lt_Retail_2 Electricity'.
+[10:56:30.515997 INFO] Zone Lt_Retail_2 has an associated AirLoopHVAC Lt_Retail_2 Central Air Source HP.
+[10:56:30.516268 INFO] Added a custom meter object Meter 66 - Lt_Retail_2 Electricity with 11 key-variable groups.
+[10:56:30.516280 INFO] Meter 66 - Lt_Retail_2 Electricity reporting at frequency 'timestep'.
+[10:56:30.516291 INFO] Creating custom meter called 'Meter 67 - Lt_Retail_3 Electricity'.
+[10:56:30.516774 INFO] Zone Lt_Retail_3 has an associated AirLoopHVAC Lt_Retail_3 Central Air Source HP.
+[10:56:30.517039 INFO] Added a custom meter object Meter 67 - Lt_Retail_3 Electricity with 11 key-variable groups.
+[10:56:30.517052 INFO] Meter 67 - Lt_Retail_3 Electricity reporting at frequency 'timestep'.
+[10:56:30.517062 INFO] Creating custom meter called 'Meter 68 - Lt_Retail_4 Electricity'.
+[10:56:30.517402 INFO] Zone Lt_Retail_4 has an associated AirLoopHVAC Lt_Retail_4 Central Air Source HP.
+[10:56:30.517671 INFO] Added a custom meter object Meter 68 - Lt_Retail_4 Electricity with 11 key-variable groups.
+[10:56:30.517683 INFO] Meter 68 - Lt_Retail_4 Electricity reporting at frequency 'timestep'.
+[10:56:30.517694 INFO] Creating custom meter called 'Meter 69 - Mail_Shipping Electricity'.
+[10:56:30.520543 INFO] Creating custom meter called 'Meter 70 - Office 1 Electricity'.
+[10:56:30.521654 INFO] Zone Office 1 has an associated AirLoopHVAC Office 1 Central Air Source HP.
+[10:56:30.522011 INFO] Added a custom meter object Meter 70 - Office 1 Electricity with 11 key-variable groups.
+[10:56:30.522027 INFO] Meter 70 - Office 1 Electricity reporting at frequency 'timestep'.
+[10:56:30.522040 INFO] Creating custom meter called 'Meter 71 - Stairwell_1_2 Electricity'.
+[10:56:30.524490 INFO] Creating custom meter called 'Meter 72 - Stairwell_1_3 Electricity'.
+[10:56:30.526663 INFO] Creating custom meter called 'Meter 73 - Stairwell_1_4 Electricity'.
+[10:56:30.528720 INFO] Creating custom meter called 'Meter 74 - Stairwell_2_2 Electricity'.
+[10:56:30.530774 INFO] Creating custom meter called 'Meter 75 - Stairwell_2_3 Electricity'.
+[10:56:30.532979 INFO] Creating custom meter called 'Meter 76 - Stairwell_2_4 Electricity'.
+[10:56:30.535252 INFO] Creating custom meter called 'Meter 77 - Stair_1 Electricity'.
+[10:56:30.537683 INFO] Creating custom meter called 'Meter 78 - Stair_2 Electricity'.
+[10:56:30.540064 INFO] The output variables for the model object are []
+[10:56:30.540081 INFO] Added 78 custom meter objects.
+[10:56:30.540090 DEBUG] Finished measure.run for 'meter_custom_zones'
+[10:56:33.448442 DEBUG] Running of measure 'meter_custom_zones' completed. Post-processing measure output
+[10:56:33.455490 INFO] Moving to the next workflow step.
+[10:56:33.472230 DEBUG] Passing measure OpenStudioResults of type ModelMeasure
+[10:56:33.477851 DEBUG] Passing measure EnvelopeAndInternalLoadBreakdown of type ModelMeasure
+[10:56:33.483187 DEBUG] Passing measure EnergyUseByStandardsBuildingType of type ModelMeasure
+[10:56:33.488374 DEBUG] Passing measure DViewExport of type ModelMeasure
+[10:56:33.488388 INFO] Finished applying OpenStudio measures.
+[10:56:33.488395 DEBUG] Communicating measure output attributes to the output adapter
+[10:57:07.208917 DEBUG] Saved model as C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/in.osm
+[10:57:07.209007 INFO] Current state: 'os_measures'
+[10:57:07.209084 INFO] Next state will be: 'translator'
+[10:57:07.246315 DEBUG] RunTranslation passed the following options {:debug=>true, :preserve_run_dir=>false, :skip_expand_objects=>false, :skip_energyplus_preprocess=>false, :profile=>false, :targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :cleanup=>true, :energyplus_path=>nil, :verify_osw=>true, :weather_file=>nil, :fast=>false, :output_adapter=>#<OpenStudio::Workflow::OutputAdapter::Local:0x00000230a329cab8 @options={:output_directory=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run"}>}
+[10:57:07.248391 DEBUG] RunTranslation passed the following registry {:openstudio_2=>true, :osw_path=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/workflow_from.osw>, :osw_dir=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily", :run_dir=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run>, :log_targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :logger=>#<Logger:0x00000230a329daf8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00000230a329d8c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x00000230a329d800 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<MultiDelegator:0x00000230a329dc10 @targets=[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>]>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x00000230a329d6c0>>>, :workflow=>{:file_paths=>["../../../weather", "../../../seeds", "../../../files"], :hash=>"40DFFF5D", :measure_paths=>["../../../.bundle/install/ruby/2.5.0/bundler/gems/build_stock/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/build_stock_resources/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-common-measures-gem-9a9d6d793603/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-ee-gem-ac6cf66d906f/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-model-articulation-gem-4bff8055ceb9/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/unmet_hours/lib/measures", "../../../measures"], :seed_file=>"../in_upto.osm", :steps=>[{:arguments=>{:__SKIP__=>true, :begin_day_of_month=>"1", :begin_month=>"1", :calendar_year=>"2019", :end_day_of_month=>"31", :end_month=>"12", :timesteps_per_hr=>"1"}, :measure_dir_name=>"ResidentialSimulationControls"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"HPXMLtoOpenStudio"}, {:arguments=>{:__SKIP__=>true, :floorplan_path=>"floorplan.json", :num_bathrooms=>"2", :num_bedrooms=>"0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3", :num_occupants=>"auto", :occupants_monthly_sch=>"1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0", :occupants_weekday_sch=>"1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00", :occupants_weekend_sch=>"1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00"}, :description=>"For Number of Bedrooms enter a value for each unit in order of building unit number. The unit number is extracted from the right side of the unit name separated from the name prefix by a space. Merging of floorspace.json with the OSM will happen in this measure and should NOT be done in the geometry editor tab of the OpenStudio Application.", :measure_dir_name=>"ResidentialGeometryCreateFromFloorspaceJS", :modeler_description=>"The example floorspace.json file used for this OSW organized unit number by number of bedrooms to make the number of bedrooms argument cleaner. Building Unit 112 for example is the 12th 1 Bedroom unit. This workflow is setup to work with OpenStudio 3.0.1 but not OpenStudio 3.1.0.", :name=>"ResidentialGeometryCreateFromFloorspaceJS"}, {:arguments=>{:__SKIP__=>true, :set_year=>"2019", :weather_file_name=>"USA_CA_Sacramento.Metro.AP.724839_TMY3.epw"}, :description=>"If the weather file argument is changed add an epw by that name to the files directory under the project folder along with a ddy and stat file that has the same name, other than the file extension.", :measure_dir_name=>"ChangeBuildingLocation", :name=>"ChangeBuildingLocation"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"ResidentialHotWaterHeaterHeatPump", :name=>"ResidentialHotWaterHeaterHeatPump"}, {:arguments=>{:__SKIP__=>true, :bath_mult=>"1", :plant_loop=>"auto", :schedule_day_shift=>"0", :shower_mult=>"1", :sink_mult=>"1"}, :measure_dir_name=>"ResidentialHotWaterFixtures", :name=>"ResidentialHotWaterFixtures"}, {:arguments=>{:__SKIP__=>true, :dist_ins=>"0", :dist_layout=>"trunk and branch", :pipe_mat=>"copper", :recirc_type=>"none", :space=>"interior"}, :measure_dir_name=>"ResidentialHotWaterDistribution", :name=>"ResidentialHotWaterDistribution"}, {:arguments=>{:__SKIP__=>true, :season_end_month=>"Dec", :season_start_month=>"Jan", :use_auto_season=>"false", :weekday_offset_magnitude=>"0", :weekday_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekday_setpoint=>"71.0", :weekend_offset_magnitude=>"0", :weekend_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekend_setpoint=>"71.0"}, :measure_dir_name=>"ResidentialHVACHeatingSetpoints", :name=>"ResidentialHVACHeatingSetpoints"}, {:arguments=>{:__SKIP__=>true, :season_end_month=>"Dec", :season_start_month=>"Jan", :use_auto_season=>"false", :weekday_offset_magnitude=>"0", :weekday_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekday_setpoint=>"76.0", :weekend_offset_magnitude=>"0", :weekend_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekend_setpoint=>"76.0"}, :measure_dir_name=>"ResidentialHVACCoolingSetpoints", :name=>"ResidentialHVACCoolingSetpoints"}, {:arguments=>{:__SKIP__=>true, :location=>"auto", :monthly_sch=>"0.837, 0.835, 1.084, 1.084, 1.084, 1.096, 1.096, 1.096, 1.096, 0.931, 0.925, 0.837", :mult=>"1", :rated_annual_energy=>"348", :weekday_sch=>"0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041", :weekend_sch=>"0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041"}, :measure_dir_name=>"ResidentialApplianceRefrigerator", :name=>"ResidentialApplianceRefrigerator"}, {:arguments=>{:__SKIP__=>true, :annual_cost=>"7", :cold_cycle=>"false", :drum_volume=>"4.5", :fill_sensor=>"false", :imef=>"2.92", :internal_heater=>"false", :location=>"auto", :mult_e=>"1", :mult_hw=>"1", :plant_loop=>"auto", :rated_annual_energy=>"75", :schedule_day_shift=>"0", :test_date=>"2013", :thermostatic_control=>"true"}, :measure_dir_name=>"ResidentialApplianceClothesWasher", :name=>"ResidentialApplianceClothesWasher"}, {:arguments=>{:__SKIP__=>true, :cef=>"5.2", :fuel_split=>"1.0", :fuel_type=>"electric", :location=>"auto", :mult=>"1.0"}, :measure_dir_name=>"ResidentialApplianceClothesDryer", :name=>"ResidentialApplianceClothesDryer"}, {:arguments=>{:__SKIP__=>true, :annual_gas_cost=>"18", :cold_inlet=>"false", :cold_use=>"0", :has_internal_heater=>"true", :location=>"auto", :mult_e=>"1", :mult_hw=>"1", :num_settings=>"12", :plant_loop=>"auto", :rated_annual_energy=>"199", :schedule_day_shift=>"0", :test_date=>"2017"}, :measure_dir_name=>"ResidentialApplianceDishwasher", :name=>"ResidentialApplianceDishwasher"}, {:arguments=>{:__SKIP__=>true, :cooktop_ef=>"0.84", :fuel_type=>"electric", :has_elec_ignition=>true, :location=>"auto", :monthly_sch=>"1.097, 1.097, 0.991, 0.987, 0.991, 0.890, 0.896, 0.896, 0.890, 1.085, 1.085, 1.097", :mult=>"1.0", :oven_ef=>"0.11", :weekday_sch=>"0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011", :weekend_sch=>"0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011"}, :measure_dir_name=>"ResidentialApplianceCookingRange", :name=>"ResidentialApplianceCookingRange"}, {:arguments=>{:__SKIP__=>true, :cfl_eff=>"55", :energy_use_interior=>"900", :hw_cfl=>"0", :hw_led=>"1.0", :hw_lfl=>"0", :in_eff=>"15", :led_eff=>"80", :lfl_eff=>"88", :monthly_sch=>"1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248", :mult=>"1", :option_type=>"Lamp Fractions", :pg_cfl=>"0", :pg_led=>"1.0", :pg_lfl=>"0", :sch_option_type=>"Calculated Lighting Schedule"}, :measure_dir_name=>"ResidentialLightingInterior", :name=>"ResidentialLightingInterior"}, {:arguments=>{:__SKIP__=>true, :energy_use=>"2000", :lat_frac=>"0.021", :monthly_sch=>"1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248", :mult=>"1", :option_type=>"Multiplier", :sens_frac=>"0.93", :weekday_sch=>"0.035, 0.033, 0.032, 0.031, 0.032, 0.033, 0.037, 0.042, 0.043, 0.043, 0.043, 0.044, 0.045, 0.045, 0.044, 0.046, 0.048, 0.052, 0.053, 0.05, 0.047, 0.045, 0.04, 0.036", :weekend_sch=>"0.035, 0.033, 0.032, 0.031, 0.032, 0.033, 0.037, 0.042, 0.043, 0.043, 0.043, 0.044, 0.045, 0.045, 0.044, 0.046, 0.048, 0.052, 0.053, 0.05, 0.047, 0.045, 0.04, 0.036"}, :measure_dir_name=>"ResidentialMiscPlugLoads", :name=>"ResidentialMiscPlugLoads"}, {:arguments=>{:__SKIP__=>true, :remove_adiabatic=>true}, :measure_dir_name=>"surface_matching_diagnostic", :name=>"surface_matching_diagnostic"}, {:arguments=>{:__SKIP__=>true, :relative_building_rotation=>0}, :measure_dir_name=>"RotateBuilding", :name=>"RotateBuilding"}, {:arguments=>{:__SKIP__=>true, :facade=>"All", :wwr=>"0.3"}, :measure_dir_name=>"SetWindowToWallRatioByFacade", :name=>"SetWindowToWallRatioByFacade"}, {:arguments=>{:__SKIP__=>true, :facade=>"South", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"South AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :facade=>"East", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"East AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :facade=>"West", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"West AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :building_story=>"Story 3", :multiplier_adj=>"2"}, :measure_dir_name=>"change_zone_multiplier_by_building_story"}, {:arguments=>{:__SKIP__=>true, :add_constructions=>true, :add_elevators=>true, :add_exterior_lights=>true, :add_hvac=>true, :add_space_type_loads=>true, :add_swh=>true, :add_thermostat=>true, :hvac_system_type=>"Minisplit Heat Pumps with ERVs", :onsite_parking_fraction=>"0.0", :wall_roof_construction_template=>"ZE AEDG Multifamily Recommendations", :window_construction_template=>"ZE AEDG Multifamily Recommendations"}, :measure_dir_name=>"zero_energy_multifamily", :name=>"zero_energy_multifamily"}, {:arguments=>{:__SKIP__=>true}, :description=>"This is my new measure, I don't think it has any arguments.", :measure_dir_name=>"EnableIdealAirLoadsForAllZones", :name=>"Turn on Ideal Air Loads"}, {:arguments=>{:__SKIP__=>true, :swh_type=>"Waste Water Heat Pump 120F Supply and Electric Tank"}, :description=>"This replaces water heaters in individual units with a central water system.", :measure_dir_name=>"multifamily_central_wwhp", :name=>"multifamily_central_wwhp"}, {:arguments=>{:__SKIP__=>true, :cell_efficiency=>"0.1976", :fraction_of_surface=>"0.75", :inverter_efficiency=>"0.96"}, :measure_dir_name=>"add_rooftop_pv", :name=>"add_rooftop_pv"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"view_model", :name=>"view_model"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"InteriorLights:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>true, :meter_name=>"ExteriorLights:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"InteriorEquipment:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Fans:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Pumps:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Heating:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Cooling:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"HeatRecovery:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"WaterSystems:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"ElectricityProduced:Facility", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>true, :custom_meter_name=>"ResFloors_Lights_Hourly", :fuel_type=>"Electricity", :file_path=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_multifamily_SAC/ze_multifamily/measures/meter_custom/tests/lights_res_only_hourly.csv", :add_output_meter=>true, :reporting_frequency=>"timestep"}, :description=>"This measure creates a Custom Meter to combine output variables and meters from a user-defined .csv file. This is helpful for combining energy use by floor, by space type, or for specific zones.", :measure_dir_name=>"meter_custom"}, {:arguments=>{:__SKIP__=>false, :fuel_type=>"Electricity", :add_output_meter=>true, :reporting_frequency=>"timestep"}, :description=>"This is my custom zone meter measure.", :measure_dir_name=>"meter_custom_zones"}, {:arguments=>{:zone_condition_section=>true}, :measure_dir_name=>"openstudio_results", :name=>"openstudio_results"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"envelope_and_internal_load_breakdown", :name=>"envelope_and_internal_load_breakdown"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"energy_use_by_standards_noPAT"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"d_view_export"}], :updated_at=>"20201119T092656Z"}, :datapoint=>nil, :analysis=>nil, :workflow_json=>#<OpenStudio::WorkflowJSON:0x00000230a30bc950 @__swigtype__="_p_openstudio__WorkflowJSON">, :root_dir=>#<OpenStudio::Path:0x00000230a30bc8b0 @__swigtype__="_p_openstudio__path">, :runner=>#<WorkflowRunner:0x00000230a3277740 @__swigtype__="_p_openstudio__measure__OSRunner", @multi_logger=#<Logger:0x00000230a329daf8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00000230a329d8c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x00000230a329d800 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<MultiDelegator:0x00000230a329dc10 @targets=[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>]>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x00000230a329d6c0>>>, @workflow_json=#<OpenStudio::WorkflowJSON:0x00000230a30bc950 @__swigtype__="_p_openstudio__WorkflowJSON">, @openstudio_2=true, @datapoint=nil, @analysis=nil, @halted=false, @use_os_halted=true>, :model=>#<OpenStudio::Model::Model:0x00000230a31a6758 @__swigtype__="_p_openstudio__model__Model">, :wf=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/files/USA_CA_Sacramento.Metro.AP.724839_TMY3.epw", :output_attributes=>{:view_model=>{:applicable=>false}, :AddMeter=>{"meter_name"=>"ElectricityProduced:Facility", "reporting_frequency"=>"timestep", :applicable=>true}, :MeterCustom=>{"fuel_type"=>"Electricity", "add_output_meter"=>true, "reporting_frequency"=>"timestep", :applicable=>true}}, :model_idf=>nil, :sql=>nil}
+[10:57:07.248933 DEBUG] Calling perform in the RunTranslation class
+[10:57:07.250107 INFO] Weather file for EnergyPlus simulation is C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/files/USA_CA_Sacramento.Metro.AP.724839_TMY3.epw
+[10:57:07.261711 INFO] Beginning the translation to IDF
+[10:57:07.261859 INFO] Translate object to EnergyPlus IDF in preparation for EnergyPlus
+[10:58:00.326139 INFO] Translate object to EnergyPlus IDF took 53.06420397758484
+[10:58:00.326198 INFO] Successfully translated to IDF
+[10:58:25.270267 DEBUG] Saved IDF as C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/in.idf
+[10:58:25.270337 INFO] Current state: 'translator'
+[10:58:25.270399 INFO] Next state will be: 'ep_measures'
+[10:58:25.304002 DEBUG] RunEnergyPlusMeasures passed the following options {:debug=>true, :preserve_run_dir=>false, :skip_expand_objects=>false, :skip_energyplus_preprocess=>false, :profile=>false, :targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :cleanup=>true, :energyplus_path=>nil, :verify_osw=>true, :weather_file=>nil, :fast=>false, :output_adapter=>#<OpenStudio::Workflow::OutputAdapter::Local:0x00000230a329cab8 @options={:output_directory=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run"}>}
+[10:58:25.350129 DEBUG] RunEnergyPlusMeasures passed the following registry {:openstudio_2=>true, :osw_path=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/workflow_from.osw>, :osw_dir=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily", :run_dir=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run>, :log_targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :logger=>#<Logger:0x00000230a329daf8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00000230a329d8c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x00000230a329d800 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<MultiDelegator:0x00000230a329dc10 @targets=[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>]>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x00000230a329d6c0>>>, :workflow=>{:file_paths=>["../../../weather", "../../../seeds", "../../../files"], :hash=>"40DFFF5D", :measure_paths=>["../../../.bundle/install/ruby/2.5.0/bundler/gems/build_stock/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/build_stock_resources/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-common-measures-gem-9a9d6d793603/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-ee-gem-ac6cf66d906f/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-model-articulation-gem-4bff8055ceb9/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/unmet_hours/lib/measures", "../../../measures"], :seed_file=>"../in_upto.osm", :steps=>[{:arguments=>{:__SKIP__=>true, :begin_day_of_month=>"1", :begin_month=>"1", :calendar_year=>"2019", :end_day_of_month=>"31", :end_month=>"12", :timesteps_per_hr=>"1"}, :measure_dir_name=>"ResidentialSimulationControls"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"HPXMLtoOpenStudio"}, {:arguments=>{:__SKIP__=>true, :floorplan_path=>"floorplan.json", :num_bathrooms=>"2", :num_bedrooms=>"0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3", :num_occupants=>"auto", :occupants_monthly_sch=>"1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0", :occupants_weekday_sch=>"1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00", :occupants_weekend_sch=>"1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00"}, :description=>"For Number of Bedrooms enter a value for each unit in order of building unit number. The unit number is extracted from the right side of the unit name separated from the name prefix by a space. Merging of floorspace.json with the OSM will happen in this measure and should NOT be done in the geometry editor tab of the OpenStudio Application.", :measure_dir_name=>"ResidentialGeometryCreateFromFloorspaceJS", :modeler_description=>"The example floorspace.json file used for this OSW organized unit number by number of bedrooms to make the number of bedrooms argument cleaner. Building Unit 112 for example is the 12th 1 Bedroom unit. This workflow is setup to work with OpenStudio 3.0.1 but not OpenStudio 3.1.0.", :name=>"ResidentialGeometryCreateFromFloorspaceJS"}, {:arguments=>{:__SKIP__=>true, :set_year=>"2019", :weather_file_name=>"USA_CA_Sacramento.Metro.AP.724839_TMY3.epw"}, :description=>"If the weather file argument is changed add an epw by that name to the files directory under the project folder along with a ddy and stat file that has the same name, other than the file extension.", :measure_dir_name=>"ChangeBuildingLocation", :name=>"ChangeBuildingLocation"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"ResidentialHotWaterHeaterHeatPump", :name=>"ResidentialHotWaterHeaterHeatPump"}, {:arguments=>{:__SKIP__=>true, :bath_mult=>"1", :plant_loop=>"auto", :schedule_day_shift=>"0", :shower_mult=>"1", :sink_mult=>"1"}, :measure_dir_name=>"ResidentialHotWaterFixtures", :name=>"ResidentialHotWaterFixtures"}, {:arguments=>{:__SKIP__=>true, :dist_ins=>"0", :dist_layout=>"trunk and branch", :pipe_mat=>"copper", :recirc_type=>"none", :space=>"interior"}, :measure_dir_name=>"ResidentialHotWaterDistribution", :name=>"ResidentialHotWaterDistribution"}, {:arguments=>{:__SKIP__=>true, :season_end_month=>"Dec", :season_start_month=>"Jan", :use_auto_season=>"false", :weekday_offset_magnitude=>"0", :weekday_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekday_setpoint=>"71.0", :weekend_offset_magnitude=>"0", :weekend_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekend_setpoint=>"71.0"}, :measure_dir_name=>"ResidentialHVACHeatingSetpoints", :name=>"ResidentialHVACHeatingSetpoints"}, {:arguments=>{:__SKIP__=>true, :season_end_month=>"Dec", :season_start_month=>"Jan", :use_auto_season=>"false", :weekday_offset_magnitude=>"0", :weekday_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekday_setpoint=>"76.0", :weekend_offset_magnitude=>"0", :weekend_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekend_setpoint=>"76.0"}, :measure_dir_name=>"ResidentialHVACCoolingSetpoints", :name=>"ResidentialHVACCoolingSetpoints"}, {:arguments=>{:__SKIP__=>true, :location=>"auto", :monthly_sch=>"0.837, 0.835, 1.084, 1.084, 1.084, 1.096, 1.096, 1.096, 1.096, 0.931, 0.925, 0.837", :mult=>"1", :rated_annual_energy=>"348", :weekday_sch=>"0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041", :weekend_sch=>"0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041"}, :measure_dir_name=>"ResidentialApplianceRefrigerator", :name=>"ResidentialApplianceRefrigerator"}, {:arguments=>{:__SKIP__=>true, :annual_cost=>"7", :cold_cycle=>"false", :drum_volume=>"4.5", :fill_sensor=>"false", :imef=>"2.92", :internal_heater=>"false", :location=>"auto", :mult_e=>"1", :mult_hw=>"1", :plant_loop=>"auto", :rated_annual_energy=>"75", :schedule_day_shift=>"0", :test_date=>"2013", :thermostatic_control=>"true"}, :measure_dir_name=>"ResidentialApplianceClothesWasher", :name=>"ResidentialApplianceClothesWasher"}, {:arguments=>{:__SKIP__=>true, :cef=>"5.2", :fuel_split=>"1.0", :fuel_type=>"electric", :location=>"auto", :mult=>"1.0"}, :measure_dir_name=>"ResidentialApplianceClothesDryer", :name=>"ResidentialApplianceClothesDryer"}, {:arguments=>{:__SKIP__=>true, :annual_gas_cost=>"18", :cold_inlet=>"false", :cold_use=>"0", :has_internal_heater=>"true", :location=>"auto", :mult_e=>"1", :mult_hw=>"1", :num_settings=>"12", :plant_loop=>"auto", :rated_annual_energy=>"199", :schedule_day_shift=>"0", :test_date=>"2017"}, :measure_dir_name=>"ResidentialApplianceDishwasher", :name=>"ResidentialApplianceDishwasher"}, {:arguments=>{:__SKIP__=>true, :cooktop_ef=>"0.84", :fuel_type=>"electric", :has_elec_ignition=>true, :location=>"auto", :monthly_sch=>"1.097, 1.097, 0.991, 0.987, 0.991, 0.890, 0.896, 0.896, 0.890, 1.085, 1.085, 1.097", :mult=>"1.0", :oven_ef=>"0.11", :weekday_sch=>"0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011", :weekend_sch=>"0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011"}, :measure_dir_name=>"ResidentialApplianceCookingRange", :name=>"ResidentialApplianceCookingRange"}, {:arguments=>{:__SKIP__=>true, :cfl_eff=>"55", :energy_use_interior=>"900", :hw_cfl=>"0", :hw_led=>"1.0", :hw_lfl=>"0", :in_eff=>"15", :led_eff=>"80", :lfl_eff=>"88", :monthly_sch=>"1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248", :mult=>"1", :option_type=>"Lamp Fractions", :pg_cfl=>"0", :pg_led=>"1.0", :pg_lfl=>"0", :sch_option_type=>"Calculated Lighting Schedule"}, :measure_dir_name=>"ResidentialLightingInterior", :name=>"ResidentialLightingInterior"}, {:arguments=>{:__SKIP__=>true, :energy_use=>"2000", :lat_frac=>"0.021", :monthly_sch=>"1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248", :mult=>"1", :option_type=>"Multiplier", :sens_frac=>"0.93", :weekday_sch=>"0.035, 0.033, 0.032, 0.031, 0.032, 0.033, 0.037, 0.042, 0.043, 0.043, 0.043, 0.044, 0.045, 0.045, 0.044, 0.046, 0.048, 0.052, 0.053, 0.05, 0.047, 0.045, 0.04, 0.036", :weekend_sch=>"0.035, 0.033, 0.032, 0.031, 0.032, 0.033, 0.037, 0.042, 0.043, 0.043, 0.043, 0.044, 0.045, 0.045, 0.044, 0.046, 0.048, 0.052, 0.053, 0.05, 0.047, 0.045, 0.04, 0.036"}, :measure_dir_name=>"ResidentialMiscPlugLoads", :name=>"ResidentialMiscPlugLoads"}, {:arguments=>{:__SKIP__=>true, :remove_adiabatic=>true}, :measure_dir_name=>"surface_matching_diagnostic", :name=>"surface_matching_diagnostic"}, {:arguments=>{:__SKIP__=>true, :relative_building_rotation=>0}, :measure_dir_name=>"RotateBuilding", :name=>"RotateBuilding"}, {:arguments=>{:__SKIP__=>true, :facade=>"All", :wwr=>"0.3"}, :measure_dir_name=>"SetWindowToWallRatioByFacade", :name=>"SetWindowToWallRatioByFacade"}, {:arguments=>{:__SKIP__=>true, :facade=>"South", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"South AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :facade=>"East", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"East AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :facade=>"West", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"West AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :building_story=>"Story 3", :multiplier_adj=>"2"}, :measure_dir_name=>"change_zone_multiplier_by_building_story"}, {:arguments=>{:__SKIP__=>true, :add_constructions=>true, :add_elevators=>true, :add_exterior_lights=>true, :add_hvac=>true, :add_space_type_loads=>true, :add_swh=>true, :add_thermostat=>true, :hvac_system_type=>"Minisplit Heat Pumps with ERVs", :onsite_parking_fraction=>"0.0", :wall_roof_construction_template=>"ZE AEDG Multifamily Recommendations", :window_construction_template=>"ZE AEDG Multifamily Recommendations"}, :measure_dir_name=>"zero_energy_multifamily", :name=>"zero_energy_multifamily"}, {:arguments=>{:__SKIP__=>true}, :description=>"This is my new measure, I don't think it has any arguments.", :measure_dir_name=>"EnableIdealAirLoadsForAllZones", :name=>"Turn on Ideal Air Loads"}, {:arguments=>{:__SKIP__=>true, :swh_type=>"Waste Water Heat Pump 120F Supply and Electric Tank"}, :description=>"This replaces water heaters in individual units with a central water system.", :measure_dir_name=>"multifamily_central_wwhp", :name=>"multifamily_central_wwhp"}, {:arguments=>{:__SKIP__=>true, :cell_efficiency=>"0.1976", :fraction_of_surface=>"0.75", :inverter_efficiency=>"0.96"}, :measure_dir_name=>"add_rooftop_pv", :name=>"add_rooftop_pv"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"view_model", :name=>"view_model"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"InteriorLights:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>true, :meter_name=>"ExteriorLights:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"InteriorEquipment:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Fans:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Pumps:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Heating:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Cooling:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"HeatRecovery:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"WaterSystems:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"ElectricityProduced:Facility", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>true, :custom_meter_name=>"ResFloors_Lights_Hourly", :fuel_type=>"Electricity", :file_path=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_multifamily_SAC/ze_multifamily/measures/meter_custom/tests/lights_res_only_hourly.csv", :add_output_meter=>true, :reporting_frequency=>"timestep"}, :description=>"This measure creates a Custom Meter to combine output variables and meters from a user-defined .csv file. This is helpful for combining energy use by floor, by space type, or for specific zones.", :measure_dir_name=>"meter_custom"}, {:arguments=>{:__SKIP__=>false, :fuel_type=>"Electricity", :add_output_meter=>true, :reporting_frequency=>"timestep"}, :description=>"This is my custom zone meter measure.", :measure_dir_name=>"meter_custom_zones"}, {:arguments=>{:zone_condition_section=>true}, :measure_dir_name=>"openstudio_results", :name=>"openstudio_results"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"envelope_and_internal_load_breakdown", :name=>"envelope_and_internal_load_breakdown"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"energy_use_by_standards_noPAT"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"d_view_export"}], :updated_at=>"20201119T092656Z"}, :datapoint=>nil, :analysis=>nil, :workflow_json=>#<OpenStudio::WorkflowJSON:0x00000230a30bc950 @__swigtype__="_p_openstudio__WorkflowJSON">, :root_dir=>#<OpenStudio::Path:0x00000230a30bc8b0 @__swigtype__="_p_openstudio__path">, :runner=>#<WorkflowRunner:0x00000230a3277740 @__swigtype__="_p_openstudio__measure__OSRunner", @multi_logger=#<Logger:0x00000230a329daf8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00000230a329d8c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x00000230a329d800 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<MultiDelegator:0x00000230a329dc10 @targets=[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>]>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x00000230a329d6c0>>>, @workflow_json=#<OpenStudio::WorkflowJSON:0x00000230a30bc950 @__swigtype__="_p_openstudio__WorkflowJSON">, @openstudio_2=true, @datapoint=nil, @analysis=nil, @halted=false, @use_os_halted=true>, :model=>#<OpenStudio::Model::Model:0x00000230a31a6758 @__swigtype__="_p_openstudio__model__Model">, :wf=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/in.epw", :output_attributes=>{:view_model=>{:applicable=>false}, :AddMeter=>{"meter_name"=>"ElectricityProduced:Facility", "reporting_frequency"=>"timestep", :applicable=>true}, :MeterCustom=>{"fuel_type"=>"Electricity", "add_output_meter"=>true, "reporting_frequency"=>"timestep", :applicable=>true}}, :model_idf=>#<OpenStudio::Workspace:0x00000230daac0438 @__swigtype__="_p_openstudio__Workspace">, :sql=>nil}
+[10:58:25.350703 DEBUG] Calling perform in the RunEnergyPlusMeasures class
+[10:58:25.350741 INFO] Beginning to execute EnergyPlus measures.
+[10:58:25.350925 DEBUG] Finding measures of type EnergyPlusMeasure
+[10:58:25.369552 DEBUG] Passing measure ResidentialSimulationControls of type EnergyPlusMeasure
+[10:58:25.399733 DEBUG] Passing measure HPXMLTranslator of type EnergyPlusMeasure
+[10:58:25.425385 DEBUG] Passing measure ResidentialGeometryFromFloorspaceJS of type EnergyPlusMeasure
+[10:58:25.444063 DEBUG] Passing measure ChangeBuildingLocation of type EnergyPlusMeasure
+[10:58:25.462511 DEBUG] Passing measure ResidentialHotWaterHeaterHeatPump of type EnergyPlusMeasure
+[10:58:25.476578 DEBUG] Passing measure ResidentialHotWaterFixtures of type EnergyPlusMeasure
+[10:58:25.488132 DEBUG] Passing measure ResidentialHotWaterDistribution of type EnergyPlusMeasure
+[10:58:25.501264 DEBUG] Passing measure ProcessHeatingSetpoints of type EnergyPlusMeasure
+[10:58:25.515230 DEBUG] Passing measure ProcessCoolingSetpoints of type EnergyPlusMeasure
+[10:58:25.529055 DEBUG] Passing measure ResidentialRefrigerator of type EnergyPlusMeasure
+[10:58:25.542311 DEBUG] Passing measure ResidentialClothesWasher of type EnergyPlusMeasure
+[10:58:25.555075 DEBUG] Passing measure ResidentialClothesDryer of type EnergyPlusMeasure
+[10:58:25.568637 DEBUG] Passing measure ResidentialDishwasher of type EnergyPlusMeasure
+[10:58:25.582139 DEBUG] Passing measure ResidentialCookingRange of type EnergyPlusMeasure
+[10:58:25.595310 DEBUG] Passing measure ResidentialLightingInterior of type EnergyPlusMeasure
+[10:58:25.606767 DEBUG] Passing measure ResidentialMiscElectricLoads of type EnergyPlusMeasure
+[10:58:25.619416 DEBUG] Passing measure SurfaceMatchingDiagnostic of type EnergyPlusMeasure
+[10:58:25.632684 DEBUG] Passing measure RotateBuilding of type EnergyPlusMeasure
+[10:58:25.647503 DEBUG] Passing measure SetWindowToWallRatioByFacade of type EnergyPlusMeasure
+[10:58:25.674867 DEBUG] Passing measure AddOverhangsByProjectionFactor of type EnergyPlusMeasure
+[10:58:25.704552 DEBUG] Passing measure AddOverhangsByProjectionFactor of type EnergyPlusMeasure
+[10:58:25.733208 DEBUG] Passing measure AddOverhangsByProjectionFactor of type EnergyPlusMeasure
+[10:58:25.752835 DEBUG] Passing measure ChangeZoneMultiplierByBuildingStory of type EnergyPlusMeasure
+[10:58:25.769867 DEBUG] Passing measure ZeroEnergyMultifamily of type EnergyPlusMeasure
+[10:58:25.790383 DEBUG] Passing measure EnableIdealAirLoadsForAllZones of type EnergyPlusMeasure
+[10:58:25.807573 DEBUG] Passing measure MultifamilyCentralWasteWaterHeatPump of type EnergyPlusMeasure
+[10:58:25.823917 DEBUG] Passing measure AddRooftopPV of type EnergyPlusMeasure
+[10:58:25.839724 DEBUG] Passing measure ViewModel of type EnergyPlusMeasure
+[10:58:25.858727 DEBUG] Passing measure AddMeter of type EnergyPlusMeasure
+[10:58:25.874487 DEBUG] Passing measure AddMeter of type EnergyPlusMeasure
+[10:58:25.890692 DEBUG] Passing measure AddMeter of type EnergyPlusMeasure
+[10:58:25.906165 DEBUG] Passing measure AddMeter of type EnergyPlusMeasure
+[10:58:25.922560 DEBUG] Passing measure AddMeter of type EnergyPlusMeasure
+[10:58:25.941934 DEBUG] Passing measure AddMeter of type EnergyPlusMeasure
+[10:58:25.960389 DEBUG] Passing measure AddMeter of type EnergyPlusMeasure
+[10:58:25.978852 DEBUG] Passing measure AddMeter of type EnergyPlusMeasure
+[10:58:25.994625 DEBUG] Passing measure AddMeter of type EnergyPlusMeasure
+[10:58:26.011453 DEBUG] Passing measure AddMeter of type EnergyPlusMeasure
+[10:58:26.029044 DEBUG] Passing measure MeterCustom of type EnergyPlusMeasure
+[10:58:26.046509 DEBUG] Passing measure MeterCustom of type EnergyPlusMeasure
+[10:58:26.091718 DEBUG] Passing measure OpenStudioResults of type EnergyPlusMeasure
+[10:58:26.107729 DEBUG] Passing measure EnvelopeAndInternalLoadBreakdown of type EnergyPlusMeasure
+[10:58:26.125152 DEBUG] Passing measure EnergyUseByStandardsBuildingType of type EnergyPlusMeasure
+[10:58:26.144499 DEBUG] Passing measure DViewExport of type EnergyPlusMeasure
+[10:58:26.144560 INFO] Finished applying EnergyPlus measures.
+[10:58:26.144580 DEBUG] Communicating measure output attributes to the output adapter
+[10:58:51.227024 DEBUG] Saved IDF as C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/in.idf
+[10:58:51.227088 INFO] Current state: 'ep_measures'
+[10:58:51.227160 INFO] Next state will be: 'preprocess'
+[10:58:51.254746 DEBUG] RunPreprocess passed the following options {:debug=>true, :preserve_run_dir=>false, :skip_expand_objects=>false, :skip_energyplus_preprocess=>false, :profile=>false, :targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :cleanup=>true, :energyplus_path=>nil, :verify_osw=>true, :weather_file=>nil, :fast=>false, :output_adapter=>#<OpenStudio::Workflow::OutputAdapter::Local:0x00000230a329cab8 @options={:output_directory=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run"}>}
+[10:58:51.256898 DEBUG] RunPreprocess passed the following registry {:openstudio_2=>true, :osw_path=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/workflow_from.osw>, :osw_dir=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily", :run_dir=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run>, :log_targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :logger=>#<Logger:0x00000230a329daf8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00000230a329d8c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x00000230a329d800 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<MultiDelegator:0x00000230a329dc10 @targets=[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>]>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x00000230a329d6c0>>>, :workflow=>{:file_paths=>["../../../weather", "../../../seeds", "../../../files"], :hash=>"40DFFF5D", :measure_paths=>["../../../.bundle/install/ruby/2.5.0/bundler/gems/build_stock/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/build_stock_resources/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-common-measures-gem-9a9d6d793603/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-ee-gem-ac6cf66d906f/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-model-articulation-gem-4bff8055ceb9/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/unmet_hours/lib/measures", "../../../measures"], :seed_file=>"../in_upto.osm", :steps=>[{:arguments=>{:__SKIP__=>true, :begin_day_of_month=>"1", :begin_month=>"1", :calendar_year=>"2019", :end_day_of_month=>"31", :end_month=>"12", :timesteps_per_hr=>"1"}, :measure_dir_name=>"ResidentialSimulationControls"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"HPXMLtoOpenStudio"}, {:arguments=>{:__SKIP__=>true, :floorplan_path=>"floorplan.json", :num_bathrooms=>"2", :num_bedrooms=>"0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3", :num_occupants=>"auto", :occupants_monthly_sch=>"1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0", :occupants_weekday_sch=>"1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00", :occupants_weekend_sch=>"1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00"}, :description=>"For Number of Bedrooms enter a value for each unit in order of building unit number. The unit number is extracted from the right side of the unit name separated from the name prefix by a space. Merging of floorspace.json with the OSM will happen in this measure and should NOT be done in the geometry editor tab of the OpenStudio Application.", :measure_dir_name=>"ResidentialGeometryCreateFromFloorspaceJS", :modeler_description=>"The example floorspace.json file used for this OSW organized unit number by number of bedrooms to make the number of bedrooms argument cleaner. Building Unit 112 for example is the 12th 1 Bedroom unit. This workflow is setup to work with OpenStudio 3.0.1 but not OpenStudio 3.1.0.", :name=>"ResidentialGeometryCreateFromFloorspaceJS"}, {:arguments=>{:__SKIP__=>true, :set_year=>"2019", :weather_file_name=>"USA_CA_Sacramento.Metro.AP.724839_TMY3.epw"}, :description=>"If the weather file argument is changed add an epw by that name to the files directory under the project folder along with a ddy and stat file that has the same name, other than the file extension.", :measure_dir_name=>"ChangeBuildingLocation", :name=>"ChangeBuildingLocation"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"ResidentialHotWaterHeaterHeatPump", :name=>"ResidentialHotWaterHeaterHeatPump"}, {:arguments=>{:__SKIP__=>true, :bath_mult=>"1", :plant_loop=>"auto", :schedule_day_shift=>"0", :shower_mult=>"1", :sink_mult=>"1"}, :measure_dir_name=>"ResidentialHotWaterFixtures", :name=>"ResidentialHotWaterFixtures"}, {:arguments=>{:__SKIP__=>true, :dist_ins=>"0", :dist_layout=>"trunk and branch", :pipe_mat=>"copper", :recirc_type=>"none", :space=>"interior"}, :measure_dir_name=>"ResidentialHotWaterDistribution", :name=>"ResidentialHotWaterDistribution"}, {:arguments=>{:__SKIP__=>true, :season_end_month=>"Dec", :season_start_month=>"Jan", :use_auto_season=>"false", :weekday_offset_magnitude=>"0", :weekday_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekday_setpoint=>"71.0", :weekend_offset_magnitude=>"0", :weekend_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekend_setpoint=>"71.0"}, :measure_dir_name=>"ResidentialHVACHeatingSetpoints", :name=>"ResidentialHVACHeatingSetpoints"}, {:arguments=>{:__SKIP__=>true, :season_end_month=>"Dec", :season_start_month=>"Jan", :use_auto_season=>"false", :weekday_offset_magnitude=>"0", :weekday_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekday_setpoint=>"76.0", :weekend_offset_magnitude=>"0", :weekend_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekend_setpoint=>"76.0"}, :measure_dir_name=>"ResidentialHVACCoolingSetpoints", :name=>"ResidentialHVACCoolingSetpoints"}, {:arguments=>{:__SKIP__=>true, :location=>"auto", :monthly_sch=>"0.837, 0.835, 1.084, 1.084, 1.084, 1.096, 1.096, 1.096, 1.096, 0.931, 0.925, 0.837", :mult=>"1", :rated_annual_energy=>"348", :weekday_sch=>"0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041", :weekend_sch=>"0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041"}, :measure_dir_name=>"ResidentialApplianceRefrigerator", :name=>"ResidentialApplianceRefrigerator"}, {:arguments=>{:__SKIP__=>true, :annual_cost=>"7", :cold_cycle=>"false", :drum_volume=>"4.5", :fill_sensor=>"false", :imef=>"2.92", :internal_heater=>"false", :location=>"auto", :mult_e=>"1", :mult_hw=>"1", :plant_loop=>"auto", :rated_annual_energy=>"75", :schedule_day_shift=>"0", :test_date=>"2013", :thermostatic_control=>"true"}, :measure_dir_name=>"ResidentialApplianceClothesWasher", :name=>"ResidentialApplianceClothesWasher"}, {:arguments=>{:__SKIP__=>true, :cef=>"5.2", :fuel_split=>"1.0", :fuel_type=>"electric", :location=>"auto", :mult=>"1.0"}, :measure_dir_name=>"ResidentialApplianceClothesDryer", :name=>"ResidentialApplianceClothesDryer"}, {:arguments=>{:__SKIP__=>true, :annual_gas_cost=>"18", :cold_inlet=>"false", :cold_use=>"0", :has_internal_heater=>"true", :location=>"auto", :mult_e=>"1", :mult_hw=>"1", :num_settings=>"12", :plant_loop=>"auto", :rated_annual_energy=>"199", :schedule_day_shift=>"0", :test_date=>"2017"}, :measure_dir_name=>"ResidentialApplianceDishwasher", :name=>"ResidentialApplianceDishwasher"}, {:arguments=>{:__SKIP__=>true, :cooktop_ef=>"0.84", :fuel_type=>"electric", :has_elec_ignition=>true, :location=>"auto", :monthly_sch=>"1.097, 1.097, 0.991, 0.987, 0.991, 0.890, 0.896, 0.896, 0.890, 1.085, 1.085, 1.097", :mult=>"1.0", :oven_ef=>"0.11", :weekday_sch=>"0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011", :weekend_sch=>"0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011"}, :measure_dir_name=>"ResidentialApplianceCookingRange", :name=>"ResidentialApplianceCookingRange"}, {:arguments=>{:__SKIP__=>true, :cfl_eff=>"55", :energy_use_interior=>"900", :hw_cfl=>"0", :hw_led=>"1.0", :hw_lfl=>"0", :in_eff=>"15", :led_eff=>"80", :lfl_eff=>"88", :monthly_sch=>"1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248", :mult=>"1", :option_type=>"Lamp Fractions", :pg_cfl=>"0", :pg_led=>"1.0", :pg_lfl=>"0", :sch_option_type=>"Calculated Lighting Schedule"}, :measure_dir_name=>"ResidentialLightingInterior", :name=>"ResidentialLightingInterior"}, {:arguments=>{:__SKIP__=>true, :energy_use=>"2000", :lat_frac=>"0.021", :monthly_sch=>"1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248", :mult=>"1", :option_type=>"Multiplier", :sens_frac=>"0.93", :weekday_sch=>"0.035, 0.033, 0.032, 0.031, 0.032, 0.033, 0.037, 0.042, 0.043, 0.043, 0.043, 0.044, 0.045, 0.045, 0.044, 0.046, 0.048, 0.052, 0.053, 0.05, 0.047, 0.045, 0.04, 0.036", :weekend_sch=>"0.035, 0.033, 0.032, 0.031, 0.032, 0.033, 0.037, 0.042, 0.043, 0.043, 0.043, 0.044, 0.045, 0.045, 0.044, 0.046, 0.048, 0.052, 0.053, 0.05, 0.047, 0.045, 0.04, 0.036"}, :measure_dir_name=>"ResidentialMiscPlugLoads", :name=>"ResidentialMiscPlugLoads"}, {:arguments=>{:__SKIP__=>true, :remove_adiabatic=>true}, :measure_dir_name=>"surface_matching_diagnostic", :name=>"surface_matching_diagnostic"}, {:arguments=>{:__SKIP__=>true, :relative_building_rotation=>0}, :measure_dir_name=>"RotateBuilding", :name=>"RotateBuilding"}, {:arguments=>{:__SKIP__=>true, :facade=>"All", :wwr=>"0.3"}, :measure_dir_name=>"SetWindowToWallRatioByFacade", :name=>"SetWindowToWallRatioByFacade"}, {:arguments=>{:__SKIP__=>true, :facade=>"South", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"South AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :facade=>"East", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"East AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :facade=>"West", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"West AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :building_story=>"Story 3", :multiplier_adj=>"2"}, :measure_dir_name=>"change_zone_multiplier_by_building_story"}, {:arguments=>{:__SKIP__=>true, :add_constructions=>true, :add_elevators=>true, :add_exterior_lights=>true, :add_hvac=>true, :add_space_type_loads=>true, :add_swh=>true, :add_thermostat=>true, :hvac_system_type=>"Minisplit Heat Pumps with ERVs", :onsite_parking_fraction=>"0.0", :wall_roof_construction_template=>"ZE AEDG Multifamily Recommendations", :window_construction_template=>"ZE AEDG Multifamily Recommendations"}, :measure_dir_name=>"zero_energy_multifamily", :name=>"zero_energy_multifamily"}, {:arguments=>{:__SKIP__=>true}, :description=>"This is my new measure, I don't think it has any arguments.", :measure_dir_name=>"EnableIdealAirLoadsForAllZones", :name=>"Turn on Ideal Air Loads"}, {:arguments=>{:__SKIP__=>true, :swh_type=>"Waste Water Heat Pump 120F Supply and Electric Tank"}, :description=>"This replaces water heaters in individual units with a central water system.", :measure_dir_name=>"multifamily_central_wwhp", :name=>"multifamily_central_wwhp"}, {:arguments=>{:__SKIP__=>true, :cell_efficiency=>"0.1976", :fraction_of_surface=>"0.75", :inverter_efficiency=>"0.96"}, :measure_dir_name=>"add_rooftop_pv", :name=>"add_rooftop_pv"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"view_model", :name=>"view_model"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"InteriorLights:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>true, :meter_name=>"ExteriorLights:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"InteriorEquipment:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Fans:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Pumps:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Heating:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Cooling:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"HeatRecovery:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"WaterSystems:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"ElectricityProduced:Facility", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>true, :custom_meter_name=>"ResFloors_Lights_Hourly", :fuel_type=>"Electricity", :file_path=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_multifamily_SAC/ze_multifamily/measures/meter_custom/tests/lights_res_only_hourly.csv", :add_output_meter=>true, :reporting_frequency=>"timestep"}, :description=>"This measure creates a Custom Meter to combine output variables and meters from a user-defined .csv file. This is helpful for combining energy use by floor, by space type, or for specific zones.", :measure_dir_name=>"meter_custom"}, {:arguments=>{:__SKIP__=>false, :fuel_type=>"Electricity", :add_output_meter=>true, :reporting_frequency=>"timestep"}, :description=>"This is my custom zone meter measure.", :measure_dir_name=>"meter_custom_zones"}, {:arguments=>{:zone_condition_section=>true}, :measure_dir_name=>"openstudio_results", :name=>"openstudio_results"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"envelope_and_internal_load_breakdown", :name=>"envelope_and_internal_load_breakdown"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"energy_use_by_standards_noPAT"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"d_view_export"}], :updated_at=>"20201119T092656Z"}, :datapoint=>nil, :analysis=>nil, :workflow_json=>#<OpenStudio::WorkflowJSON:0x00000230a30bc950 @__swigtype__="_p_openstudio__WorkflowJSON">, :root_dir=>#<OpenStudio::Path:0x00000230a30bc8b0 @__swigtype__="_p_openstudio__path">, :runner=>#<WorkflowRunner:0x00000230a3277740 @__swigtype__="_p_openstudio__measure__OSRunner", @multi_logger=#<Logger:0x00000230a329daf8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00000230a329d8c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x00000230a329d800 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<MultiDelegator:0x00000230a329dc10 @targets=[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>]>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x00000230a329d6c0>>>, @workflow_json=#<OpenStudio::WorkflowJSON:0x00000230a30bc950 @__swigtype__="_p_openstudio__WorkflowJSON">, @openstudio_2=true, @datapoint=nil, @analysis=nil, @halted=false, @use_os_halted=true>, :model=>#<OpenStudio::Model::Model:0x00000230a31a6758 @__swigtype__="_p_openstudio__model__Model">, :wf=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/in.epw", :output_attributes=>{:view_model=>{:applicable=>false}, :AddMeter=>{"meter_name"=>"ElectricityProduced:Facility", "reporting_frequency"=>"timestep", :applicable=>true}, :MeterCustom=>{"fuel_type"=>"Electricity", "add_output_meter"=>true, "reporting_frequency"=>"timestep", :applicable=>true}}, :model_idf=>#<OpenStudio::Workspace:0x00000230daac0438 @__swigtype__="_p_openstudio__Workspace">, :sql=>nil}
+[10:58:51.257353 DEBUG] Calling perform in the RunPreprocess class
+[10:59:03.959807 INFO] Beginning to collect output requests from Reporting measures.
+[10:59:03.959996 DEBUG] Finding measures of type ReportingMeasure
+[10:59:03.978877 DEBUG] Passing measure ResidentialSimulationControls of type ReportingMeasure
+[10:59:03.999431 DEBUG] Passing measure HPXMLTranslator of type ReportingMeasure
+[10:59:04.008390 DEBUG] Passing measure ResidentialGeometryFromFloorspaceJS of type ReportingMeasure
+[10:59:04.015930 DEBUG] Passing measure ChangeBuildingLocation of type ReportingMeasure
+[10:59:04.021183 DEBUG] Passing measure ResidentialHotWaterHeaterHeatPump of type ReportingMeasure
+[10:59:04.026270 DEBUG] Passing measure ResidentialHotWaterFixtures of type ReportingMeasure
+[10:59:04.031212 DEBUG] Passing measure ResidentialHotWaterDistribution of type ReportingMeasure
+[10:59:04.036195 DEBUG] Passing measure ProcessHeatingSetpoints of type ReportingMeasure
+[10:59:04.041485 DEBUG] Passing measure ProcessCoolingSetpoints of type ReportingMeasure
+[10:59:04.046371 DEBUG] Passing measure ResidentialRefrigerator of type ReportingMeasure
+[10:59:04.051294 DEBUG] Passing measure ResidentialClothesWasher of type ReportingMeasure
+[10:59:04.056400 DEBUG] Passing measure ResidentialClothesDryer of type ReportingMeasure
+[10:59:04.061631 DEBUG] Passing measure ResidentialDishwasher of type ReportingMeasure
+[10:59:04.066546 DEBUG] Passing measure ResidentialCookingRange of type ReportingMeasure
+[10:59:04.071658 DEBUG] Passing measure ResidentialLightingInterior of type ReportingMeasure
+[10:59:04.076833 DEBUG] Passing measure ResidentialMiscElectricLoads of type ReportingMeasure
+[10:59:04.081851 DEBUG] Passing measure SurfaceMatchingDiagnostic of type ReportingMeasure
+[10:59:04.086907 DEBUG] Passing measure RotateBuilding of type ReportingMeasure
+[10:59:04.092485 DEBUG] Passing measure SetWindowToWallRatioByFacade of type ReportingMeasure
+[10:59:04.097544 DEBUG] Passing measure AddOverhangsByProjectionFactor of type ReportingMeasure
+[10:59:04.102572 DEBUG] Passing measure AddOverhangsByProjectionFactor of type ReportingMeasure
+[10:59:04.107589 DEBUG] Passing measure AddOverhangsByProjectionFactor of type ReportingMeasure
+[10:59:04.113074 DEBUG] Passing measure ChangeZoneMultiplierByBuildingStory of type ReportingMeasure
+[10:59:04.118586 DEBUG] Passing measure ZeroEnergyMultifamily of type ReportingMeasure
+[10:59:04.123697 DEBUG] Passing measure EnableIdealAirLoadsForAllZones of type ReportingMeasure
+[10:59:04.128876 DEBUG] Passing measure MultifamilyCentralWasteWaterHeatPump of type ReportingMeasure
+[10:59:04.133914 DEBUG] Passing measure AddRooftopPV of type ReportingMeasure
+[10:59:04.139641 DEBUG] Passing measure ViewModel of type ReportingMeasure
+[10:59:04.144710 DEBUG] Passing measure AddMeter of type ReportingMeasure
+[10:59:04.149655 DEBUG] Passing measure AddMeter of type ReportingMeasure
+[10:59:04.154598 DEBUG] Passing measure AddMeter of type ReportingMeasure
+[10:59:04.159777 DEBUG] Passing measure AddMeter of type ReportingMeasure
+[10:59:04.164728 DEBUG] Passing measure AddMeter of type ReportingMeasure
+[10:59:04.169710 DEBUG] Passing measure AddMeter of type ReportingMeasure
+[10:59:04.174715 DEBUG] Passing measure AddMeter of type ReportingMeasure
+[10:59:04.179660 DEBUG] Passing measure AddMeter of type ReportingMeasure
+[10:59:04.184611 DEBUG] Passing measure AddMeter of type ReportingMeasure
+[10:59:04.189759 DEBUG] Passing measure AddMeter of type ReportingMeasure
+[10:59:04.194713 DEBUG] Passing measure MeterCustom of type ReportingMeasure
+[10:59:04.199681 DEBUG] Passing measure MeterCustom of type ReportingMeasure
+[10:59:04.212625 INFO] Found measure OpenStudioResults of type ReportingMeasure. Collecting EnergyPlus Output Requests now.
+[10:59:04.213020 DEBUG] Starting apply_measure for openstudio_results
+[10:59:04.226592 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_openstudio_results
+[10:59:04.226954 DEBUG] energyPlusOutputRequests running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_openstudio_results
+[10:59:04.227373 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/openstudio_results/measure.rb
+[10:59:08.980006 DEBUG] Iterating over arguments for workflow item 'openstudio_results'
+[10:59:08.980079 INFO] Setting argument value 'zone_condition_section' to 'true'
+[10:59:08.980289 DEBUG] Calling measure.energyPlusOutputRequests for 'openstudio_results'
+[10:59:09.442210 DEBUG] Finished measure.energyPlusOutputRequests for 'openstudio_results', 11 output requests added
+[10:59:10.791832 INFO] Moving to the next workflow step.
+[10:59:10.797664 INFO] Found measure EnvelopeAndInternalLoadBreakdown of type ReportingMeasure. Collecting EnergyPlus Output Requests now.
+[10:59:10.798054 DEBUG] Starting apply_measure for envelope_and_internal_load_breakdown
+[10:59:10.803598 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_envelope_and_internal_load_breakdown
+[10:59:10.804053 DEBUG] energyPlusOutputRequests running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_envelope_and_internal_load_breakdown
+[10:59:10.804384 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/envelope_and_internal_load_breakdown/measure.rb
+[10:59:10.985813 DEBUG] Iterating over arguments for workflow item 'envelope_and_internal_load_breakdown'
+[10:59:10.986022 INFO] Moving to the next workflow step.
+[10:59:10.992194 INFO] Found measure EnergyUseByStandardsBuildingType of type ReportingMeasure. Collecting EnergyPlus Output Requests now.
+[10:59:10.992635 DEBUG] Starting apply_measure for energy_use_by_standards_noPAT
+[10:59:10.998421 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_energy_use_by_standards_noPAT
+[10:59:10.998748 DEBUG] energyPlusOutputRequests running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_energy_use_by_standards_noPAT
+[10:59:10.999088 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/energy_use_by_standards_noPAT/measure.rb
+[10:59:11.122439 DEBUG] Iterating over arguments for workflow item 'energy_use_by_standards_noPAT'
+[10:59:11.122526 DEBUG] Calling measure.energyPlusOutputRequests for 'energy_use_by_standards_noPAT'
+[10:59:11.125020 DEBUG] Finished measure.energyPlusOutputRequests for 'energy_use_by_standards_noPAT', 21 output requests added
+[10:59:13.498149 INFO] Moving to the next workflow step.
+[10:59:13.503499 INFO] Found measure DViewExport of type ReportingMeasure. Collecting EnergyPlus Output Requests now.
+[10:59:13.503899 DEBUG] Starting apply_measure for d_view_export
+[10:59:13.509026 DEBUG] Creating run directory for measure in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_d_view_export
+[10:59:13.509369 DEBUG] energyPlusOutputRequests running in C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_d_view_export
+[10:59:13.510728 DEBUG] Loading Measure from C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/measures/d_view_export/measure.rb
+[10:59:13.620264 DEBUG] Iterating over arguments for workflow item 'd_view_export'
+[10:59:13.620360 DEBUG] Calling measure.energyPlusOutputRequests for 'd_view_export'
+[10:59:13.620383 DEBUG] Finished measure.energyPlusOutputRequests for 'd_view_export', 0 output requests added
+[10:59:15.076410 INFO] Moving to the next workflow step.
+[10:59:15.076438 INFO] Finished collect output requests from Reporting measures.
+[10:59:15.076456 INFO] Running EnergyPlus Preprocess
+[10:59:15.145581 INFO] Finished EnergyPlus Preprocess
+[10:59:15.145629 INFO] Finished preprocess job for EnergyPlus simulation
+[10:59:31.776696 DEBUG] Saved IDF as C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/in.idf
+[10:59:31.777054 INFO] Current state: 'preprocess'
+[10:59:31.777131 INFO] Next state will be: 'postprocess'
+[10:59:31.814404 DEBUG] RunPostprocess passed the following options {:cleanup=>true, :debug=>true, :preserve_run_dir=>false, :skip_expand_objects=>false, :skip_energyplus_preprocess=>false, :profile=>false, :targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :energyplus_path=>nil, :verify_osw=>true, :weather_file=>nil, :fast=>false, :output_adapter=>#<OpenStudio::Workflow::OutputAdapter::Local:0x00000230a329cab8 @options={:output_directory=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run"}>}
+[10:59:31.816355 DEBUG] RunPostprocess passed the following registry {:openstudio_2=>true, :osw_path=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/workflow_from.osw>, :osw_dir=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily", :run_dir=>#<Pathname:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run>, :log_targets=>[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>], :logger=>#<Logger:0x00000230a329daf8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00000230a329d8c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x00000230a329d800 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<MultiDelegator:0x00000230a329dc10 @targets=[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>]>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x00000230a329d6c0>>>, :workflow=>{:file_paths=>["../../../weather", "../../../seeds", "../../../files"], :hash=>"40DFFF5D", :measure_paths=>["../../../.bundle/install/ruby/2.5.0/bundler/gems/build_stock/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/build_stock_resources/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-common-measures-gem-9a9d6d793603/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-ee-gem-ac6cf66d906f/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/openstudio-model-articulation-gem-4bff8055ceb9/lib/measures", "../../../.bundle/install/ruby/2.5.0/bundler/gems/unmet_hours/lib/measures", "../../../measures"], :seed_file=>"../in_upto.osm", :steps=>[{:arguments=>{:__SKIP__=>true, :begin_day_of_month=>"1", :begin_month=>"1", :calendar_year=>"2019", :end_day_of_month=>"31", :end_month=>"12", :timesteps_per_hr=>"1"}, :measure_dir_name=>"ResidentialSimulationControls"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"HPXMLtoOpenStudio"}, {:arguments=>{:__SKIP__=>true, :floorplan_path=>"floorplan.json", :num_bathrooms=>"2", :num_bedrooms=>"0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3", :num_occupants=>"auto", :occupants_monthly_sch=>"1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0", :occupants_weekday_sch=>"1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00", :occupants_weekend_sch=>"1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00"}, :description=>"For Number of Bedrooms enter a value for each unit in order of building unit number. The unit number is extracted from the right side of the unit name separated from the name prefix by a space. Merging of floorspace.json with the OSM will happen in this measure and should NOT be done in the geometry editor tab of the OpenStudio Application.", :measure_dir_name=>"ResidentialGeometryCreateFromFloorspaceJS", :modeler_description=>"The example floorspace.json file used for this OSW organized unit number by number of bedrooms to make the number of bedrooms argument cleaner. Building Unit 112 for example is the 12th 1 Bedroom unit. This workflow is setup to work with OpenStudio 3.0.1 but not OpenStudio 3.1.0.", :name=>"ResidentialGeometryCreateFromFloorspaceJS"}, {:arguments=>{:__SKIP__=>true, :set_year=>"2019", :weather_file_name=>"USA_CA_Sacramento.Metro.AP.724839_TMY3.epw"}, :description=>"If the weather file argument is changed add an epw by that name to the files directory under the project folder along with a ddy and stat file that has the same name, other than the file extension.", :measure_dir_name=>"ChangeBuildingLocation", :name=>"ChangeBuildingLocation"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"ResidentialHotWaterHeaterHeatPump", :name=>"ResidentialHotWaterHeaterHeatPump"}, {:arguments=>{:__SKIP__=>true, :bath_mult=>"1", :plant_loop=>"auto", :schedule_day_shift=>"0", :shower_mult=>"1", :sink_mult=>"1"}, :measure_dir_name=>"ResidentialHotWaterFixtures", :name=>"ResidentialHotWaterFixtures"}, {:arguments=>{:__SKIP__=>true, :dist_ins=>"0", :dist_layout=>"trunk and branch", :pipe_mat=>"copper", :recirc_type=>"none", :space=>"interior"}, :measure_dir_name=>"ResidentialHotWaterDistribution", :name=>"ResidentialHotWaterDistribution"}, {:arguments=>{:__SKIP__=>true, :season_end_month=>"Dec", :season_start_month=>"Jan", :use_auto_season=>"false", :weekday_offset_magnitude=>"0", :weekday_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekday_setpoint=>"71.0", :weekend_offset_magnitude=>"0", :weekend_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekend_setpoint=>"71.0"}, :measure_dir_name=>"ResidentialHVACHeatingSetpoints", :name=>"ResidentialHVACHeatingSetpoints"}, {:arguments=>{:__SKIP__=>true, :season_end_month=>"Dec", :season_start_month=>"Jan", :use_auto_season=>"false", :weekday_offset_magnitude=>"0", :weekday_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekday_setpoint=>"76.0", :weekend_offset_magnitude=>"0", :weekend_offset_schedule=>"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0", :weekend_setpoint=>"76.0"}, :measure_dir_name=>"ResidentialHVACCoolingSetpoints", :name=>"ResidentialHVACCoolingSetpoints"}, {:arguments=>{:__SKIP__=>true, :location=>"auto", :monthly_sch=>"0.837, 0.835, 1.084, 1.084, 1.084, 1.096, 1.096, 1.096, 1.096, 0.931, 0.925, 0.837", :mult=>"1", :rated_annual_energy=>"348", :weekday_sch=>"0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041", :weekend_sch=>"0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041"}, :measure_dir_name=>"ResidentialApplianceRefrigerator", :name=>"ResidentialApplianceRefrigerator"}, {:arguments=>{:__SKIP__=>true, :annual_cost=>"7", :cold_cycle=>"false", :drum_volume=>"4.5", :fill_sensor=>"false", :imef=>"2.92", :internal_heater=>"false", :location=>"auto", :mult_e=>"1", :mult_hw=>"1", :plant_loop=>"auto", :rated_annual_energy=>"75", :schedule_day_shift=>"0", :test_date=>"2013", :thermostatic_control=>"true"}, :measure_dir_name=>"ResidentialApplianceClothesWasher", :name=>"ResidentialApplianceClothesWasher"}, {:arguments=>{:__SKIP__=>true, :cef=>"5.2", :fuel_split=>"1.0", :fuel_type=>"electric", :location=>"auto", :mult=>"1.0"}, :measure_dir_name=>"ResidentialApplianceClothesDryer", :name=>"ResidentialApplianceClothesDryer"}, {:arguments=>{:__SKIP__=>true, :annual_gas_cost=>"18", :cold_inlet=>"false", :cold_use=>"0", :has_internal_heater=>"true", :location=>"auto", :mult_e=>"1", :mult_hw=>"1", :num_settings=>"12", :plant_loop=>"auto", :rated_annual_energy=>"199", :schedule_day_shift=>"0", :test_date=>"2017"}, :measure_dir_name=>"ResidentialApplianceDishwasher", :name=>"ResidentialApplianceDishwasher"}, {:arguments=>{:__SKIP__=>true, :cooktop_ef=>"0.84", :fuel_type=>"electric", :has_elec_ignition=>true, :location=>"auto", :monthly_sch=>"1.097, 1.097, 0.991, 0.987, 0.991, 0.890, 0.896, 0.896, 0.890, 1.085, 1.085, 1.097", :mult=>"1.0", :oven_ef=>"0.11", :weekday_sch=>"0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011", :weekend_sch=>"0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011"}, :measure_dir_name=>"ResidentialApplianceCookingRange", :name=>"ResidentialApplianceCookingRange"}, {:arguments=>{:__SKIP__=>true, :cfl_eff=>"55", :energy_use_interior=>"900", :hw_cfl=>"0", :hw_led=>"1.0", :hw_lfl=>"0", :in_eff=>"15", :led_eff=>"80", :lfl_eff=>"88", :monthly_sch=>"1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248", :mult=>"1", :option_type=>"Lamp Fractions", :pg_cfl=>"0", :pg_led=>"1.0", :pg_lfl=>"0", :sch_option_type=>"Calculated Lighting Schedule"}, :measure_dir_name=>"ResidentialLightingInterior", :name=>"ResidentialLightingInterior"}, {:arguments=>{:__SKIP__=>true, :energy_use=>"2000", :lat_frac=>"0.021", :monthly_sch=>"1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248", :mult=>"1", :option_type=>"Multiplier", :sens_frac=>"0.93", :weekday_sch=>"0.035, 0.033, 0.032, 0.031, 0.032, 0.033, 0.037, 0.042, 0.043, 0.043, 0.043, 0.044, 0.045, 0.045, 0.044, 0.046, 0.048, 0.052, 0.053, 0.05, 0.047, 0.045, 0.04, 0.036", :weekend_sch=>"0.035, 0.033, 0.032, 0.031, 0.032, 0.033, 0.037, 0.042, 0.043, 0.043, 0.043, 0.044, 0.045, 0.045, 0.044, 0.046, 0.048, 0.052, 0.053, 0.05, 0.047, 0.045, 0.04, 0.036"}, :measure_dir_name=>"ResidentialMiscPlugLoads", :name=>"ResidentialMiscPlugLoads"}, {:arguments=>{:__SKIP__=>true, :remove_adiabatic=>true}, :measure_dir_name=>"surface_matching_diagnostic", :name=>"surface_matching_diagnostic"}, {:arguments=>{:__SKIP__=>true, :relative_building_rotation=>0}, :measure_dir_name=>"RotateBuilding", :name=>"RotateBuilding"}, {:arguments=>{:__SKIP__=>true, :facade=>"All", :wwr=>"0.3"}, :measure_dir_name=>"SetWindowToWallRatioByFacade", :name=>"SetWindowToWallRatioByFacade"}, {:arguments=>{:__SKIP__=>true, :facade=>"South", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"South AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :facade=>"East", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"East AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :facade=>"West", :projection_factor=>"1.0"}, :measure_dir_name=>"AddOverhangsByProjectionFactor", :name=>"West AddOverhangsByProjectionFactor"}, {:arguments=>{:__SKIP__=>true, :building_story=>"Story 3", :multiplier_adj=>"2"}, :measure_dir_name=>"change_zone_multiplier_by_building_story"}, {:arguments=>{:__SKIP__=>true, :add_constructions=>true, :add_elevators=>true, :add_exterior_lights=>true, :add_hvac=>true, :add_space_type_loads=>true, :add_swh=>true, :add_thermostat=>true, :hvac_system_type=>"Minisplit Heat Pumps with ERVs", :onsite_parking_fraction=>"0.0", :wall_roof_construction_template=>"ZE AEDG Multifamily Recommendations", :window_construction_template=>"ZE AEDG Multifamily Recommendations"}, :measure_dir_name=>"zero_energy_multifamily", :name=>"zero_energy_multifamily"}, {:arguments=>{:__SKIP__=>true}, :description=>"This is my new measure, I don't think it has any arguments.", :measure_dir_name=>"EnableIdealAirLoadsForAllZones", :name=>"Turn on Ideal Air Loads"}, {:arguments=>{:__SKIP__=>true, :swh_type=>"Waste Water Heat Pump 120F Supply and Electric Tank"}, :description=>"This replaces water heaters in individual units with a central water system.", :measure_dir_name=>"multifamily_central_wwhp", :name=>"multifamily_central_wwhp"}, {:arguments=>{:__SKIP__=>true, :cell_efficiency=>"0.1976", :fraction_of_surface=>"0.75", :inverter_efficiency=>"0.96"}, :measure_dir_name=>"add_rooftop_pv", :name=>"add_rooftop_pv"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"view_model", :name=>"view_model"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"InteriorLights:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>true, :meter_name=>"ExteriorLights:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"InteriorEquipment:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Fans:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Pumps:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Heating:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"Cooling:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"HeatRecovery:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"WaterSystems:Electricity", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>false, :meter_name=>"ElectricityProduced:Facility", :reporting_frequency=>"timestep"}, :measure_dir_name=>"AddMeter"}, {:arguments=>{:__SKIP__=>true, :custom_meter_name=>"ResFloors_Lights_Hourly", :fuel_type=>"Electricity", :file_path=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_multifamily_SAC/ze_multifamily/measures/meter_custom/tests/lights_res_only_hourly.csv", :add_output_meter=>true, :reporting_frequency=>"timestep"}, :description=>"This measure creates a Custom Meter to combine output variables and meters from a user-defined .csv file. This is helpful for combining energy use by floor, by space type, or for specific zones.", :measure_dir_name=>"meter_custom"}, {:arguments=>{:__SKIP__=>false, :fuel_type=>"Electricity", :add_output_meter=>true, :reporting_frequency=>"timestep"}, :description=>"This is my custom zone meter measure.", :measure_dir_name=>"meter_custom_zones"}, {:arguments=>{:zone_condition_section=>true}, :measure_dir_name=>"openstudio_results", :name=>"openstudio_results"}, {:arguments=>{:__SKIP__=>true}, :measure_dir_name=>"envelope_and_internal_load_breakdown", :name=>"envelope_and_internal_load_breakdown"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"energy_use_by_standards_noPAT"}, {:arguments=>{:__SKIP__=>false}, :measure_dir_name=>"d_view_export"}], :updated_at=>"20201119T092656Z"}, :datapoint=>nil, :analysis=>nil, :workflow_json=>#<OpenStudio::WorkflowJSON:0x00000230a30bc950 @__swigtype__="_p_openstudio__WorkflowJSON">, :root_dir=>#<OpenStudio::Path:0x00000230a30bc8b0 @__swigtype__="_p_openstudio__path">, :runner=>#<WorkflowRunner:0x00000230a3277740 @__swigtype__="_p_openstudio__measure__OSRunner", @multi_logger=#<Logger:0x00000230a329daf8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00000230a329d8c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x00000230a329d800 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<MultiDelegator:0x00000230a329dc10 @targets=[#<IO:<STDOUT>>, #<File:C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/run.log>]>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x00000230a329d6c0>>>, @workflow_json=#<OpenStudio::WorkflowJSON:0x00000230a30bc950 @__swigtype__="_p_openstudio__WorkflowJSON">, @openstudio_2=true, @datapoint=nil, @analysis=nil, @halted=false, @use_os_halted=true>, :model=>#<OpenStudio::Model::Model:0x00000230a31a6758 @__swigtype__="_p_openstudio__model__Model">, :wf=>"C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/in.epw", :output_attributes=>{:view_model=>{:applicable=>false}, :AddMeter=>{"meter_name"=>"ElectricityProduced:Facility", "reporting_frequency"=>"timestep", :applicable=>true}, :MeterCustom=>{"fuel_type"=>"Electricity", "add_output_meter"=>true, "reporting_frequency"=>"timestep", :applicable=>true}}, :model_idf=>#<OpenStudio::Workspace:0x00000230daac0438 @__swigtype__="_p_openstudio__Workspace">, :sql=>nil}
+[10:59:31.816751 DEBUG] Calling perform in the RunPostprocess class
+[10:59:31.816799 INFO] Gathering reports
+[10:59:31.816849 INFO] C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run
+[10:59:31.816891 INFO] C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily
+[10:59:31.839475 INFO] measure_xml_path: C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/measures/view_model/measure.xml
+[10:59:31.839800 INFO] Saving report C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/027_view_model/report.html to C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/reports/view_model_report.html
+[10:59:31.857916 INFO] measure_xml_path: C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/measures/view_model/measure.xml
+[10:59:31.858358 INFO] Saving report C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/027_view_model/report.json to C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/reports/view_model_report.json
+[10:59:31.892101 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/000_ResidentialSimulationControls
+[10:59:31.892302 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/001_HPXMLtoOpenStudio
+[10:59:31.892526 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/002_ResidentialGeometryCreateFromFloorspaceJS
+[10:59:31.892684 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/003_ChangeBuildingLocation
+[10:59:31.892831 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/004_ResidentialHotWaterHeaterHeatPump
+[10:59:31.892973 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/005_ResidentialHotWaterFixtures
+[10:59:31.893147 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/006_ResidentialHotWaterDistribution
+[10:59:31.893287 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/007_ResidentialHVACHeatingSetpoints
+[10:59:31.893436 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/008_ResidentialHVACCoolingSetpoints
+[10:59:31.893585 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/009_ResidentialApplianceRefrigerator
+[10:59:31.893707 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/010_ResidentialApplianceClothesWasher
+[10:59:31.893829 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/011_ResidentialApplianceClothesDryer
+[10:59:31.893948 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/012_ResidentialApplianceDishwasher
+[10:59:31.894068 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/013_ResidentialApplianceCookingRange
+[10:59:31.894186 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/014_ResidentialLightingInterior
+[10:59:31.894304 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/015_ResidentialMiscPlugLoads
+[10:59:31.894431 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/016_surface_matching_diagnostic
+[10:59:31.894606 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/017_RotateBuilding
+[10:59:31.894727 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/018_SetWindowToWallRatioByFacade
+[10:59:31.894846 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/019_AddOverhangsByProjectionFactor
+[10:59:31.894967 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/020_AddOverhangsByProjectionFactor
+[10:59:31.895087 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/021_AddOverhangsByProjectionFactor
+[10:59:31.895230 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/022_change_zone_multiplier_by_building_story
+[10:59:31.895350 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/023_zero_energy_multifamily
+[10:59:31.895478 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/024_EnableIdealAirLoadsForAllZones
+[10:59:31.895609 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/025_multifamily_central_wwhp
+[10:59:31.895722 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/026_add_rooftop_pv
+[10:59:31.895834 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/028_AddMeter
+[10:59:31.895946 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/029_AddMeter
+[10:59:31.896079 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/030_AddMeter
+[10:59:31.896206 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/031_AddMeter
+[10:59:31.896375 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/032_AddMeter
+[10:59:31.896488 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/033_AddMeter
+[10:59:31.896598 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/034_AddMeter
+[10:59:31.896706 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/035_AddMeter
+[10:59:31.896814 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/036_AddMeter
+[10:59:31.896921 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/037_AddMeter
+[10:59:31.897027 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/038_meter_custom
+[10:59:31.897155 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/039_meter_custom_zones
+[10:59:31.897283 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_d_view_export
+[10:59:31.897395 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_energy_use_by_standards_noPAT
+[10:59:31.897508 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_envelope_and_internal_load_breakdown
+[10:59:31.897616 INFO] Removing empty directory C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_mf_custom_meter/ze_multifamily/run/040_openstudio_results
+[10:59:31.897727 INFO] Finished gathering reports
+[10:59:31.897738 INFO] Beginning cleanup of the run directory
+[10:59:31.899758 INFO] Finished cleanup of the run directory
+[10:59:31.899772 INFO] Finished postprocess
+[10:59:31.899783 INFO] Current state: 'postprocess'
+[10:59:31.899805 INFO] Next state will be: 'finished'
+[10:59:31.899812 INFO] Finished workflow - communicating results and zipping files
+[10:59:32.668583 INFO] Workflow complete
