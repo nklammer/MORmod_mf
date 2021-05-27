@@ -1,5 +1,4 @@
 require 'openstudio'
-require 'csv'
 require_relative "constants"
 
 # start the measure
@@ -12,12 +11,12 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
 
   # human readable description
   def description
-    return 'This measure creates a Custom Meter to combine output variables and meters for each zone in the ZEDG MF building type. This is helpful to submeter apartments and common areas. To find the meter and variable names, look in the .rdd and .mtd files in the `run` directory. The measure optionally outputs the custom meter.'
+    return 'This measure creates a Custom Meter to combine output variables and meters for each zone in the ZEDG MF building pipeline. This is helpful to submeter apartments and common areas. To find the meter and variable names, look in the .rdd and .mtd files in the `run` directory. The measure optionally outputs the custom meter for viewing in data viewers like DView and DesignBuilder Results Viewer.'
   end
 
   # human readable description of modeling approach
   def modeler_description
-    return 'This measure creates a Meter:Custom object based on ... optionally adds an Output:Meter for the custom meter to save the values to the .eio and .mtr files. Common errors include (1) using space names instead of thermal zone names as key variables, (2) not specifying the Zone variable, e.g. Lights Electric Energy vs. Zone Lights Electric Energy, (3) combining different fuel types on the same meter, and (4) Requesting a variable or meter that is not there, e.g., if a zone has no electric equipment, you cannot request a Zone Electric Equipment Electric Energy variable.'
+    return 'Currently this measure only works for "hvac_system_type" : "Minisplit Heat Pumps with ERVs". This measure creates a Meter:Custom object based on all electric end uses attributable to a zone. It optionally adds an Output:Meter for the custom meter to save the values to the .eio and .mtr files. Common errors include (1) using space names instead of thermal zone names as key variables, (2) not specifying the Zone variable, e.g. Lights Electric Energy vs. Zone Lights Electric Energy, (3) combining different fuel types on the same meter, (4) Requesting a variable or meter that is not there, e.g., if a zone has no electric equipment, you cannot request a Zone Electric Equipment Electric Energy variable, (5) calling OS methods on objects like Array or Hash.'
   end
 
   # define the arguments that the user will input
