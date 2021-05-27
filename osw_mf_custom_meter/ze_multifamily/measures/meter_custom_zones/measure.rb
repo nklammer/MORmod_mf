@@ -88,19 +88,19 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
     zone_vars[:elec][:var] = "Electricity:Zone"
     # break ---------------------------------------
     zone_vars[:ashp_clg] = {}
-    zone_vars[:ashp_clg][:key] = "ZONE_KEY CENTRAL AIR SOURCE HP COOLING COIL"
+    zone_vars[:ashp_clg][:key] = "CLG_COIL_NAME"
     zone_vars[:ashp_clg][:var] = "Cooling Coil Total Electric Energy"
 
     zone_vars[:ashp_htg] = {}
-    zone_vars[:ashp_htg][:key] = "ZONE_KEY CENTRAL AIR SOURCE HP HEATING COIL"
+    zone_vars[:ashp_htg][:key] = "HTG_COIL_NAME"
     zone_vars[:ashp_htg][:var] = "Heating Coil Electric Energy"
 
     zone_vars[:ashp_dfst] = {}
-    zone_vars[:ashp_dfst][:key] = "ZONE_KEY CENTRAL AIR SOURCE HP HEATING COIL"
+    zone_vars[:ashp_dfst][:key] = "HTG_COIL_NAME"
     zone_vars[:ashp_dfst][:var] = "Heating Coil Defrost Electric Energy"
 
     zone_vars[:ashp_crank] = {}
-    zone_vars[:ashp_crank][:key] = "ZONE_KEY CENTRAL AIR SOURCE HP HEATING COIL"
+    zone_vars[:ashp_crank][:key] = "HTG_COIL_NAME"
     zone_vars[:ashp_crank][:var] = "Heating Coil Crankcase Heater Electric Energy"
 
     zone_vars[:ashp_fan] = {}
@@ -119,9 +119,9 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
     zone_vars[:erv_supply][:key] = "ZONE_KEY ERV SUPPLY FAN"
     zone_vars[:erv_supply][:var] = "Fan Electric Energy"
 
-    zone_vars[:erv_exhuast] = {}
-    zone_vars[:erv_exhuast][:key] = "ZONE_KEY ERV EXHAUST FAN"
-    zone_vars[:erv_exhuast][:var] = "Fan Electric Energy"
+    zone_vars[:erv_exhaust] = {}
+    zone_vars[:erv_exhaust][:key] = "ZONE_KEY ERV EXHAUST FAN"
+    zone_vars[:erv_exhaust][:var] = "Fan Electric Energy"
 
     zone_vars[:erv_hx] = {}
     zone_vars[:erv_hx][:key] = "ZONE_KEY ERV HX"
@@ -159,6 +159,22 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
     # reset zone count
     zone_count = 0
 
+    coils_clg = []
+    coils_clg += model.getCoilCoolingDXSingleSpeeds
+    coils_clg += model.getCoilCoolingDXMultiSpeeds
+    coils_clg += model.getCoilCoolingDXTwoSpeeds
+    coils_clg += model.getCoilCoolingDXVariableSpeeds
+    # -----------
+    coils_htg = []
+    coils_htg += model.getCoilHeatingDXSingleSpeeds
+    coils_htg += model.getCoilHeatingDXMultiSpeeds
+    coils_htg += model.getCoilHeatingDXVariableSpeeds
+
+    coil_clg_names = coils_clg.map { |coil| coil.name.get.to_s }
+    coil_htg_names = coils_htg.map { |coil| coil.name.get.to_s }
+    runner.registerInfo("The cooling coil names are #{coil_clg_names}")
+    runner.registerInfo("The heating coil names are #{coil_htg_names}")
+
     # how to correlate the zone name with the dhw object name?
     # optional objects must be called with #get after checking #empty?
     # all zones
@@ -166,7 +182,7 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
       # validate zone w/o dhw
       zone_count += 1
       # instantiate custom meter
-      meter_custom_name = "Meter #{zone_count} - #{zone.name} Electricity"
+      meter_custom_name = "Mtr#{zone_count} - #{zone.name} Electricity"
       runner.registerInfo("Creating custom meter called '#{meter_custom_name}'.")
       meter_custom = OpenStudio::Model::MeterCustom.new(model)
       meter_custom.setName(meter_custom_name)
@@ -177,19 +193,29 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
       meter_custom.addKeyVarGroup(key_name, var_name)
 
       # only condiitoned zones
+      # THIS NEEDS TO BE FIXED
       next if zone.airLoopHVAC.empty?
       runner.registerInfo("Zone '#{zone.name}' has an associated AirLoopHVAC '#{zone.airLoopHVAC.get.name}'.")
       # array of relevant hash symbols; method Hash.select
-      # okay but array is much easier to iterate over than hash
       # just remember to include two dummy variables for block instead of one
-      k_ary = [:ashp_clg, :ashp_crank, :ashp_dfst, :ashp_fan, :ashp_htg, :ashp_supmtl, :ashp_unit, :erv_supply, :erv_exhuast, :erv_hx]
-      sub_hash = zone_vars.select {|k,v| k_ary.include?(k)}
+      k_ary = [:ashp_fan, :ashp_supmtl, :ashp_unit, :erv_supply, :erv_exhaust, :erv_hx]
+      sub_hash = zone_vars.select { |k,v| k_ary.include?(k) }
       sub_hash.each do |k,v|
-        key_name = v[:key].gsub(/ZONE_KEY/, "#{zone.name}")
+        key_name = v[:key].gsub(/ZONE_KEY/, "#{zone.name}") # needs to be matched against the existing object's full name
+        var_name = v[:var] # should be okay
+        meter_custom.addKeyVarGroup(key_name, var_name)
+      end
+      k_coils = [:ashp_clg, :ashp_htg, :ashp_dfst, :ashp_crank]
+      sub_hash = zone_vars.select { |k,v| k_coils.include?(k) }
+      sub_hash.each do |k,v|
+        runner.registerInfo("The `v[:key]` is #{v[:key]}.")
+        runner.registerInfo("The result of `coil_clg_names.grep(Regexp.new(zone.name.to_s))` is #{coil_clg_names.grep(Regexp.new(zone.name.to_s))}")
+        key_name = v[:key].gsub(/CLG_COIL_NAME/, coil_clg_names.grep(Regexp.new(zone.name.to_s))[0]) # convert to str one element array
+        key_name = v[:key].gsub(/HTG_COIL_NAME/, coil_htg_names.grep(Regexp.new(zone.name.to_s))[0]) # alt 2 heating coil
         var_name = v[:var]
         meter_custom.addKeyVarGroup(key_name, var_name)
       end
-
+      
       # only zones with DHW
       zone.spaces.each do |space|
         # validate looped space with dhw
