@@ -5,3 +5,14 @@
 .bundle/install
 Gemfile.lock
 .DS_Store
+osw_mf_custom_meter/ze_multifamily/out.osw
+*.html
+*.zip
+*.bnd
+*.shd
+*.sql
+*.job
+osw_mf_custom_meter/ze_multifamily/run/epluszsz.csv
+*.eio
+osw_mf_custom_meter/ze_multifamily/run/027_view_model/report.json
+osw_mf_custom_meter/ze_multifamily/reports/view_model_report.json
