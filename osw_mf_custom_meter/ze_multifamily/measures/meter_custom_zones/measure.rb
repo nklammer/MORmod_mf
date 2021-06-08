@@ -16,7 +16,7 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
 
   # human readable description of modeling approach
   def modeler_description
-    return 'Currently this measure only works for "hvac_system_type" : "Minisplit Heat Pumps with ERVs". This measure creates a Meter:Custom object based on all electric end uses attributable to a zone. It optionally adds an Output:Meter for the custom meter to save the values to the .eio and .mtr files. Common errors include (1) using space names instead of thermal zone names as key variables, (2) not specifying the Zone variable, e.g. Lights Electric Energy vs. Zone Lights Electric Energy, (3) combining different fuel types on the same meter, (4) Requesting a variable or meter that is not there, e.g., if a zone has no electric equipment, you cannot request a Zone Electric Equipment Electric Energy variable, (5) calling OS methods on objects like Array or Hash.'
+    return 'Currently this measure only works for "hvac_system_type" : "Minisplit Heat Pumps with ERVs". This measure creates a Meter:Custom object based on all electric end uses attributable to a zone. It optionally adds an Output:Meter for the custom meter to save the values to the .eio and .mtr files. Common errors include (1) using space names instead of thermal zone names as key variables, (2) not specifying the Zone variable, e.g. Lights Electric Energy vs. Zone Lights Electric Energy, (3) combining different fuel types on the same meter, (4) Requesting a variable or meter that is not there, e.g., if a zone has no electric equipment, you cannot request a Zone Electric Equipment Electric Energy variable, (5) EnergyPlus does not allow creating a MeterCustom object for meter contents that already exists i.e. "Electricity:Zone:ELEVATOR_1_4", and (6) calling OS methods on objects like Array or Hash.'
   end
 
   # define the arguments that the user will input
@@ -73,6 +73,10 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
     fuel_type = runner.getStringArgumentValue('fuel_type', user_arguments)
     add_output_meter = runner.getBoolArgumentValue('add_output_meter', user_arguments)
     reporting_frequency = runner.getStringArgumentValue('reporting_frequency', user_arguments)
+
+    meters = model.getOutputMeters
+    # reporting initial condition of model
+    runner.registerInitialCondition("The model started with #{meters.size} meter objects.")
 
     # initialize hash of vars
     zone_vars = {}
@@ -186,74 +190,92 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
       meter_custom = OpenStudio::Model::MeterCustom.new(model)
       meter_custom.setName(meter_custom_name)
       meter_custom.setFuelType(fuel_type)
-      # zone electric meter
+      # Electricity:Zone:ZONE_KEY meter
       key_name = (zone_vars[:elec][:key]).gsub(/ZONE_KEY/, "#{zone.name}")
       var_name = zone_vars[:elec][:var]
       meter_custom.addKeyVarGroup(key_name, var_name)
 
       # only condiitoned zones
       # THIS NEEDS TO BE FIXED
-      next if zone.airLoopHVAC.empty?
-      runner.registerInfo("Zone '#{zone.name}' has an associated AirLoopHVAC '#{zone.airLoopHVAC.get.name}'.")
-      # array of relevant hash symbols; method Hash.select
-      # just remember to include two dummy variables for block instead of one
-      k_ary = [:ashp_fan, :ashp_supmtl, :ashp_unit, :erv_supply, :erv_exhaust, :erv_hx]
-      sub_hash = zone_vars.select { |k,v| k_ary.include?(k) }
-      sub_hash.each do |k,v|
-        key_name = v[:key].gsub(/ZONE_KEY/, "#{zone.name}") # needs to be matched against the existing object's full name
-        var_name = v[:var] # should be okay
-        meter_custom.addKeyVarGroup(key_name, var_name)
-      end
-      k_coils = [:ashp_clg, :ashp_htg, :ashp_dfst, :ashp_crank]
-      sub_hash = zone_vars.select { |k,v| k_coils.include?(k) }
-      sub_hash.each do |k,v|
-        runner.registerInfo("The `v[:key]` is #{v[:key]}.")
-        runner.registerInfo("The result of `coil_clg_names.grep(Regexp.new(zone.name.to_s))` is #{coil_clg_names.grep(Regexp.new(zone.name.to_s))}")
-        key_name = v[:key].gsub(/CLG_COIL_NAME/, coil_clg_names.grep(Regexp.new(zone.name.to_s))[0]) # convert to str one element array
-        key_name = v[:key].gsub(/HTG_COIL_NAME/, coil_htg_names.grep(Regexp.new(zone.name.to_s))[0]) # alt 2 heating coil
-        var_name = v[:var]
-        meter_custom.addKeyVarGroup(key_name, var_name)
-      end
-      
-      # only zones with DHW
-      zone.spaces.each do |space|
-        # validate looped space with dhw
-        next if space.spaceType.empty?
-        next if space.waterUseEquipment.empty?
-        next if space.buildingUnit.empty?
-        # greedy regex matching of the three digit building unit number
-        # Regexp module #match method
-        unit_num = /\d{3}/.match(space.buildingUnit.get.name.to_s)
-        runner.registerInfo("Zone '#{zone.name}' has an associated DHW system and a building unit number of '#{unit_num}'.")
-        # method #name undefined for  #<OpenStudio::Model::OptionalBuildingUnit:0x000001bbd33d44c0>.
-        # Use #get on boost optional objects then #name
-        # 'Building Unit 001'
-        #runner.registerInfo("The object HotWaterEquipment in zone #{zone.name} is called '#{space.waterUseEquipment.first.name}'.")
-        #runner.registerInfo("The methods I can call on 'space.waterUseEquipment' are #{space.waterUseEquipment.methods}")
-        k_ary = [:wh_coil_crank, :wh_coil_heat, :wh_fan, :wh_hpwh_off, :wh_tank_heater, :wh_tank_off, :wh_tank_on]
-        sub_hash = zone_vars.select {|k,v| k_ary.include?(k)}
+      if not zone.airLoopHVAC.empty? # TRUE for conditioned zones
+        runner.registerInfo("Zone '#{zone.name}' has an associated AirLoopHVAC '#{zone.airLoopHVAC.get.name}'.")
+        # array of relevant hash symbols; method Hash.select
+        # just remember to include two dummy variables for block instead of one
+        k_ary = [:ashp_fan, :ashp_supmtl, :ashp_unit, :erv_supply, :erv_exhaust, :erv_hx]
+        sub_hash = zone_vars.select { |k,v| k_ary.include?(k) }
         sub_hash.each do |k,v|
-          key_name = v[:key].gsub(/XXX/, "#{unit_num}")
+          key_name = v[:key].gsub(/ZONE_KEY/, "#{zone.name}") # needs to be matched against the existing object's full name
+          var_name = v[:var] # should be okay
+          meter_custom.addKeyVarGroup(key_name, var_name) 
+        end
+
+        k_coils = [:ashp_clg, :ashp_htg, :ashp_dfst, :ashp_crank]
+        sub_hash = zone_vars.select { |k,v| k_coils.include?(k) }
+        sub_hash.each do |k,v|
+          runner.registerInfo("The `v[:key]` is #{v[:key]}.")
+          runner.registerInfo("The result of `coil_clg_names.grep(Regexp.new(zone.name.to_s))` is #{coil_clg_names.grep(Regexp.new(zone.name.to_s))}")
+          key_name = v[:key].gsub(/CLG_COIL_NAME/, coil_clg_names.grep(Regexp.new(zone.name.to_s))[0]) # convert to str one element array
+          key_name = v[:key].gsub(/HTG_COIL_NAME/, coil_htg_names.grep(Regexp.new(zone.name.to_s))[0]) # alt 2 heating coil
           var_name = v[:var]
           meter_custom.addKeyVarGroup(key_name, var_name)
         end
+      
+        # only zones with DHW
+        zone.spaces.each do |space|
+          # validate looped space with dhw
+          next if space.spaceType.empty? # this 'next if' is okay to leave
+          next if space.waterUseEquipment.empty?
+          next if space.buildingUnit.empty?
+          # greedy regex matching of the three digit building unit number
+          # Regexp module #match method
+          unit_num = /\d{3}/.match(space.buildingUnit.get.name.to_s)
+          runner.registerInfo("Zone '#{zone.name}' has an associated DHW system and a building unit number of '#{unit_num}'.")
+          # method #name undefined for  #<OpenStudio::Model::OptionalBuildingUnit:0x000001bbd33d44c0>.
+          # Use #get on boost optional objects then #name
+          # 'Building Unit 001'
+          #runner.registerInfo("The object HotWaterEquipment in zone #{zone.name} is called '#{space.waterUseEquipment.first.name}'.")
+          #runner.registerInfo("The methods I can call on 'space.waterUseEquipment' are #{space.waterUseEquipment.methods}")
+          k_ary = [:wh_coil_crank, :wh_coil_heat, :wh_fan, :wh_hpwh_off, :wh_tank_heater, :wh_tank_off, :wh_tank_on]
+          sub_hash = zone_vars.select {|k,v| k_ary.include?(k)}
+          sub_hash.each do |k,v|
+            key_name = v[:key].gsub(/XXX/, "#{unit_num}")
+            var_name = v[:var]
+            meter_custom.addKeyVarGroup(key_name, var_name)
+          end # ends key-var loop
+        end # ends spaces loop
+        # still in conditioned zones loop
+        if add_output_meter
+          output_meter = OpenStudio::Model::OutputMeter.new(model)
+          output_meter.setName(meter_custom_name)
+          output_meter.setReportingFrequency(reporting_frequency)
+          runner.registerInfo("Added a custom meter object #{meter_custom_name} for a conditioned zone with #{meter_custom.numKeyVarGroups} key-variable groups.")
+          runner.registerInfo("#{meter_custom_name} reporting at frequency '#{reporting_frequency}'.")
+        end # ends output meter: true? for conditioned zones
+      else # zones that are unconditioned but still have space loads
+        # see the AddMeter measure in the openstudio-common-measures-gem
+        # make 'meter_exist_name' variable here
+        #meter_exist_name = "Electricity:Zone:ZONE_KEY"
+        # this is a separate case for an existing meter where 'name' field
+        # contains both key and variable information; there is no addKeyVarGroup method
+        meter_exist_name = var_name + ":" + key_name
 
-      end
+        if add_output_meter
+          output_meter = OpenStudio::Model::OutputMeter.new(model)
+          output_meter.setName(meter_exist_name) # OnMeter=Electricity:Zone:ELEVATOR_1_4 [J]; name needs to correspond to E+ 'Key Name' field
+          # !- Key Name:   ZONE_NAME  !- Output Variable:   Electricity:Zone
+          output_meter.setReportingFrequency(reporting_frequency)
+          runner.registerInfo("Added a meter object #{meter_exist_name} for an unconditioned zone with 1 key-variable group.")
+          runner.registerInfo("#{meter_exist_name} reporting at frequency '#{reporting_frequency}'.")
+        end # ends output meter: true? for unconditioned zones
+      end # ends 'ifelse' conditioned zone loop
       # still inside zone loop
-      # don't forget to add output meter at end
-      if add_output_meter
-        output_meter = OpenStudio::Model::OutputMeter.new(model)
-        output_meter.setName(meter_custom_name)
-        output_meter.setReportingFrequency(reporting_frequency)
-        runner.registerInfo("Added a custom meter object #{meter_custom_name} with #{meter_custom.numKeyVarGroups} key-variable groups.")
-        runner.registerInfo("#{meter_custom_name} reporting at frequency '#{reporting_frequency}'.")
-      end
-    end
+    end # ends zone loop
     # outside zone loop
-    runner.registerInfo("The output variables for the model object are #{model.getOutputVariables}")
 
     # reporting final condition
-    runner.registerFinalCondition("Added #{zone_count} custom meter objects.")
+    runner.registerFinalCondition("Added #{zone_count} meter objects.")
+    meters = model.getOutputMeters
+    runner.registerFinalCondition("The model ended with #{meters.size} meter objects.")
 
     return true
   end
