@@ -184,21 +184,21 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
     zones.each do |zone|
       # validate zone w/o dhw
       zone_count += 1
-      # instantiate custom meter
-      meter_custom_name = "Mtr#{zone_count} - #{zone.name} Electricity"
-      runner.registerInfo("Creating custom meter called '#{meter_custom_name}'.")
-      meter_custom = OpenStudio::Model::MeterCustom.new(model)
-      meter_custom.setName(meter_custom_name)
-      meter_custom.setFuelType(fuel_type)
-      # Electricity:Zone:ZONE_KEY meter
-      key_name = (zone_vars[:elec][:key]).gsub(/ZONE_KEY/, "#{zone.name}")
-      var_name = zone_vars[:elec][:var]
-      meter_custom.addKeyVarGroup(key_name, var_name)
-
       # only condiitoned zones
-      # THIS NEEDS TO BE FIXED
       if not zone.airLoopHVAC.empty? # TRUE for conditioned zones
         runner.registerInfo("Zone '#{zone.name}' has an associated AirLoopHVAC '#{zone.airLoopHVAC.get.name}'.")
+
+        # instantiate custom meter
+        meter_custom_name = "Mtr#{zone_count} - #{zone.name} Electricity"
+        runner.registerInfo("Creating custom meter called '#{meter_custom_name}'.")
+        meter_custom = OpenStudio::Model::MeterCustom.new(model)
+        meter_custom.setName(meter_custom_name)
+        meter_custom.setFuelType(fuel_type)
+        # Electricity:Zone:ZONE_KEY meter
+        key_name = (zone_vars[:elec][:key]).gsub(/ZONE_KEY/, "#{zone.name}")
+        var_name = zone_vars[:elec][:var]
+        meter_custom.addKeyVarGroup(key_name, var_name)
+
         # array of relevant hash symbols; method Hash.select
         # just remember to include two dummy variables for block instead of one
         k_ary = [:ashp_fan, :ashp_supmtl, :ashp_unit, :erv_supply, :erv_exhaust, :erv_hx]
@@ -257,6 +257,8 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
         #meter_exist_name = "Electricity:Zone:ZONE_KEY"
         # this is a separate case for an existing meter where 'name' field
         # contains both key and variable information; there is no addKeyVarGroup method
+        key_name = (zone_vars[:elec][:key]).gsub(/ZONE_KEY/, "#{zone.name}")
+        var_name = zone_vars[:elec][:var]
         meter_exist_name = var_name + ":" + key_name
 
         if add_output_meter
