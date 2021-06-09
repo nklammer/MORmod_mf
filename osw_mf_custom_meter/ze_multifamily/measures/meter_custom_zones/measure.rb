@@ -248,6 +248,9 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
           output_meter = OpenStudio::Model::OutputMeter.new(model)
           output_meter.setName(meter_custom_name)
           output_meter.setReportingFrequency(reporting_frequency)
+          runner.registerInitialCondition("The meter file only option is defaulted #{output_meter.isMeterFileOnlyDefaulted()}.")
+          output_meter.setMeterFileOnly(false)
+          runner.registerFinalCondition("The meter is only on the meter file: #{output_meter.meterFileOnly()}.")
           runner.registerInfo("Added a custom meter object #{meter_custom_name} for a conditioned zone with #{meter_custom.numKeyVarGroups} key-variable groups.")
           runner.registerInfo("#{meter_custom_name} reporting at frequency '#{reporting_frequency}'.")
         end # ends output meter: true? for conditioned zones
@@ -266,6 +269,9 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
           output_meter.setName(meter_exist_name) # OnMeter=Electricity:Zone:ELEVATOR_1_4 [J]; name needs to correspond to E+ 'Key Name' field
           # !- Key Name:   ZONE_NAME  !- Output Variable:   Electricity:Zone
           output_meter.setReportingFrequency(reporting_frequency)
+          runner.registerInitialCondition("The meter file only option is defaulted #{output_meter.isMeterFileOnlyDefaulted()}.")
+          output_meter.setMeterFileOnly(false)
+          runner.registerFinalCondition("The meter is only on the meter file: #{output_meter.meterFileOnly()}.")
           runner.registerInfo("Added a meter object #{meter_exist_name} for an unconditioned zone with 1 key-variable group.")
           runner.registerInfo("#{meter_exist_name} reporting at frequency '#{reporting_frequency}'.")
         end # ends output meter: true? for unconditioned zones
