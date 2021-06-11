@@ -1,5 +1,4 @@
 require 'openstudio'
-require_relative "constants"
 
 # start the measure
 class MeterCustom < OpenStudio::Measure::ModelMeasure
