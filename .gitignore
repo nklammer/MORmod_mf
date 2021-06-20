@@ -5,3 +5,14 @@
 .bundle/install
 Gemfile.lock
 .DS_Store
+*/*/out.osw
+*.html
+*.zip
+*.bnd
+*.shd
+*.sql
+*.job
+*/*/run/epluszsz.csv
+*.eio
+*/*/run/*/report.json
+*/*/reports/view_model_report.json
