@@ -176,7 +176,7 @@ class MultifamilyCentralWasteWaterHeatPump_Test < Minitest::Test
     epw_path = File.dirname(__FILE__) + '/USA_TX_Houston-Bush.Intercontinental.AP.722430_TMY3.epw'
     args = {}
     args['swh_type'] = 'Waste Water Heat Pump 140F Supply'
-    result = apply_and_run_measure(test_name, osm_path, epw_path, args, annual_run: false)
+    result = apply_and_run_measure(test_name, osm_path, epw_path, args, annual_run: true)
     assert_equal(result.value.valueName, 'Success')
   end
 
@@ -187,7 +187,7 @@ class MultifamilyCentralWasteWaterHeatPump_Test < Minitest::Test
     epw_path = File.dirname(__FILE__) + '/USA_TX_Houston-Bush.Intercontinental.AP.722430_TMY3.epw'
     args = {}
     args['swh_type'] = 'Waste Water Heat Pump 90F Supply and Electric Tank'
-    result = apply_and_run_measure(test_name, osm_path, epw_path, args, annual_run: false)
+    result = apply_and_run_measure(test_name, osm_path, epw_path, args, annual_run: true)
     assert_equal(result.value.valueName, 'Success')
   end
 

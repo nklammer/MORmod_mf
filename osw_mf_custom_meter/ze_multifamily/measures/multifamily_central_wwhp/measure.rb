@@ -183,8 +183,8 @@ class MultifamilyCentralWasteWaterHeatPump < OpenStudio::Measure::ModelMeasure
     water_use_equipments = []
     model.getWaterUseEquipments.each { |water_use_equipment| water_use_equipments << water_use_equipment }
 
-    #remove existing swh fans
-    model.getFanOnOffs.each{|fan| fan.remove if  fan.endUseSubcategory.include? 'Domestic Hot Water'}
+    # remove existing swh fans
+    model.getFanOnOffs.each{|fan| fan.remove if fan.endUseSubcategory.include? 'Domestic Hot Water'}
 
     # remove existing shw loops
     model.getPlantLoops.each { |plant_loop|  plant_loop.remove if std.plant_loop_swh_loop?(plant_loop) }
@@ -204,7 +204,7 @@ class MultifamilyCentralWasteWaterHeatPump < OpenStudio::Measure::ModelMeasure
                         'OS:EnergyManagementSystem:ConstructionIndexVariable']
     model.getModelObjects.each do |obj|
       next unless ems_object_types.include? obj.iddObject.name
-      if (obj.name.get.include? 'res_wh_Building') || (obj.name.get.include? 'res wh_Building') || (obj.name.get.include? 'wastewater')
+      if (obj.name.get.include? 'res_wh_Building') || (obj.name.get.include? 'wastewater')
         obj.remove
       end
     end
