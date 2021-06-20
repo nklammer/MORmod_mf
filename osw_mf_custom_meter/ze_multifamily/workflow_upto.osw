@@ -58,7 +58,7 @@
          {
             "__SKIP__" : false,
             "set_year" : "2019",
-            "weather_file_name" : "USA_CA_Sacramento.Metro.AP.724839_TMY3.epw"
+            "weather_file_name" : "USA_CA_Los.Angeles.Intl.AP.722950_TMY3.epw"
          },
          "description" : "If the weather file argument is changed add an epw by that name to the files directory under the project folder along with a ddy and stat file that has the same name, other than the file extension.",
          "measure_dir_name" : "ChangeBuildingLocation",
@@ -370,7 +370,7 @@
       },
 	   {
 	     "arguments": {
-	       "__SKIP__": true,
+	       "__SKIP__": false,
 	       "meter_name": "InteriorLights:Electricity",
 	       "reporting_frequency": "timestep"
 	     },
@@ -378,7 +378,7 @@
 	   },
 	   {
 	     "arguments": {
-	       "__SKIP__": true,
+	       "__SKIP__": false,
 	       "meter_name": "ExteriorLights:Electricity",
 	       "reporting_frequency": "timestep"
 	     },
@@ -394,7 +394,7 @@
 	   },
 	   {
 	     "arguments": {
-	       "__SKIP__": true,
+	       "__SKIP__": false,
 	       "meter_name": "Fans:Electricity",
 	       "reporting_frequency": "timestep"
 	     },
@@ -402,7 +402,7 @@
 	   },
 	   {
 	     "arguments": {
-	       "__SKIP__": true,
+	       "__SKIP__": false,
 	       "meter_name": "Pumps:Electricity",
 	       "reporting_frequency": "timestep"
 	     },
