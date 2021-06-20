@@ -106,10 +106,10 @@ class EnableIdealAirLoadsForAllZones < OpenStudio::Measure::ModelMeasure
       is_swh_loop = false
       plant_loop.supplyComponents.each do |component|
         # boost optional
-        if (component.to_WaterHeaterMixed.is_initialized 
-          || component.to_WaterHeaterStratified.is_initialized 
-          || component.to_WaterHeaterHeatPump.is_initialized 
-          || component.to_WaterHeaterHeatPumpWrappedCondensor.is_initialized)
+        if component.to_WaterHeaterMixed.is_initialized ||
+           component.to_WaterHeaterStratified.is_initialized ||
+           component.to_WaterHeaterHeatPump.is_initialized ||
+           component.to_WaterHeaterHeatPumpWrappedCondensor.is_initialized
           # is_swh_loop = true
           next
         end
