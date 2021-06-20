@@ -462,7 +462,7 @@
 	   },
       {
          "arguments": {
-           "__SKIP__": false,
+           "__SKIP__": true,
            "fuel_type": "Electricity",
            "add_output_meter": true,
            "reporting_frequency": "timestep"
