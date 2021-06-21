@@ -168,6 +168,7 @@
       {
          "arguments" : 
          {
+            "__SKIP__" :true,
             "cef" : "5.2",
             "fuel_split" : "1.0",
             "fuel_type" : "electric",
