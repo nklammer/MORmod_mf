@@ -146,6 +146,7 @@
       {
          "arguments" : 
          {
+            "__SKIP__" : true,
             "annual_cost" : "7",
             "cold_cycle" : "false",
             "drum_volume" : "4.5",
@@ -179,6 +180,7 @@
       {
          "arguments" : 
          {
+            "__SKIP__" : true,
             "annual_gas_cost" : "18",
             "cold_inlet" : "false",
             "cold_use" : "0",
