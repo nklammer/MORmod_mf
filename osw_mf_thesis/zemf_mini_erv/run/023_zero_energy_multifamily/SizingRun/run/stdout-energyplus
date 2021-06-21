@@ -1,0 +1,96 @@
+EnergyPlus Starting
+EnergyPlus, Version 9.3.0-baff08990c, YMD=2021.06.20 13:18
+Initializing Response Factors
+Calculating CTFs for "INTERIORFURNISHINGS", Construction # 2
+Calculating CTFs for "TYPICAL IEAD ROOF R-34.48", Construction # 6
+Calculating CTFs for "TYPICAL INSULATED CARPETED 8IN SLAB FLOOR", Construction # 7
+Calculating CTFs for "TYPICAL INSULATED WOOD FRAMED EXTERIOR WALL R-34.48", Construction # 13
+Calculating CTFs for "TYPICAL INTERIOR CEILING", Construction # 14
+Calculating CTFs for "TYPICAL INTERIOR WALL", Construction # 18
+Initializing Window Optical Properties
+Initializing Solar Calculations
+Allocate Solar Module Arrays
+Initializing Zone and Enclosure Report Variables
+Initializing Surface (Shading) Report Variables
+Computing Interior Solar Absorption Factors
+Determining Shadowing Combinations
+Computing Window Shade Absorption Factors
+Proceeding with Initializing Solar Calculations
+Initializing Surfaces
+Initializing Outdoor environment for Surfaces
+Setting up Surface Reporting Variables
+Initializing Temperature and Flux Histories
+Initializing Window Shading
+Computing Interior Absorption Factors
+Computing Interior Diffuse Solar Absorption Factors
+Computing Interior Diffuse Solar Exchange through Interzone Windows
+Initializing Solar Heat Gains
+Initializing Internal Heat Gains
+Initializing Interior Solar Distribution
+Initializing Interior Convection Coefficients
+Gathering Information for Predefined Reporting
+Completed Initializing Surface Heat Balance
+Calculate Outside Surface Heat Balance
+Calculate Inside Surface Heat Balance
+Calculate Air Heat Balance
+Initializing HVAC
+Warming up
+Calculating Detailed Daylighting Factors, Start Date=08/21
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #1 LOS ANGELES INTL ARPT ANN CLG .4% CONDNS DB=>MWB 1
+Warming up
+Calculating Detailed Daylighting Factors, Start Date=08/21
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #2 LOS ANGELES INTL ARPT ANN CLG .4% CONDNS WB=>MDB 1
+Warming up
+Calculating Detailed Daylighting Factors, Start Date=01/21
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #3 LOS ANGELES INTL ARPT ANN HTG 99.6% CONDNS DB 1
+Calculating System sizing
+...for Sizing Period: #1 LOS ANGELES INTL ARPT ANN CLG .4% CONDNS DB=>MWB 1
+Calculating System sizing
+...for Sizing Period: #2 LOS ANGELES INTL ARPT ANN CLG .4% CONDNS WB=>MDB 1
+Calculating System sizing
+...for Sizing Period: #3 LOS ANGELES INTL ARPT ANN HTG 99.6% CONDNS DB 1
+Adjusting Air System Sizing
+Adjusting Standard 62.1 Ventilation Sizing
+Initializing Simulation
+Reporting Surfaces
+Beginning Primary Simulation
+Initializing New Environment Parameters
+Warming up {1}
+Calculating Detailed Daylighting Factors, Start Date=08/21
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Starting Simulation at 08/21 for LOS ANGELES INTL ARPT ANN CLG .4% CONDNS DB=>MWB 1
+Initializing New Environment Parameters
+Warming up {1}
+Calculating Detailed Daylighting Factors, Start Date=08/21
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Starting Simulation at 08/21 for LOS ANGELES INTL ARPT ANN CLG .4% CONDNS WB=>MDB 1
+Initializing New Environment Parameters
+Warming up {1}
+Calculating Detailed Daylighting Factors, Start Date=01/21
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Warming up {5}
+Starting Simulation at 01/21 for LOS ANGELES INTL ARPT ANN HTG 99.6% CONDNS DB 1
+Writing tabular output file results using HTML format.
+Computing Life Cycle Costs and Reporting
+Writing final SQL reports
+EnergyPlus Run Time=00hr 00min 38.01sec
+EnergyPlus Completed Successfully.

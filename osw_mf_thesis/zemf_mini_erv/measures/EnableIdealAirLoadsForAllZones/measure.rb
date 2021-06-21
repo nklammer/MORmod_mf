@@ -108,8 +108,7 @@ class EnableIdealAirLoadsForAllZones < OpenStudio::Measure::ModelMeasure
         # boost optional
         if component.to_WaterHeaterMixed.is_initialized ||
            component.to_WaterHeaterStratified.is_initialized ||
-           component.to_WaterHeaterHeatPump.is_initialized ||
-           component.to_WaterHeaterHeatPumpWrappedCondensor.is_initialized
+           component.to_WaterHeaterHeatPump.is_initialized
           # is_swh_loop = true
           next
         end
