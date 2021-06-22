@@ -95,28 +95,12 @@ class EnableIdealAirLoadsForAllZones < OpenStudio::Measure::ModelMeasure
           ideal_loads = OpenStudio::Model::ZoneHVACIdealLoadsAirSystem.new(model)
           ideal_loads.addToThermalZone(zone) # ZoneHVACComponent class
           # Set the ideal loads properties
-          ideal_loads.setName("#{zone.name} ILAS")
+          ideal_loads.setName("#{zone.name}")
           # ideal_loads.setHeatingLimit(40.0)
           # ideal_loads.setMinimumCoolingSupplyAirTemperature(0.0)
         end
 
         # outside checking if thermostat exists for zone
-        # add output variable
-        ideal_loads_air_system_variables = [
-          'Zone Ideal Loads Zone Total Cooling Energy'
-        ]
-
-        ideal_loads_air_system_variables.each do |variable|
-          # create the OutputVariable definition
-          output_var = OpenStudio::Model::OutputVariable.new(variable, model)
-          output_var.setKeyValue("#{zone.name}") # must be simple string
-          output_var.setReportingFrequency('hourly')
-          output_var.setName("#{zone.name} ILAS Total Cooling Energy") # this name might not make it into IDF
-          runner.registerInfo("Adding output variable for '#{output_var.variableName}' reporting '#{output_var.reportingFrequency}''.")
-          runner.registerInfo("Key value for variable is '#{output_var.keyValue}'. I've named it '#{output_var.name}'.")
-
-          output_vars_added += 1
-        end
 
         ideal_systems += 1
 
@@ -124,6 +108,25 @@ class EnableIdealAirLoadsForAllZones < OpenStudio::Measure::ModelMeasure
 
       end
     end
+    # outside of thermal zones loop
+
+    # add output variable
+    ideal_loads_air_system_variables = [
+      'Zone Ideal Loads Zone Total Cooling Energy'
+    ]
+    
+    ideal_loads_air_system_variables.each do |variable| # will loop once for set of size 1
+      # create the OutputVariable definition
+      output_var = OpenStudio::Model::OutputVariable.new(variable, model)
+      output_var.setKeyValue("*") # must be simple string
+      output_var.setReportingFrequency('timestep')
+      output_var.setName("ILAS Total Cooling Energy") # this name might not make it into IDF
+      runner.registerInfo("Adding output variable for '#{output_var.variableName}' reporting '#{output_var.reportingFrequency}'.")
+      runner.registerInfo("Key value for variable is '#{output_var.keyValue}'. I've named it '#{output_var.name}'.")
+    
+      output_vars_added += 1
+    end
+    
 
     # # remove air and plant loops not used for SWH
     # model.getAirLoopHVACs.each(&:remove)
