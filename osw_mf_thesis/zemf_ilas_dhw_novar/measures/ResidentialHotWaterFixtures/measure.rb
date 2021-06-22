@@ -353,7 +353,7 @@ class ResidentialHotWaterFixtures < OpenStudio::Measure::ModelMeasure
       end
 
       # increment days shift by 7 for each building unit
-      d_sh += 7
+      d_sh += 0
 
     end
 
