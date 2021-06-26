@@ -141,6 +141,26 @@ require 'openstudio-standards'
       standard.model_add_hvac_system(model, 'Ground Source Heat Pumps', 'Electricity', nil, 'Electricity', system_zones,
                                      zone_equipment_ventilation: false)
 
+    when 'Ideal Air Loads and Output Variable' # req'd args: model, system_type, main_heat_fuel, zone_heat_fuel, cool_fuel, zones
+      standard.model_add_hvac_system(model, 'Ideal Air Loads', nil, nil, nil, zones) # override system_zones for all zones
+          # add output variable
+      ideal_loads_air_system_variables = [
+        'Zone Ideal Loads Zone Total Cooling Energy'
+      ]
+    
+      ideal_loads_air_system_variables.each do |variable| # will loop once for set of size 1
+        # create the OutputVariable definition
+        output_var = OpenStudio::Model::OutputVariable.new(variable, model)
+        output_var.setKeyValue("*") # must be simple string
+        output_var.setReportingFrequency('timestep')
+        output_var.setName("ILAS Total Cooling Energy") # this name might not make it into IDF
+        runner.registerInfo("Adding output variable for '#{output_var.variableName}' reporting '#{output_var.reportingFrequency}'.")
+        runner.registerInfo("Key value for variable is '#{output_var.keyValue}'. I've named it '#{output_var.name}'.")
+      
+        output_vars_added += 1
+      end
+
+
     else
       runner.registerError("HVAC System #{system_type} not recognized")
       return false
@@ -296,6 +316,7 @@ require 'openstudio-standards'
     hvac_chs << 'Water Source Heat Pumps with Boiler and Fluid-cooler with ERVs'
     hvac_chs << 'Water Source Heat Pumps with Ground Source Heat Pump with DOAS'
     hvac_chs << 'Water Source Heat Pumps with Ground Source Heat Pump with ERVs'
+    hvac_chs << 'Ideal Air Loads and Output Variable'
     hvac_system_type = OpenStudio::Measure::OSArgument.makeChoiceArgument('hvac_system_type', hvac_chs, true)
     hvac_system_type.setDisplayName('HVAC System Type')
     hvac_system_type.setDefaultValue('Four-pipe Fan Coils with central air-source heat pump with DOAS')

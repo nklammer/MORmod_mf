@@ -328,7 +328,7 @@
             "add_space_type_loads" : true,
             "add_swh" : true,
             "add_thermostat" : true,
-            "hvac_system_type" : "Minisplit Heat Pumps with ERVs",
+            "hvac_system_type" : "Ideal Air Loads and Output Variable",
             "onsite_parking_fraction" : "0.0",
             "wall_roof_construction_template" : "ZE AEDG Multifamily Recommendations",
             "window_construction_template" : "ZE AEDG Multifamily Recommendations"

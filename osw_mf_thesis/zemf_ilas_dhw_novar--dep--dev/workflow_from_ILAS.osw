@@ -341,7 +341,7 @@
             "add_space_type_loads" : true,
             "add_swh" : true,
             "add_thermostat" : true,
-            "hvac_system_type" : "Minisplit Heat Pumps with ERVs",
+            "hvac_system_type" : "Ideal Air Loads and Output Variable",
             "onsite_parking_fraction" : "0.0",
             "wall_roof_construction_template" : "ZE AEDG Multifamily Recommendations",
             "window_construction_template" : "ZE AEDG Multifamily Recommendations"
@@ -352,7 +352,7 @@
       {
          "arguments" : 
          {
-            "__SKIP__" : false
+            "__SKIP__" : true
          },
          "description" : "Removes all Zone HVAC Components except Fan Zone Exhaust. Adds a Zone HVAC Ideal Air Loads System to the zone if a thermostat is present. Removes all Air Loop HVACs. Removes all plant loops, even those for DHW.",
          "measure_dir_name" : "EnableIdealAirLoadsForAllZones",
