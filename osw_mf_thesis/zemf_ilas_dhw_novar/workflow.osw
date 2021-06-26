@@ -333,7 +333,7 @@
       {
          "arguments" : 
          {
-            "__SKIP__" : true
+            "__SKIP__" : false
          },
          "description" : "Removes all Zone HVAC Components except Fan Zone Exhaust. Adds a Zone HVAC Ideal Air Loads System to the zone if a thermostat is present. Removes all Air Loop HVACs. Removes all plant loops, even those for DHW.",
          "measure_dir_name" : "EnableIdealAirLoadsForAllZones",

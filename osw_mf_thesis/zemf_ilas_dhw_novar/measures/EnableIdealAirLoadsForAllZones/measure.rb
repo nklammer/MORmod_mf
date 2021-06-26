@@ -101,16 +101,11 @@ class EnableIdealAirLoadsForAllZones < OpenStudio::Measure::ModelMeasure
     model.getAirLoopHVACs.each(&:remove)
 
     # see if plant loop is swh or not and take proper action (booter loop doesn't have water use equipment)
-    # for this experiment, swh will not be included in ideal air loads
     model.getPlantLoops.each do |plant_loop|
       is_swh_loop = false
       plant_loop.supplyComponents.each do |component|
-        # boost optional
-        if component.to_WaterHeaterMixed.is_initialized ||
-           component.to_WaterHeaterStratified.is_initialized ||
-           component.to_WaterHeaterHeatPump.is_initialized ||
-           component.to_WaterHeaterHeatPumpWrappedCondenser
-          # is_swh_loop = true
+        if component.to_WaterHeaterMixed.is_initialized
+          is_swh_loop = true
           next
         end
       end
