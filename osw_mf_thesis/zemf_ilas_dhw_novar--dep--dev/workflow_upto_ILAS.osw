@@ -331,7 +331,8 @@
             "hvac_system_type" : "Ideal Air Loads and Output Variable",
             "onsite_parking_fraction" : "0.0",
             "wall_roof_construction_template" : "ZE AEDG Multifamily Recommendations",
-            "window_construction_template" : "ZE AEDG Multifamily Recommendations"
+            "window_construction_template" : "ZE AEDG Multifamily Recommendations",
+            "add_output_var" : true
          },
          "measure_dir_name" : "zero_energy_multifamily",
          "name" : "zero_energy_multifamily"

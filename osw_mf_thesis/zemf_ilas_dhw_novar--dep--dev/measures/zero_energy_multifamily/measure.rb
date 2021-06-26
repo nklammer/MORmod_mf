@@ -63,7 +63,7 @@ require 'openstudio-standards'
     return 'This measure has optional arguments to apply recommendations from different sections of the Zero Energy Multifamily Design Guide.'
   end
 
-  def zero_energy_multifamily_add_hvac(model, runner, standard, system_type, zones)
+  def zero_energy_multifamily_add_hvac(model, runner, standard, system_type, zones) # I think it will do this for every standards building type
     heated_and_cooled_zones = zones.select { |zone| standard.thermal_zone_heated?(zone) && standard.thermal_zone_cooled?(zone) }
     heated_zones = zones.select { |zone| standard.thermal_zone_heated?(zone) }
     cooled_zones = zones.select { |zone| standard.thermal_zone_cooled?(zone) }
@@ -143,22 +143,6 @@ require 'openstudio-standards'
 
     when 'Ideal Air Loads and Output Variable' # req'd args: model, system_type, main_heat_fuel, zone_heat_fuel, cool_fuel, zones
       standard.model_add_hvac_system(model, 'Ideal Air Loads', nil, nil, nil, zones) # override system_zones for all zones
-          # add output variable
-      ideal_loads_air_system_variables = [
-        'Zone Ideal Loads Zone Total Cooling Energy'
-      ]
-    
-      ideal_loads_air_system_variables.each do |variable| # will loop once for set of size 1
-        # create the OutputVariable definition
-        output_var = OpenStudio::Model::OutputVariable.new(variable, model)
-        output_var.setKeyValue("*") # must be simple string
-        output_var.setReportingFrequency('timestep')
-        output_var.setName("ILAS Total Cooling Energy") # this name might not make it into IDF
-        runner.registerInfo("Adding output variable for '#{output_var.variableName}' reporting '#{output_var.reportingFrequency}'.")
-        runner.registerInfo("Key value for variable is '#{output_var.keyValue}'. I've named it '#{output_var.name}'.")
-      
-        output_vars_added += 1
-      end
 
 
     else
@@ -329,6 +313,14 @@ require 'openstudio-standards'
     # remove_objects.setDefaultValue(true)
     # args << remove_objects
 
+    # make an argument for add_output_var
+    add_output_var = OpenStudio::Measure::OSArgument.makeBoolArgument('add_output_var', false)
+    add_output_var.setDisplayName('Turn on an output variable for reporting to the ESO file.')
+    add_output_var.setDescription('Only one output variable currently in use.')
+    add_output_var.setDefaultValue(false)
+    args << add_output_var
+
+
     return args
   end
 
@@ -361,6 +353,7 @@ require 'openstudio-standards'
     args['hvac_system_type'] = runner.getStringArgumentValue('hvac_system_type', user_arguments)
     #args['remove_objects'] = runner.getBoolArgumentValue('remove_objects', user_arguments)
     args['remove_objects'] = false
+    args['add_output_var'] = runner.getBoolArgumentValue('add_output_var', user_arguments)
 
     # validate fraction parking
     fraction = OsLib_HelperMethods.checkDoubleAndIntegerArguments(runner, user_arguments, 'min' => 0.0, 'max' => 1.0, 'min_eq_bool' => true, 'max_eq_bool' => true, 'arg_array' => ['onsite_parking_fraction'])
@@ -907,8 +900,8 @@ require 'openstudio-standards'
       end
 
       # Group the zones by occupancy type.  Only split out non-dominant groups if their total area exceeds the limit.
-      sys_groups = standard.model_group_zones_by_type(model, min_area_m2 = OpenStudio.convert(500, 'ft^2', 'm^2').get)
-      sys_groups.each do |sys_group|
+      sys_groups = standard.model_group_zones_by_type(model, min_area_m2 = OpenStudio.convert(500, 'ft^2', 'm^2').get) # sys_groups > 1
+      sys_groups.each do |sys_group| # sys_groups > 1
         zero_energy_multifamily_add_hvac(model, runner, standard, args['hvac_system_type'], sys_group['zones'])
       end
     end
@@ -948,8 +941,31 @@ require 'openstudio-standards'
       end
     end
 
+    if args['add_output_var']
+      # add output variable
+      ideal_loads_air_system_variables = [
+        'Zone Ideal Loads Zone Total Cooling Energy'
+      ]
+
+      output_vars_added = 0
+              
+      ideal_loads_air_system_variables.each do |variable| # will loop once for set of size 1
+        # create the OutputVariable definition
+        output_var = OpenStudio::Model::OutputVariable.new(variable, model)
+        output_var.setKeyValue("*") # must be simple string
+        output_var.setReportingFrequency('timestep')
+        output_var.setName("ILAS Total Cooling Energy") # this name might not make it into IDF
+        runner.registerInfo("Adding output variable for '#{output_var.variableName}' reporting '#{output_var.reportingFrequency}'.")
+        runner.registerInfo("Key value for variable is '#{output_var.keyValue}'. I've named it '#{output_var.name}'.")
+   
+        output_vars_added += 1
+      end
+          
+
+    end
+
     # report final condition of model
-    runner.registerFinalCondition("The building finished with #{model.getModelObjects.size} objects.")
+    runner.registerFinalCondition("The building finished with #{model.getModelObjects.size} objects. #{output_vars_added} Output:Variable objects were added.")
 
     # log messages to info messages
     log_messages_to_runner(runner, debug = false)
