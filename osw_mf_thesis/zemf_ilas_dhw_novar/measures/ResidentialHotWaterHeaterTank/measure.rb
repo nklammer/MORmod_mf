@@ -131,6 +131,9 @@ class ResidentialHotWaterHeaterTank < OpenStudio::Measure::ModelMeasure
     oncycle_power = runner.getDoubleArgumentValue("oncyc_power", user_arguments)
     offcycle_power = runner.getDoubleArgumentValue("offcyc_power", user_arguments)
 
+    # troubleshoot
+    runner.registerInfo("The interpreted `fuel_type` is #{fuel_type}.")
+
     # Validate inputs
     if not runner.validateUserArguments(arguments(model), user_arguments)
       return false
@@ -153,7 +156,7 @@ class ResidentialHotWaterHeaterTank < OpenStudio::Measure::ModelMeasure
     model.getClimateZones.climateZones.each do |climateZone|
       next if climateZone.institution != Constants.BuildingAmericaClimateZone
 
-      ba_cz_name = climateZone.value.to_s
+      ba_cz_name = climateZone.to_s
     end
 
     location_hierarchy = Waterheater.get_location_hierarchy(ba_cz_name)
@@ -205,13 +208,14 @@ class ResidentialHotWaterHeaterTank < OpenStudio::Measure::ModelMeasure
       heatername = heater.name.get
       loopname = heater.plantLoop.get.name.get
 
-      capacity_si = heater.getHeaterMaximumCapacity.get
-      capacity = UnitConversions.convert(capacity_si.value, "W", "kBtu/hr")
-      volume_si = heater.getTankVolume.get
-      volume = UnitConversions.convert(volume_si.value, "m^3", "gal")
-      te = heater.getHeaterThermalEfficiency
+      capacity_si = heater.heaterMaximumCapacity.get
+      capacity = UnitConversions.convert(capacity_si.to_f, "W", "kBtu/hr")
+      volume_si = heater.tankVolume.get
+      volume = UnitConversions.convert(volume_si.to_f, "m^3", "gal")
+      te = heater.heaterThermalEfficiency
+      heater_fuel = heater.heaterFuelType
 
-      water_heaters << "Water heater '#{heatername}' added to plant loop '#{loopname}', with a capacity of #{capacity.round(1)} kBtu/hr" +
+      water_heaters << "Water heater '#{heatername}' with fuel type #{heater_fuel} added to plant loop '#{loopname}', with a capacity of #{capacity.round(1)} kBtu/hr" +
                        " and an actual tank volume of #{volume.round(1)} gal."
     end
     water_heaters

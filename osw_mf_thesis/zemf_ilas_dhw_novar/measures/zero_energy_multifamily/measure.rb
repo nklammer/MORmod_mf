@@ -361,7 +361,7 @@ require 'openstudio-standards'
     end
 
     # Make the standard appliers
-    standard = Standard.build('ZE AEDG Multifamily')
+    standard = Standard.build('90.1-2013')
 
     # get climate zone for model
     climate_zone = standard.model_standards_climate_zone(model)
@@ -907,12 +907,18 @@ require 'openstudio-standards'
 
       # Set the heating and cooling sizing parameters
       standard.model_apply_prm_sizing_parameters(model)
+      
+      # intermediary message
+      runner.registerInfo("You got as far as line #{__LINE__}. Maybe its the sizing run that causes problems.")
 
       # Perform a sizing run
       unless standard.model_run_sizing_run(model, "#{Dir.pwd}/SizingRun")
         log_messages_to_runner(runner, debug = true)
         return false
       end
+
+      #
+      runner.registerInfo("You got as far as line #{__LINE__}. Maybe its the efficiency standard that causes problems.")
 
       # Apply the HVAC efficiency standard
       standard.model_apply_hvac_efficiency_standard(model, climate_zone)
@@ -927,6 +933,28 @@ require 'openstudio-standards'
       end
     end
 
+
+    # add output variable
+    if args['hvac_system_type'] == 'Ideal Air Loads and Output Variable'
+      ideal_loads_air_system_variables = [
+      'Zone Ideal Loads Zone Total Cooling Energy'
+      ]
+      output_vars_added = 0
+              
+      ideal_loads_air_system_variables.each do |variable| # will loop once for set of size 1
+        # create the OutputVariable definition
+        output_var = OpenStudio::Model::OutputVariable.new(variable, model)
+        output_var.setKeyValue("*") # must be simple string
+        output_var.setReportingFrequency('timestep')
+        output_var.setName("ILAS Total Cooling Energy") # this name might not make it into IDF
+        runner.registerInfo("Adding output variable for '#{output_var.variableName}' reporting '#{output_var.reportingFrequency}'.")
+        runner.registerInfo("Key value for variable is '#{output_var.keyValue}'. I've named it '#{output_var.name}'.")
+   
+        output_vars_added += 1
+      end
+    end
+
+
     # report final condition of model
     runner.registerFinalCondition("The building finished with #{model.getModelObjects.size} objects.")
 
@@ -934,6 +962,11 @@ require 'openstudio-standards'
     log_messages_to_runner(runner, debug = false)
 
     return true
+
+          
+
+
+
   end
 end
 

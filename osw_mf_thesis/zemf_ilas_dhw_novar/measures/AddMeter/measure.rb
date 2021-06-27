@@ -124,7 +124,6 @@ class AddMeter < OpenStudio::Measure::ModelMeasure
       meter = OpenStudio::Model::OutputMeter.new(model)
       meter.setName(meter_name)
       meter.setReportingFrequency(reporting_frequency)
-      meter.setMeterFileOnly(false)
       runner.registerInfo("Adding meter for #{meter.name} reporting #{reporting_frequency}")
     end
 
