@@ -67,11 +67,18 @@
       {
          "arguments" : 
          {
-            "__SKIP__" : false
+            "__SKIP__" : false,
+            "fuel_type": "gas",
+            "capacity": "40.0",
+            "energy_factor": "0.59",
+            "location": "auto",
+            "setpoint_temp": "125",
+            "tank_volume": "50"
          },
-         "measure_dir_name" : "ResidentialHotWaterHeaterHeatPump",
-         "name" : "ResidentialHotWaterHeaterHeatPump"
+         "measure_dir_name" : "ResidentialHotWaterHeaterTank",
+         "name" : "ResidentialHotWaterHeaterTank"
       },
+
       {
          "arguments" : 
          {
@@ -320,15 +327,15 @@
             "add_exterior_lights" : true,
             "add_hvac" : true,
             "add_space_type_loads" : true,
-            "add_swh" : true,
+            "add_swh" : false,
             "add_thermostat" : true,
-            "hvac_system_type" : "Minisplit Heat Pumps with ERVs",
+            "hvac_system_type" : "Ideal Air Loads and Output Variable",
             "onsite_parking_fraction" : "0.0",
             "wall_roof_construction_template" : "ZE AEDG Multifamily Recommendations",
             "window_construction_template" : "ZE AEDG Multifamily Recommendations"
          },
-         "measure_dir_name" : "zero_energy_multifamily",
-         "name" : "zero_energy_multifamily"
+         "measure_dir_name" : "zero_energy_multifamily_ilas_better",
+         "name" : "zero_energy_multifamily_ilas_better"
       },
       {
          "arguments" : 
@@ -450,7 +457,7 @@
 	   },
 	   {
 	     "arguments": {
-	       "__SKIP__": false,
+	       "__SKIP__": true,
 	       "custom_meter_name": "ResFloors_Lights_Hourly",
 	       "fuel_type": "Electricity",
           "file_path": "C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_multifamily_SAC/ze_multifamily/measures/meter_custom/tests/lights_res_only_hourly.csv",
@@ -462,7 +469,7 @@
 	   },
       {
          "arguments": {
-           "__SKIP__": false,
+           "__SKIP__": true,
            "custom_meter_name": "ResFloors_ElecEquip_Hourly",
            "fuel_type": "Electricity",
            "file_path": "C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_multifamily_SAC/ze_multifamily/measures/meter_custom/tests/eequip_res_only_hourly.csv",
@@ -475,7 +482,7 @@
       {
         "arguments" : 
         {
-           "zone_condition_section" : true
+           "zone_condition_section" : false
         },
         "measure_dir_name" : "openstudio_results",
         "name" : "openstudio_results"
