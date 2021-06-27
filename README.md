@@ -45,6 +45,9 @@ Program Version,EnergyPlus, Version 9.3.0-baff08990c, YMD=2021.03.14 22:50,
    ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
    ************* EnergyPlus Terminated--Fatal Error Detected. 0 Warning; 2 Severe Errors; Elapsed Time=00hr 00min  1.32sec
 
+# RESULTS VIEWER
+
+I recommend using the free software, ResultsViewer to view and export `eplusout.eso` files to `.csv` format for analysis.
 
 # DOCUMENTATION
 Always run OpenStudio with Git Bash command `openstudio --verbose run -w path/to/workflow.osw --debug -- measures_only[optional]`. Include the `run.log` file and `eplusout.rdd` file in the commits.
