@@ -482,7 +482,7 @@
       {
         "arguments" : 
         {
-           "zone_condition_section" : true
+           "zone_condition_section" : false
         },
         "measure_dir_name" : "openstudio_results",
         "name" : "openstudio_results"
