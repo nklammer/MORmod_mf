@@ -361,7 +361,7 @@ require 'openstudio-standards'
     end
 
     # Make the standard appliers
-    standard = Standard.build('ZE AEDG Multifamily')
+    standard = Standard.build('90.1-2013')
 
     # get climate zone for model
     climate_zone = standard.model_standards_climate_zone(model)
