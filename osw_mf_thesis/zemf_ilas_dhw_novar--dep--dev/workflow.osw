@@ -326,7 +326,7 @@
             "add_exterior_lights" : true,
             "add_hvac" : true,
             "add_space_type_loads" : true,
-            "add_swh" : true,
+            "add_swh" : false,
             "add_thermostat" : true,
             "hvac_system_type" : "Ideal Air Loads and Output Variable",
             "onsite_parking_fraction" : "0.0",
