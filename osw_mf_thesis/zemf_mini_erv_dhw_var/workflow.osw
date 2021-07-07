@@ -58,7 +58,7 @@
          {
             "__SKIP__" : false,
             "set_year" : "2019",
-            "weather_file_name" : "USA_CA_Los.Angeles.Intl.AP.722950_TMY3.epw"
+            "weather_file_name" : "USA_WA_Seattle-Tacoma.Intl.AP.727930_TMY3.epw"
          },
          "description" : "If the weather file argument is changed add an epw by that name to the files directory under the project folder along with a ddy and stat file that has the same name, other than the file extension.",
          "measure_dir_name" : "ChangeBuildingLocation",
