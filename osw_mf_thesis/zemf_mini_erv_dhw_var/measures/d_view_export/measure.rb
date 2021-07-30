@@ -140,6 +140,11 @@ class DViewExport < OpenStudio::Measure::ReportingMeasure
                   freq == 'Zone Timestep' ||
                   freq == 'Timestep' ||
                   freq == 'Hourly'
+      
+      # For this application, exclude these variables
+      next if var_name == 'Surface Average Face Conduction Heat Transfer Energy' ||
+              var_name == 'Zone Air Relative Humidity' ||
+              var_name == 'Zone Air Temperature'
 
       col = []
 
