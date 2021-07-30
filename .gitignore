@@ -19,4 +19,5 @@ Gemfile.lock
 */*/coverage
 */*/run
 */*/in
+*/*/*.sql
 
