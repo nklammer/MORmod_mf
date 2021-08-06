@@ -302,6 +302,21 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
     end # ends zone loop
     # outside zone loop
 
+    #---------add wildcard for all 'Pump Electric Energy'-------------
+    output_meter = OpenStudio::Model::OutputMeter.new(model)
+    meter_name = "*:Pump Electric Energy"
+    output_meter.setName(meter_name)
+    output_meter.setReportingFrequency(reporting_frequency)
+    output_meter.setMeterFileOnly(false)
+
+    #---------add wildcard for all 'Exterior Lights Electric Energy'-------------
+    output_meter = OpenStudio::Model::OutputMeter.new(model)
+    meter_name = "*:Exterior Lights Electric Energy"
+    output_meter.setName(meter_name)
+    output_meter.setReportingFrequency(reporting_frequency)
+    output_meter.setMeterFileOnly(false)
+    
+
     # reporting final condition
     runner.registerFinalCondition("Added #{zone_count} meter objects.")
     meters = model.getOutputMeters
