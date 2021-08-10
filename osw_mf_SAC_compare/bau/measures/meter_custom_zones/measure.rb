@@ -178,8 +178,8 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
 
     coil_clg_names = coils_clg.map { |coil| coil.name.get.to_s }
     coil_htg_names = coils_htg.map { |coil| coil.name.get.to_s }
-    runner.registerInfo("The cooling coil names are #{coil_clg_names}")
-    runner.registerInfo("The heating coil names are #{coil_htg_names}")
+    runner.registerInfo("There are #{coil_clg_names.size} distinct cooling coils in the model of types 'DXSingleSpeed', 'DXMultiSpeed', 'DXTwoSpeed', and 'DXVariableSpeed'.\n")
+    runner.registerInfo("There are #{coil_htg_names.size} distinct heating coils in the model of types 'DXSingleSpeed', 'DXMultiSpeed', and 'DXVariableSpeed'.\n")
 
     # how to correlate the zone name with the dhw object name?
     # optional objects must be called with #get after checking #empty?
@@ -187,9 +187,12 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
     zones.each do |zone|
       # validate zone w/o dhw
       zone_count += 1
+
+
+
       # only condiitoned zones
       if not zone.airLoopHVAC.empty? # TRUE for conditioned zones
-        runner.registerInfo("Zone '#{zone.name}' has an associated AirLoopHVAC '#{zone.airLoopHVAC.get.name}'.")
+        runner.registerInfo("In addition to space loads, zone '#{zone.name}' is conditioned with an AirLoopHVAC '#{zone.airLoopHVAC.get.name}'.")
 
         # instantiate custom meter
         meter_custom_name = "Mtr#{zone_count} - #{zone.name} Electricity"
@@ -198,10 +201,10 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
         meter_custom.setName(meter_custom_name)
         meter_custom.setFuelType(fuel_type)
         # Electricity:Zone:ZONE_KEY meter
-        key_name = (zone_mtd[:elec][:key]).gsub(/ZONE_KEY/, "#{zone.name}")
-        var_name = zone_mtd[:elec][:var]
+        key_name = (zone_mtd[:elec][:key]).gsub(/ZONE_KEY/, "#{zone.name}") # 0_BDRM_1_2
+        var_name = zone_mtd[:elec][:var] # Electricity:Zone
         meter_custom.addKeyVarGroup(key_name, var_name)
-        runner.registerInfo("#{key_name}:#{var_name} was added under #{meter_custom_name}.")
+        runner.registerInfo("#{var_name}:#{key_name} was added under #{meter_custom_name}.") # Electricity:Zone:0_BDRM_1_2
 
         # array of relevant hash symbols; method Hash.select
         # just remember to include two dummy variables for block instead of one
@@ -220,15 +223,12 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
         sub_hash = zone_mtd.select { |k,v| coil_keys.include?(k) }
         sub_hash.each do |k,v|
           key_name = v[:key]
-          runner.registerInfo("The `v[:key]` is #{v[:key]}.")
           new_key_name = coil_clg_names.grep(Regexp.new(zone.name.to_s))[0]
-          runner.registerInfo("The result of `coil_clg_names.grep(Regexp.new(zone.name.to_s))[0]` is #{coil_clg_names.grep(Regexp.new(zone.name.to_s))[0]}")
           key_name = key_name.gsub(/CLG_COIL_NAME/, new_key_name) # convert to str from one element array # somehow this is not working
-          runner.registerInfo("The `key_name` variable was changed to `#{key_name}`.") # good here
           key_name = key_name.gsub(/HTG_COIL_NAME/, coil_htg_names.grep(Regexp.new(zone.name.to_s))[0]) # alt 2 heating coil # could it be this line is resetting the var 'key_name'
           var_name = v[:var] # good
-          meter_custom.addKeyVarGroup(key_name, var_name) # bad here
-          runner.registerInfo("#{key_name}:#{var_name} was added under #{meter_custom_name}.") # bad here for some reason
+          meter_custom.addKeyVarGroup(key_name, var_name)
+          runner.registerInfo("#{key_name}:#{var_name} was added under #{meter_custom_name}.")
         end
       
         # only zones with DHW
@@ -301,6 +301,35 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
       # still inside zone loop
     end # ends zone loop
     # outside zone loop
+
+    #---------add 'Pump Electric Energy'-------------
+    output_meter = OpenStudio::Model::OutputMeter.new(model)
+    meter_name = "Pumps:Electricity"
+    output_meter.setName(meter_name)
+    output_meter.setReportingFrequency(reporting_frequency)
+    output_meter.setMeterFileOnly(false)
+
+    #---------add 'Exterior Lights Electric Energy'-------------
+    output_meter = OpenStudio::Model::OutputMeter.new(model)
+    meter_name = "ExteriorLights:Electricity"
+    output_meter.setName(meter_name)
+    output_meter.setReportingFrequency(reporting_frequency)
+    output_meter.setMeterFileOnly(false)
+
+    #---------add 'Interior Lights Electric Energy'-------------
+    output_meter = OpenStudio::Model::OutputMeter.new(model)
+    meter_name = "InteriorLights:Electricity"
+    output_meter.setName(meter_name)
+    output_meter.setReportingFrequency(reporting_frequency)
+    output_meter.setMeterFileOnly(false)
+    
+    #---------add 'Fans:Electricity'-------------
+    output_meter = OpenStudio::Model::OutputMeter.new(model)
+    meter_name = "Fans:Electricity"
+    output_meter.setName(meter_name)
+    output_meter.setReportingFrequency(reporting_frequency)
+    output_meter.setMeterFileOnly(false)    
+    
 
     # reporting final condition
     runner.registerFinalCondition("Added #{zone_count} meter objects.")
