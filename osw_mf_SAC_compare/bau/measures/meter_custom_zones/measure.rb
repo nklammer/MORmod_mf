@@ -1,7 +1,7 @@
 require 'openstudio'
 
 # start the measure
-class MeterCustom < OpenStudio::Measure::ModelMeasure
+class MeterCustomByZones < OpenStudio::Measure::ModelMeasure
 
   # human readable name
   def name
@@ -311,7 +311,7 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
 
     return true
   end # ends run method
-end
+end # ends the class def
 
 # register the measure to be used by the application
-MeterCustom.new.registerWithApplication
+MeterCustomByZones.new.registerWithApplication

@@ -455,23 +455,10 @@
 	     },
 	     "measure_dir_name": "AddMeter"
 	   },
-	   {
-	     "arguments": {
-	       "__SKIP__": true,
-	       "custom_meter_name": "ResFloors_Lights_Hourly",
-	       "fuel_type": "Electricity",
-          "file_path": "C:/Users/nokla/Documents/GitHub/MORmod_mf/osw_multifamily_SAC/ze_multifamily/measures/meter_custom/tests/lights_res_only_hourly.csv",
-          "add_output_meter": true,
-          "reporting_frequency": "timestep"
-	     },
-	     "description": "This measure creates a Custom Meter to combine output variables and meters from a user-defined .csv file. This is helpful for combining energy use by floor, by space type, or for specific zones.",
-        "measure_dir_name": "meter_custom"
-	   },
       {
          "arguments": {
            "__SKIP__": false,
-           "fuel_type": "Electricity",
-           "add_output_meter": true,
+           "fuel_type": "Generic",
            "reporting_frequency": "timestep"
          },
          "description": "Virtual submeters on each apartment unit.",
@@ -495,7 +482,7 @@
       },
 	    {
 	      "arguments": {
-	        "__SKIP__": false
+	        "__SKIP__": true
 	      },
 	      "measure_dir_name": "energy_use_by_standards_noPAT"
 	    },

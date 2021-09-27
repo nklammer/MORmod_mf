@@ -129,7 +129,7 @@ class DViewExport < OpenStudio::Measure::ReportingMeasure
     kvs.each_with_index do |kv, i|
       valid << [freqs[i], vars[i], kvs[i], unitss[i]]
     end
-    runner.registerInitialCondition("Found #{valid.size} timeseries outputs in the SQL file.")    
+    runner.registerInitialCondition("Found #{valid.size} timeseries outputs.")    
     
     # Create an array of columns, one for each series
     cols = []
@@ -384,7 +384,7 @@ class DViewExport < OpenStudio::Measure::ReportingMeasure
     # Transpose the columns to rows
     longest_series_length = cols[0].size
     max_length_array = Array.new(longest_series_length + 3) # Make an array equal to the longest possible array
-    runner.registerInfo("#{cols.size} series remain after looping and filtering each variable.")
+    runner.registerInfo("#{cols.size} series were found")
     runner.registerInfo("longest series is #{longest_series_length.size}")
     rows = max_length_array.zip(*cols[0..-1])
     puts rows[0]
