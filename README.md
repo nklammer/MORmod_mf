@@ -6,7 +6,7 @@ This work was inspired by and heavily borrows from previous work done for the pu
 # VERSIONS
 * Ruby 2.5.5p157
 * OpenStudio 3.0.1
-* EnergyPlus 9.3.0
+  * EnergyPlus 9.3.0
 * Git Bash for Windows (a git-enabled shell) 3.2.57
 * approximately resstock-2.2.0
 
