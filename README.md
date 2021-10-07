@@ -4,11 +4,12 @@ This repository contains resources and documentation for Noah Klammer's 2021 MS 
 This work was inspired by and heavily borrows from previous work done for the publication of the Zero Energy Design Guide for Multifamily buildings. A [related publication](https://www.nrel.gov/docs/fy20osti/77013.pdf) detailing the technical work is available for free.
 
 # VERSIONS
-* Ruby 2.5.5p157
-* OpenStudio 3.0.1
-  * EnergyPlus 9.3.0
-* Git Bash for Windows (a git-enabled shell) 3.2.57
-* approximately resstock-2.2.0
+* Ruby 2.5.5p157 ([download](https://rubyinstaller.org/downloads/archives/))
+* OpenStudio 3.0.1 ([download](https://github.com/NREL/OpenStudio/releases/tag/v3.0.1))
+  * EnergyPlus 9.3.0 (included in the above)
+  * approximately resstock-2.2.0 ([download](https://github.com/NREL/resstock/releases/tag/v2.2.0))
+* Git Bash for Windows (a git-enabled shell) v2.30.0(2) ([download](https://github.com/git-for-windows/git/releases/tag/v2.30.0-rc2))
+
 
 # GEMS
 This project counts on many local changes to published packages (or in Ruby parlance "gems"). For that reason it is suggested to rely on local resources inside this repository instead of external public gems.
