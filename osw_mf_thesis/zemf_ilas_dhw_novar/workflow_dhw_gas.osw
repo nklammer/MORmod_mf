@@ -8,7 +8,7 @@
    "hash" : "40DFFF5D",
    "measure_paths" : 
    [
-      "../../../measures"
+      "../measures"
    ],
    "seed_file" : "../seed_multifamily.osm",
    "steps" : 
