@@ -16,7 +16,7 @@
       "../../../.bundle/install/ruby/2.5.0/bundler/gems/unmet_hours/lib/measures",
       "../../../measures"
    ],
-   "seed_file" : "../ze_multifamily.osm",
+   "seed_file" : "../seed_multifamily.osm",
    "steps" : 
    [
       {

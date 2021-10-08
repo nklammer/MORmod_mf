@@ -8,3 +8,33 @@ There are four cases for comparison.
 
 # CLUSTER VARIABLES
 The variable chosen for clustering is the idealized cooling load (sensible and latent) from the ZoneHVAC:IdealLoadsAirSystem objects, `Zone Ideal Loads Zone Total Cooling Energy`.
+
+## What's in the `seed_multifamily.osm` file?
+The file `seed_multifamily.osm` is a stub file that contains only the basic metadata required for the OpenStudio workflow utility to affect changes to the model object as it articulates and generates model features. This inlcludes:
+
+* OpenStudio Version Number
+  * for checking compatibility
+* The placeholder OS:Site object that situates the model in a real Earth location.
+* The YearDescription that says what day of the week the year starts on
+  * the actual calendar year number does not matter
+* Placeholder climate zone information
+* The OS:Building name
+* The system sizing safety factors for heating and cooling equipment sizing
+* The shadow calculation method
+* The heat balance algorithm method
+* The run period (full year, one week, one month, etc.)
+* Stubs of space types
+  * `commercial` from 90.1-2013 "Retail" from "Retail"
+  * `elevator` from 90.1-2013 "ElevatorCore" from "SmallHotel"
+  * `stair` from 90.1-2013 "Stair" from "SmallHotel"
+  * `coffee` from 90.1-2013 "Dining" from "QuickServiceRestaurant"
+  * `mail` from 90.1-2013 "Storage" from "SmallHotel"
+  * `community` from 90.1-2013 "Meeting" from "SmallHotel"
+  * `retail` from 90.1-2013 "Core_Retail" from "Retail"
+  * `garbage` from 90.1-2013 "Storage" from "smallHotel"
+  * `gym` from 90.1-2013 "Exercise" from "SmallHotel"
+  * `office` from 90.1-2013 "Office" from "MidriseApartment"
+  * `lobby` from 90.1-2013 "Entry" from "Retail"
+  * `bathroom` from 90.1-2013 "PublicRestroom" from "SmallHotel"
+  * `corridor` from 90.1-2013 "Corridor" from "MidriseApartment"
+  
