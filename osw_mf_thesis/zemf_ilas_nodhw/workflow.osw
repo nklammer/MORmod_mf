@@ -451,7 +451,6 @@
          "arguments": {
            "__SKIP__": true,
            "fuel_type": "Electricity",
-           "add_output_meter": true,
            "reporting_frequency": "timestep"
          },
          "description": "This is my custom meter with all zones.",
