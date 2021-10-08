@@ -133,13 +133,12 @@ class ResidentialHotWaterFixtures < OpenStudio::Measure::ModelMeasure
     tot_b_gpd = 0
     msgs = []
 
-    # set the d_sh var before looping
-    d_sh = d_sh
-
+    # set the d_sh_idx var before looping
+    d_sh_idx = 0
 
     units.each_with_index do |unit, unit_index|
-      # increment d_sh "day shift" for shifting to each unit_index
-      runner.registerInfo("The `d_sh` variable for this loop is at #{d_sh}")
+      # increment d_sh_idx "day shift index" by increment of "d_sh" for shifting to each unit_index
+      runner.registerInfo("The `d_sh_idx` variable for this loop is at #{d_sh_idx}")
 
       # Get unit beds/baths
       nbeds, nbaths = Geometry.get_unit_beds_baths(model, unit, runner)
@@ -212,10 +211,10 @@ class ResidentialHotWaterFixtures < OpenStudio::Measure::ModelMeasure
       # Showers
       if sh_gpd > 0
 
-        runner.registerInfo(" The shower day shift for this loop is #{d_sh}") #remove
+        runner.registerInfo(" The shower day shift for this loop is #{d_sh_idx}") #remove
 
         # Create schedule
-        sch_sh = HotWaterSchedule.new(model, runner, Constants.ObjectNameShower + " schedule", Constants.ObjectNameShower + " temperature schedule", nbeds, d_sh, "Shower", mixed_use_t, create_sch_object = true, schedule_type_limits_name = Constants.ScheduleTypeLimitsFraction) # remove or look over
+        sch_sh = HotWaterSchedule.new(model, runner, Constants.ObjectNameShower + " schedule", Constants.ObjectNameShower + " temperature schedule", nbeds, d_sh_idx, "Shower", mixed_use_t, create_sch_object = true, schedule_type_limits_name = Constants.ScheduleTypeLimitsFraction) # remove or look over
         if not sch_sh.validated?
           return false
         end
@@ -274,7 +273,7 @@ class ResidentialHotWaterFixtures < OpenStudio::Measure::ModelMeasure
       if s_gpd > 0
 
         # Create schedule
-        sch_s = HotWaterSchedule.new(model, runner, Constants.ObjectNameSink + " schedule", Constants.ObjectNameSink + " temperature schedule", nbeds, d_sh, "Sink", mixed_use_t, create_sch_object = true, schedule_type_limits_name = Constants.ScheduleTypeLimitsFraction)
+        sch_s = HotWaterSchedule.new(model, runner, Constants.ObjectNameSink + " schedule", Constants.ObjectNameSink + " temperature schedule", nbeds, d_sh_idx, "Sink", mixed_use_t, create_sch_object = true, schedule_type_limits_name = Constants.ScheduleTypeLimitsFraction)
         if not sch_s.validated?
           return false
         end
@@ -313,7 +312,7 @@ class ResidentialHotWaterFixtures < OpenStudio::Measure::ModelMeasure
       if b_gpd > 0
 
         # Create schedule
-        sch_b = HotWaterSchedule.new(model, runner, Constants.ObjectNameBath + " schedule", Constants.ObjectNameBath + " temperature schedule", nbeds, d_sh, "Bath", mixed_use_t, create_sch_object = true, schedule_type_limits_name = Constants.ScheduleTypeLimitsFraction)
+        sch_b = HotWaterSchedule.new(model, runner, Constants.ObjectNameBath + " schedule", Constants.ObjectNameBath + " temperature schedule", nbeds, d_sh_idx, "Bath", mixed_use_t, create_sch_object = true, schedule_type_limits_name = Constants.ScheduleTypeLimitsFraction)
         if not sch_b.validated?
           return false
         end
@@ -352,8 +351,8 @@ class ResidentialHotWaterFixtures < OpenStudio::Measure::ModelMeasure
         msgs << "Shower, sinks, and bath fixtures drawing #{sh_gpd.round(1)}, #{s_gpd.round(1)}, and #{b_gpd.round(1)} gal/day respectively have been added to plant loop '#{plant_loop.name}' and assigned to space '#{space.name.to_s}'."
       end
 
-      # increment days shift by 7 for each building unit
-      d_sh += 0
+      # increment days shift by `d_sh` for each building unit
+      d_sh_idx += d_sh
 
     end
 
