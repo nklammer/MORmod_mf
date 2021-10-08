@@ -49,7 +49,7 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
 
     # file path to csv detailing what is on the meter
     file_path = OpenStudio::Measure::OSArgument.makeStringArgument('file_path', true)
-    file_path.setDisplayName('Enter the path to the file:')
+    file_path.setDisplayName('Enter the project directory path. The file is assumed to be contained in the /measures/meter_custom/test folder.')
     file_path.setDefaultValue("'C:\\MyProject\\custom_meter_assignment.csv'")
     args << file_path
 
@@ -66,7 +66,7 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
     reporting_frequency_chs << 'monthly'
     reporting_frequency = OpenStudio::Measure::OSArgument::makeChoiceArgument('reporting_frequency', reporting_frequency_chs, true)
     reporting_frequency.setDisplayName('Select reporting frequency for Output:Meter object:')
-    reporting_frequency.setDefaultValue('hourly')
+    reporting_frequency.setDefaultValue('timestep')
     args << reporting_frequency
 
     return args
@@ -85,6 +85,8 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
     custom_meter_name = runner.getStringArgumentValue('custom_meter_name', user_arguments)
     fuel_type = runner.getStringArgumentValue('fuel_type', user_arguments)
     file_path = runner.getStringArgumentValue('file_path', user_arguments)
+    file_path = File.join(File.dirname(__FILE__), file_path)
+    runner.registerInfo("The file path is #{file_path}.")
     add_output_meter = runner.getBoolArgumentValue('add_output_meter', user_arguments)
     reporting_frequency = runner.getStringArgumentValue('reporting_frequency', user_arguments)
 
@@ -117,6 +119,7 @@ class MeterCustom < OpenStudio::Measure::ModelMeasure
     meter_custom = OpenStudio::Model::MeterCustom.new(model)
     meter_custom.setName(custom_meter_name)
     meter_custom.setFuelType(fuel_type)
+    # indexed with column symbols [:key_name] and [:output_variable_or_meter_name]
     variables.each do |var|
       meter_custom.addKeyVarGroup(var[:key_name], var[:output_variable_or_meter_name])
     end
