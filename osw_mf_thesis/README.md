@@ -1,4 +1,4 @@
-# THREE CASES
+# CASES
 There are four cases for comparison.
 
 * `zemf_ilas_dhw_novar` is the full model with Ideal Load Air System objects to represent idealized HVAC loads. The variable `d_sh` does not change from unit to unit in the `ResidentialHotWaterFixtures` measure `d_sh += 0`. This means that there is no temporal variance in internal loads between like units.
