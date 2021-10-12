@@ -94,7 +94,7 @@ class EnableIdealAirLoadsForAllZones < OpenStudio::Measure::ModelMeasure
           ideal_loads = OpenStudio::Model::ZoneHVACIdealLoadsAirSystem.new(model)
           ideal_loads.addToThermalZone(zone) # ZoneHVACComponent class
           # Set the ideal loads properties
-          ideal_loads.setName("#{zone.name} ILAS") # need unique name to fix namespace issue where OS was incrementing last digit of zone name
+          ideal_loads.setName("#{zone.name} Ideal Loads Air System") # need unique name to fix namespace issue where OS was incrementing last digit of zone name
           # ideal_loads.setHeatingLimit(40.0)
           # ideal_loads.setMinimumCoolingSupplyAirTemperature(0.0)
         end
