@@ -69,7 +69,7 @@ and test it true with:
 `-e "require 'openstudio-standards'" -e "puts OpenstudioStandards::VERSION"`
 
 ### workflow sub-cases
-* `workflow_dhw_gas.osw` has gas-fired 50-gallon water heaters in-unit
+* `workflow_dhw_gas.osw` has gas-fired 50-gallon water heaters in-unit. Has "Minisplit Heat Pumps with ERVs" argument to "zero_energy_multifamily". Has "EnableIdealAirLoadsForAllZones" skipped `true`.
 * `workflow_dhw_gas_ilas.osw`
 * `workflow_dhw_gas_ilas_better.osw`
 
