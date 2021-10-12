@@ -945,7 +945,8 @@ require 'openstudio-standards'
       # add output variable
       if args['Ideal Air Loads and Output Variable']
         ideal_loads_air_system_variables = [
-          'Zone Ideal Loads Zone Total Cooling Energy'
+          'Zone Ideal Loads Zone Total Cooling Energy',
+          'Zone Ideal Loads Zone Total Heating Energy'
         ]
 
         output_vars_added = 0
