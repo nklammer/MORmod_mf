@@ -67,3 +67,9 @@ I put the gem `openstudio-standards-0.2.13` in the my C: drive. I then run on th
 `openstudio --verbose -I C:/custom_os_measures/openstudio-standards-0.2.13/lib`
 and test it true with:
 `-e "require 'openstudio-standards'" -e "puts OpenstudioStandards::VERSION"`
+
+### workflow sub-cases
+* `workflow_dhw_gas.osw` has gas-fired 50-gallon water heaters in-unit
+* `workflow_dhw_gas_ilas.osw`
+* `workflow_dhw_gas_ilas_better.osw`
+
