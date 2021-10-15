@@ -42,4 +42,4 @@ The file `seed_multifamily.osm` is a stub file that contains only the basic meta
 * original
 * "forked" is the original measure.rb but integrates two addt'l actions. 1) The required `openstudio-standards` module is leveraged to make the method call `standard.model_add_hvac_system(model, 'Ideal Air Loads', nil, nil, nil, zones)` that uses the latest methods to make a valid Ideal Loads Air System in the model. 2) if arg `add_output_var` is set `true` then a new output variable is created for the  `ideal_loads_air_system_variables` array. The array contains the strings `"Zone Ideal Loads Zone Total Cooling Energy"` and `"Zone Ideal Loads Zone Total Heating Energy"`.
 * "ILAS" is the "forked" version but with troubleshooting reporting to the `runner`. The `Model::OutputVariable.new` functionality has moved from `if 'add_output_var'` is `true` to `if 'hvac_system_type'` is `'Ideal Air Loads and Output Variable'` (an argument mapping change). Two, instead of one, final conditions are reported.
-* "ILAS better" is...Ideal Loads Air System
+* "ILAS better" is the same as "ILAS" above but with Standard '90.1-2013' instead of 'ZE AEDG Multifamily'.
