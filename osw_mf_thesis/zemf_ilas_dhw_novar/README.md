@@ -68,7 +68,7 @@ I put the gem `openstudio-standards-0.2.13` in the my C: drive. I then run on th
 and test it true with:
 `-e "require 'openstudio-standards'" -e "puts OpenstudioStandards::VERSION"`
 
-`openstudio --verbose --include c/Ruby25-x64/lib/ruby/gems/2.5.0/gems`
+`openstudio --verbose --include c/Ruby25-x64/lib/ruby/gems/2.5.0/gems/openstudio-standards-0.2.13/lib`
 
 ### workflow sub-cases
 * `workflow_dhw_gas.osw` has gas-fired 50-gallon water heaters in-unit. Has "Minisplit Heat Pumps with ERVs" argument to "zero_energy_multifamily". Has "EnableIdealAirLoadsForAllZones" skipped `true`. "Enable...Zones" was authored under older versions and may no longer be functional.
