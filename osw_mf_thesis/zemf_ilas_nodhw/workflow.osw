@@ -449,6 +449,22 @@
 	   },
       {
          "arguments": {
+           "__SKIP__": false,
+           "meter_name": "Zone Ideal Loads Zone Total Cooling Energy",
+           "reporting_frequency": "timestep"
+         },
+         "measure_dir_name": "AddMeter"
+       },
+       {
+         "arguments": {
+           "__SKIP__": false,
+           "meter_name": "Zone Ideal Loads Zone Total Heating Energy",
+           "reporting_frequency": "timestep"
+         },
+         "measure_dir_name": "AddMeter"
+       },  
+      {
+         "arguments": {
            "__SKIP__": true,
            "fuel_type": "Electricity",
            "reporting_frequency": "timestep"
@@ -459,7 +475,7 @@
       {
         "arguments" : 
         {
-           "zone_condition_section" : true
+           "zone_condition_section" : false
         },
         "measure_dir_name" : "openstudio_results",
         "name" : "openstudio_results"
