@@ -3,8 +3,8 @@
   <schema_version>3.0</schema_version>
   <name>zero_energy_multifamily</name>
   <uid>5d4cf87a-8105-44cd-b47b-d5638fecec9c</uid>
-  <version_id>902ecd39-1679-4f2e-9951-067319db3972</version_id>
-  <version_modified>20200828T004217Z</version_modified>
+  <version_id>7c91dd93-c000-4632-a956-7845d2ff2255</version_id>
+  <version_modified>20211015T211436Z</version_modified>
   <xml_checksum>D81BB109</xml_checksum>
   <class_name>ZeroEnergyMultifamily</class_name>
   <display_name>Zero Energy Multifamily</display_name>
@@ -316,6 +316,10 @@
           <value>Water Source Heat Pumps with Ground Source Heat Pump with ERVs</value>
           <display_name>Water Source Heat Pumps with Ground Source Heat Pump with ERVs</display_name>
         </choice>
+        <choice>
+          <value>Ideal Air Loads</value>
+          <display_name>Ideal Air Loads</display_name>
+        </choice>
       </choices>
     </argument>
   </arguments>
@@ -444,6 +448,12 @@
       <checksum>0594932E</checksum>
     </file>
     <file>
+      <filename>zero_energy_multifamily_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>38EC95C5</checksum>
+    </file>
+    <file>
       <version>
         <software_program>OpenStudio</software_program>
         <identifier>2.0.0</identifier>
@@ -452,13 +462,25 @@
       <filename>measure.rb</filename>
       <filetype>rb</filetype>
       <usage_type>script</usage_type>
-      <checksum>1CA50E54</checksum>
+      <checksum>D7A873E9</checksum>
     </file>
     <file>
-      <filename>zero_energy_multifamily_test.rb</filename>
-      <filetype>rb</filetype>
+      <filename>in_dhw_gas.osm</filename>
+      <filetype>osm</filetype>
       <usage_type>test</usage_type>
-      <checksum>38EC95C5</checksum>
+      <checksum>5897F579</checksum>
+    </file>
+    <file>
+      <filename>out.osw</filename>
+      <filetype>osw</filetype>
+      <usage_type>test</usage_type>
+      <checksum>E9D5B94B</checksum>
+    </file>
+    <file>
+      <filename>workflow_dhw_gas.osw</filename>
+      <filetype>osw</filetype>
+      <usage_type>test</usage_type>
+      <checksum>D02EDC74</checksum>
     </file>
   </files>
 </measure>

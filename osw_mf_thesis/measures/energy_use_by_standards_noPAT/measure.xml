@@ -3,8 +3,8 @@
   <schema_version>3.0</schema_version>
   <name>energy_use_by_standards_building_type</name>
   <uid>d12f99b3-f956-427d-8ae8-e851a377b86b</uid>
-  <version_id>37608232-76a7-45cb-a938-5a26556fb8d1</version_id>
-  <version_modified>20200818T225602Z</version_modified>
+  <version_id>04465175-8372-481c-8ec7-1e18288fbbac</version_id>
+  <version_modified>20211015T211432Z</version_modified>
   <xml_checksum>F44A8258</xml_checksum>
   <class_name>EnergyUseByStandardsBuildingType</class_name>
   <display_name>Energy Use By Standards Building Type</display_name>
@@ -81,17 +81,6 @@
       <checksum>3A15D82B</checksum>
     </file>
     <file>
-      <version>
-        <software_program>OpenStudio</software_program>
-        <identifier>2.0.0</identifier>
-        <min_compatible>2.0.0</min_compatible>
-      </version>
-      <filename>measure.rb</filename>
-      <filetype>rb</filetype>
-      <usage_type>script</usage_type>
-      <checksum>8B98A976</checksum>
-    </file>
-    <file>
       <filename>README.md</filename>
       <filetype>md</filetype>
       <usage_type>readme</usage_type>
@@ -102,6 +91,17 @@
       <filetype>rb</filetype>
       <usage_type>test</usage_type>
       <checksum>B609A5F2</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>2.0.0</identifier>
+        <min_compatible>2.0.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>4512CC22</checksum>
     </file>
   </files>
 </measure>

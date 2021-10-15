@@ -3,8 +3,8 @@
   <schema_version>3.0</schema_version>
   <name>d_view_export</name>
   <uid>53b1f2c0-8a65-4b0a-820e-037186ec36d3</uid>
-  <version_id>cf901557-aeb4-4c2c-81e8-abdc4a115610</version_id>
-  <version_modified>20200715T043232Z</version_modified>
+  <version_id>848e46f4-e3b0-48fc-94cd-f523bd60db12</version_id>
+  <version_modified>20211015T211431Z</version_modified>
   <xml_checksum>DA93CCFE</xml_checksum>
   <class_name>DViewExport</class_name>
   <display_name>DView Export</display_name>
@@ -119,7 +119,7 @@
       <filename>measure.rb</filename>
       <filetype>rb</filetype>
       <usage_type>script</usage_type>
-      <checksum>1F301644</checksum>
+      <checksum>7DE36C69</checksum>
     </file>
   </files>
 </measure>

@@ -3,8 +3,8 @@
   <schema_version>3.0</schema_version>
   <name>multifamily_central_waste_water_heat_pump</name>
   <uid>42e0df75-b1b0-4f52-9c3b-3895dbe5ed0e</uid>
-  <version_id>d401b2f8-4040-45e0-8c10-2e929052b11a</version_id>
-  <version_modified>20201117T085830Z</version_modified>
+  <version_id>367b2c29-b6f4-43dd-8238-1123a66e19c1</version_id>
+  <version_modified>20211015T211434Z</version_modified>
   <xml_checksum>9882CBDB</xml_checksum>
   <class_name>MultifamilyCentralWasteWaterHeatPump</class_name>
   <display_name>Multifamily Central Waste Water Heat Pump</display_name>
@@ -93,16 +93,16 @@
       <checksum>EE565FCC</checksum>
     </file>
     <file>
-      <filename>MultifamilyCentralWasteWaterHeatPump_test.rb</filename>
-      <filetype>rb</filetype>
-      <usage_type>test</usage_type>
-      <checksum>712338EA</checksum>
-    </file>
-    <file>
       <filename>README.md</filename>
       <filetype>md</filetype>
       <usage_type>readme</usage_type>
       <checksum>F52D2CFE</checksum>
+    </file>
+    <file>
+      <filename>MultifamilyCentralWasteWaterHeatPump_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>60D41940</checksum>
     </file>
     <file>
       <version>
@@ -113,7 +113,7 @@
       <filename>measure.rb</filename>
       <filetype>rb</filetype>
       <usage_type>script</usage_type>
-      <checksum>859989C0</checksum>
+      <checksum>39594FAD</checksum>
     </file>
   </files>
 </measure>
