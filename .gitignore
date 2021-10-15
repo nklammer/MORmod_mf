@@ -1,4 +1,5 @@
 */*/*/run
+*/*/run
 */*/*/reports
 */*/*/out.osw
 */*/test
@@ -17,7 +18,10 @@ Gemfile.lock
 */*/run/*/report.json
 */*/reports/view_model_report.json
 */*/coverage
-*/*/run
 */*/in
 */*/*.sql
+*/*/in.idf
+*/*/*/in.idf
+*/*/in.osm
+*/*/*/in.osm
 
