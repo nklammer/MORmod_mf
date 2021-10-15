@@ -933,7 +933,7 @@ require 'openstudio-standards'
     end
 
     # report final condition of model
-    runner.registerFinalCondition("The building finished with #{model.getModelObjects.size} objects. #{output_vars_added} Output:Variable objects were added.")
+    runner.registerFinalCondition("The building finished with #{model.getModelObjects.size} objects.")
 
     # log messages to info messages
     log_messages_to_runner(runner, debug = false)
