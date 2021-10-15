@@ -323,20 +323,20 @@
             "add_space_type_loads" : true,
             "add_swh" : false,
             "add_thermostat" : true,
-            "hvac_system_type" : "Ideal Air Loads and Output Variable",
+            "hvac_system_type" : "Ideal Air Loads",
             "onsite_parking_fraction" : "0.0",
             "wall_roof_construction_template" : "ZE AEDG Multifamily Recommendations",
             "window_construction_template" : "ZE AEDG Multifamily Recommendations"
          },
-         "measure_dir_name" : "zero_energy_multifamily_ilas",
-         "name" : "zero_energy_multifamily_ilas"
+         "measure_dir_name" : "zero_energy_multifamily-forked",
+         "name" : "zero_energy_multifamily-forked"
       },
       {
          "arguments" : 
          {
             "__SKIP__" : true
          },
-         "description" : "This is my new measure, I don't think it has any arguments.",
+         "description" : "Turn on Ideal Air Loads for All Zones.",
          "measure_dir_name" : "EnableIdealAirLoadsForAllZones",
          "name" : "Turn on Ideal Air Loads"
       },

@@ -323,22 +323,13 @@
             "add_space_type_loads" : true,
             "add_swh" : false,
             "add_thermostat" : true,
-            "hvac_system_type" : "Minisplit Heat Pumps with ERVs",
+            "hvac_system_type" : "Ideal Air Loads",
             "onsite_parking_fraction" : "0.0",
             "wall_roof_construction_template" : "ZE AEDG Multifamily Recommendations",
             "window_construction_template" : "ZE AEDG Multifamily Recommendations"
          },
-         "measure_dir_name" : "zero_energy_multifamily",
-         "name" : "zero_energy_multifamily"
-      },
-      {
-         "arguments" : 
-         {
-            "__SKIP__" : true
-         },
-         "description" : "This is my new measure, I don't think it has any arguments.",
-         "measure_dir_name" : "EnableIdealAirLoadsForAllZones",
-         "name" : "Turn on Ideal Air Loads"
+         "measure_dir_name" : "zero_energy_multifamily-forked",
+         "name" : "zero_energy_multifamily-forked"
       },
       {
          "arguments" : 
