@@ -63,7 +63,7 @@ Always run OpenStudio with Git Bash command `openstudio --verbose run -w path/to
 # EnergyPlus Tips
 If a reporting variable requested in the `in.osm` and `in.idf` files is not a valid EnergyPlus request, the simulation will still run successfully and return `true`. Therefore, it is important that after the simulation has finished, to check the `eplusout.mtd` meta-parameter file and to check the `eplusout.err` messages.
 
-# Update log`
+# Update log
 
 * 10/12/21 - having trouble making sense of the exact method in `workflow.osm` and measures to output an `in.idf` file with Ideal Air Loads Systems. Ideal Air Loads System object became more complicated in circa 2011 release and the original BCL measure has since been replaced by the preferred method using OpenStudio Standards.
 
