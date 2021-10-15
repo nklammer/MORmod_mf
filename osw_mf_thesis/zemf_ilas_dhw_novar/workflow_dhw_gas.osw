@@ -450,6 +450,22 @@
 	     "measure_dir_name": "AddMeter"
 	   },
       {
+         "arguments": {
+           "__SKIP__": false,
+           "meter_name": "Zone Ideal Loads Zone Total Cooling Energy",
+           "reporting_frequency": "timestep"
+         },
+         "measure_dir_name": "AddMeter"
+       },
+       {
+         "arguments": {
+           "__SKIP__": false,
+           "meter_name": "Zone Ideal Loads Zone Total Heating Energy",
+           "reporting_frequency": "timestep"
+         },
+         "measure_dir_name": "AddMeter"
+       },  
+      {
         "arguments" : 
         {
            "zone_condition_section" : true
