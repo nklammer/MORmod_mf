@@ -345,7 +345,6 @@ require 'openstudio-standards'
     args['hvac_system_type'] = runner.getStringArgumentValue('hvac_system_type', user_arguments)
     #args['remove_objects'] = runner.getBoolArgumentValue('remove_objects', user_arguments)
     args['remove_objects'] = false
-    args['add_output_var'] = runner.getBoolArgumentValue('add_output_var', user_arguments)
 
     # validate fraction parking
     fraction = OsLib_HelperMethods.checkDoubleAndIntegerArguments(runner, user_arguments, 'min' => 0.0, 'max' => 1.0, 'min_eq_bool' => true, 'max_eq_bool' => true, 'arg_array' => ['onsite_parking_fraction'])
