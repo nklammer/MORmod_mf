@@ -450,19 +450,21 @@
       {
          "arguments": {
            "__SKIP__": false,
-           "meter_name": "Zone Ideal Loads Zone Total Cooling Energy",
-           "reporting_frequency": "timestep"
+           "variable_name" : "Zone Ideal Loads Zone Total Cooling Energy",
+           "reporting_frequency": "timestep",
+           "key_value" : "*"
          },
-         "measure_dir_name": "AddMeter"
+         "measure_dir_name": "AddOutputVariable"
        },
        {
          "arguments": {
            "__SKIP__": false,
-           "meter_name": "Zone Ideal Loads Zone Total Heating Energy",
-           "reporting_frequency": "timestep"
+           "variable_name" : "Zone Ideal Loads Zone Total Heating Energy",
+           "reporting_frequency": "timestep",
+           "key_value" : "*"
          },
-         "measure_dir_name": "AddMeter"
-       },  
+         "measure_dir_name": "AddOutputVariable"
+       },
       {
          "arguments": {
            "__SKIP__": true,
