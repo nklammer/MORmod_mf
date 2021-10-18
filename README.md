@@ -69,4 +69,4 @@ If a reporting variable requested in the `in.osm` and `in.idf` files is not a va
 
 * 10/15/21 - could not get gas-fired water heaters to run successfully for Ideal Loads case. Override of embedded `openstudio-standards-0.2.11` to `...0.2.13` did not work.
  
-* 10/17/21 - trying to use method `require` in measure `zero_energy_multifamily` to point to absolute directory path of `openstudio-standards-0.2.13`
+* 10/17/21 - Succeed in using method `require` in measure `zero_energy_multifamily` to point to absolute directory path of `openstudio-standards-0.2.13`. 
