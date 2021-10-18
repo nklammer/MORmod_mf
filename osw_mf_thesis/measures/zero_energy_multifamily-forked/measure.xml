@@ -3,8 +3,8 @@
   <schema_version>3.0</schema_version>
   <name>zero_energy_multifamily</name>
   <uid>5d4cf87a-8105-44cd-b47b-d5638fecec9c</uid>
-  <version_id>7c91dd93-c000-4632-a956-7845d2ff2255</version_id>
-  <version_modified>20211015T211436Z</version_modified>
+  <version_id>62014cf1-3801-48ef-bb11-6f6778d60930</version_id>
+  <version_modified>20211018T173721Z</version_modified>
   <xml_checksum>D81BB109</xml_checksum>
   <class_name>ZeroEnergyMultifamily</class_name>
   <display_name>Zero Energy Multifamily</display_name>
@@ -454,6 +454,18 @@
       <checksum>38EC95C5</checksum>
     </file>
     <file>
+      <filename>in_dhw_gas.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>5897F579</checksum>
+    </file>
+    <file>
+      <filename>workflow_dhw_gas.osw</filename>
+      <filetype>osw</filetype>
+      <usage_type>test</usage_type>
+      <checksum>D02EDC74</checksum>
+    </file>
+    <file>
       <version>
         <software_program>OpenStudio</software_program>
         <identifier>2.0.0</identifier>
@@ -462,25 +474,7 @@
       <filename>measure.rb</filename>
       <filetype>rb</filetype>
       <usage_type>script</usage_type>
-      <checksum>D7A873E9</checksum>
-    </file>
-    <file>
-      <filename>in_dhw_gas.osm</filename>
-      <filetype>osm</filetype>
-      <usage_type>test</usage_type>
-      <checksum>5897F579</checksum>
-    </file>
-    <file>
-      <filename>out.osw</filename>
-      <filetype>osw</filetype>
-      <usage_type>test</usage_type>
-      <checksum>E9D5B94B</checksum>
-    </file>
-    <file>
-      <filename>workflow_dhw_gas.osw</filename>
-      <filetype>osw</filetype>
-      <usage_type>test</usage_type>
-      <checksum>D02EDC74</checksum>
+      <checksum>FEE9E34F</checksum>
     </file>
   </files>
 </measure>

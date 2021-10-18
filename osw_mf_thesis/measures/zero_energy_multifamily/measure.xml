@@ -3,8 +3,8 @@
   <schema_version>3.0</schema_version>
   <name>zero_energy_multifamily</name>
   <uid>5d4cf87a-8105-44cd-b47b-d5638fecec9c</uid>
-  <version_id>902ecd39-1679-4f2e-9951-067319db3972</version_id>
-  <version_modified>20200828T004217Z</version_modified>
+  <version_id>730db263-a967-422a-b9d1-41f161525dde</version_id>
+  <version_modified>20211018T173719Z</version_modified>
   <xml_checksum>D81BB109</xml_checksum>
   <class_name>ZeroEnergyMultifamily</class_name>
   <display_name>Zero Energy Multifamily</display_name>
@@ -16,6 +16,7 @@
       <display_name>Add Constructions to Model</display_name>
       <description>The Construction Set will be applied to the entire building</description>
       <type>Boolean</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>true</default_value>
@@ -29,12 +30,15 @@
           <display_name>false</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>wall_roof_construction_template</name>
       <display_name>Construction template for adding wall and roof constructions</display_name>
       <description>The constructions will be applied to the entire building</description>
       <type>Choice</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>ZE AEDG Multifamily Recommendations</default_value>
@@ -56,12 +60,15 @@
           <display_name>ZE AEDG Multifamily Recommendations</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>window_construction_template</name>
       <display_name>Construction template for adding window constructions</display_name>
       <description>The constructions will be applied to the entire building</description>
       <type>Choice</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>ZE AEDG Multifamily Recommendations</default_value>
@@ -83,12 +90,15 @@
           <display_name>ZE AEDG Multifamily Recommendations</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>add_space_type_loads</name>
       <display_name>Add Space Type Loads to Model</display_name>
       <description>Populate existing space types in model with internal loads.</description>
       <type>Boolean</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>true</default_value>
@@ -102,12 +112,15 @@
           <display_name>false</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>add_elevators</name>
       <display_name>Add Elevators to Model</display_name>
       <description>Elevators will be add directly to space in model vs. being applied to a space type.</description>
       <type>Boolean</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>false</default_value>
@@ -121,21 +134,27 @@
           <display_name>false</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>elev_spaces</name>
       <display_name>Elevator Spaces</display_name>
       <description>Comma separated names of spaces for elevator. Each space listed will have associated elevator loads.</description>
       <type>String</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>Elevator_1_4,Elevator_2_4</default_value>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>elevator_type</name>
       <display_name>Elevator Type</display_name>
       <description>This will impact loads, schedules, and fraction of heat lost.</description>
       <type>Choice</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>Traction</default_value>
@@ -149,12 +168,15 @@
           <display_name>Hydraulic</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>add_internal_mass</name>
       <display_name>Add Internal Mass to Model</display_name>
       <description>Adds internal mass to each space.</description>
       <type>Boolean</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>true</default_value>
@@ -168,12 +190,15 @@
           <display_name>false</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>add_exterior_lights</name>
       <display_name>Add Exterior Lights to Model</display_name>
       <description>Multiple exterior lights objects will be added for different classes of lighting such as parking and facade.</description>
       <type>Boolean</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>true</default_value>
@@ -187,21 +212,27 @@
           <display_name>false</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>onsite_parking_fraction</name>
       <display_name>Onsite Parking Fraction</display_name>
       <description>If set to 0 no exterior lighting for parking will be added</description>
       <type>Double</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>0</default_value>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>add_thermostat</name>
       <display_name>Add Thermostats</display_name>
       <description>Add Thermostat to model based on Space Type Standards information of spaces assigned to thermal zones.</description>
       <type>Boolean</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>true</default_value>
@@ -215,12 +246,15 @@
           <display_name>false</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>add_swh</name>
       <display_name>Add Service Water Heating to Model</display_name>
       <description>This will add both the supply and demand side of service water heating.</description>
       <type>Boolean</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>true</default_value>
@@ -234,12 +268,15 @@
           <display_name>false</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>swh_type</name>
       <display_name>Service Water Heating Source</display_name>
       <description>The primary source of heating used by SWH systems in the model.</description>
       <type>Choice</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>HeatPump</default_value>
@@ -249,11 +286,15 @@
           <display_name>HeatPump</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>add_hvac</name>
       <display_name>Add HVAC System to Model</display_name>
+      <description></description>
       <type>Boolean</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>true</default_value>
@@ -267,11 +308,15 @@
           <display_name>false</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
     <argument>
       <name>hvac_system_type</name>
       <display_name>HVAC System Type</display_name>
+      <description></description>
       <type>Choice</type>
+      <units></units>
       <required>true</required>
       <model_dependent>false</model_dependent>
       <default_value>Four-pipe Fan Coils with central air-source heat pump with DOAS</default_value>
@@ -317,6 +362,8 @@
           <display_name>Water Source Heat Pumps with Ground Source Heat Pump with ERVs</display_name>
         </choice>
       </choices>
+      <min_value></min_value>
+      <max_value></max_value>
     </argument>
   </arguments>
   <outputs />
@@ -432,16 +479,16 @@
       <checksum>C254B53F</checksum>
     </file>
     <file>
-      <filename>README.md</filename>
-      <filetype>md</filetype>
-      <usage_type>readme</usage_type>
-      <checksum>59252B39</checksum>
-    </file>
-    <file>
       <filename>ze_aedg_multifamily_parametric_construction_sets.osm</filename>
       <filetype>osm</filetype>
       <usage_type>resource</usage_type>
       <checksum>0594932E</checksum>
+    </file>
+    <file>
+      <filename>zero_energy_multifamily_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>38EC95C5</checksum>
     </file>
     <file>
       <version>
@@ -452,13 +499,14 @@
       <filename>measure.rb</filename>
       <filetype>rb</filetype>
       <usage_type>script</usage_type>
-      <checksum>1CA50E54</checksum>
+      <checksum>F4CD39CE</checksum>
     </file>
     <file>
-      <filename>zero_energy_multifamily_test.rb</filename>
-      <filetype>rb</filetype>
-      <usage_type>test</usage_type>
-      <checksum>38EC95C5</checksum>
+      <filename>README.md</filename>
+      <filetype>md</filetype>
+      <usage_type>readme</usage_type>
+      <checksum>0B68E96D</checksum>
     </file>
   </files>
 </measure>
+<error>cannot load such file -- parallel</error>
