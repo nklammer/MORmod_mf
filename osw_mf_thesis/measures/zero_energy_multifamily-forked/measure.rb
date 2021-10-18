@@ -39,7 +39,7 @@
 # start the measure
 class ZeroEnergyMultifamily < OpenStudio::Measure::ModelMeasure
 
-require 'openstudio-standards'
+require 'C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/openstudio-standards-0.2.13/lib/openstudio-standards.rb'
 
 # load OpenStudio measure libraries from openstudio-extension gem
   require 'openstudio-extension'
