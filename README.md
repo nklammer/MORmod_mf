@@ -18,10 +18,13 @@ Many of the Measures are clones or derivatives of residential energy modeling co
 ### [openstudio-standards gem](https://github.com/NREL/openstudio-standards)
 This workflow uses OpenStudio v3.0.1 which has `openstudio-standards-0.2.11` embedded. If one desires to access building performance standards ASHRAE `90.1-2016` or `90.1-2019`, a more recent `openstudio-standards-0.2.XX` will be required available from [rubygems.org](https://rubygems.org/gems/openstudio-standards).
 
+### [resstock gem](https://github.com/NREL/resstock)
+
+## Bug Fixes
 Due to a bug in OpenStudio Command Line Interface, the GEM_PATH path variable needs to be taken out of the environment before running.
 In Git Bash shell command for Windows `$ unset GEM_PATH` and check for presence with bash line `$ env | grep GEM`.
 
-### [resstock gem](https://github.com/NREL/resstock)
+There is a known issue with `openstudio-standards-0.2.11` gem which causes any model with water heaters that makes a call to the `Standard` class to fail. To fix this, in the command line `gem install openstudio-standards -v 0.2.13` to install the updated gem and check the installation location with command line `gem list -d`. In the measure `zero_energy_multifamily` the `require 'openstudio-standards'` line should be changed to `require 'C:/Absolute/path/to/openstudio-standards-0.2.13/lib/openstudio-standards.rb'` to override the faulty gem.
 
 # EMS
 ## Heat Pump Water Heater
