@@ -67,3 +67,6 @@ If a reporting variable requested in the `in.osm` and `in.idf` files is not a va
 
 * 10/12/21 - having trouble making sense of the exact method in `workflow.osm` and measures to output an `in.idf` file with Ideal Air Loads Systems. Ideal Air Loads System object became more complicated in circa 2011 release and the original BCL measure has since been replaced by the preferred method using OpenStudio Standards.
 
+* 10/15/21 - could not get gas-fired water heaters to run successfully for Ideal Loads case. Override of embedded `openstudio-standards-0.2.11` to `...0.2.13` did not work.
+ 
+* 10/17/21 - trying to use method `require` to point to absolute directory path of `openstudio-standards-0.2.13`
