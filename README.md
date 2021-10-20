@@ -26,29 +26,9 @@ In Git Bash shell command for Windows `$ unset GEM_PATH` and check for presence 
 
 There is a known issue with `openstudio-standards-0.2.11` gem which causes any model with water heaters that makes a call to the `Standard` class to fail. To fix this, in the command line `gem install openstudio-standards -v 0.2.13` to install the updated gem and check the installation location with command line `gem list -d`. In the measure `zero_energy_multifamily` the `require 'openstudio-standards'` line should be changed to `require 'C:/Absolute/path/to/openstudio-standards-0.2.13/lib/openstudio-standards.rb'` to override the faulty gem.
 
-# EMS
+# Energy Management System - an EnergyPlus runtime script
 ## Heat Pump Water Heater
-## Heat Pump Water Heater
-This specific workflow has an implementation of a heat pump water heater that requires some EnergyPlus Energy Management System (EMS) code. Be aware that in order for the EMS code to run, certain output variables are "baked in" to the model reporting variables and should not be changed or replaced. The EMS argument mapping changed in > EnergyPlus v9.3.0 and so users may see the `EnergyManagementSystem:ProgramCallingManager` error.
-
-Trying to fix EMS error on other branch `dev-report-ideal`.
-`** Severe  ** <root>[EnergyManagementSystem:ProgramCallingManager][res wh_Building Unit 001 ProgramManager][programs][0] - Missing required property 'program_name'.`
-Matt D [commit](https://github.com/NREL/OpenStudio-measures/commit/82086aaa083165d59a704f9696b14a674b8bf27a) causes returns fail.
-
-I think the equipment name `"res wh_Building Unit 001"` gets set in `ResidentialHotWaterHeaterHeatPump` or `ResidentialHotWaterFixtures`
-
-Program Version,EnergyPlus, Version 9.3.0-baff08990c, YMD=2021.03.14 22:50,
-   ** Severe  ** <root>[EnergyManagementSystem:ProgramCallingManager][res wh_Building Unit 001 ProgramManager][programs][0] - Missing required property 'program_name'.
-   ** Severe  ** <root>[EnergyManagementSystem:ProgramCallingManager][res wh_Building Unit 001 ProgramManager][programs][1] - Missing required property 'program_name'.
-   **  Fatal  ** Errors occurred on processing input file. Preceding condition(s) cause termination.
-   ...Summary of Errors that led to program termination:
-   ..... Reference severe error count=2
-   ..... Last severe error=<root>[EnergyManagementSystem:ProgramCallingManager][res wh_Building Unit 001 ProgramManager][programs][1] - Missing required property 'program_name'.
-   ************* Warning:  Node connection errors not checked - most system input has not been read (see previous warning).
-   ************* Fatal error -- final processing.  Program exited before simulations began.  See previous error messages.
-   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Terminated--Fatal Error Detected. 0 Warning; 2 Severe Errors; Elapsed Time=00hr 00min  1.32sec
+This specific workflow has an implementation of a heat pump water heater that requires some EnergyPlus Energy Management System (EMS) code. Be aware that in order for the EMS code to run, certain output variables are "baked in" to the model reporting variables and should not be changed or replaced. The EMS argument mapping changed in EnergyPlus v9.3.0 or greater and so users may see the `EnergyManagementSystem:ProgramCallingManager` error. See the public [commit](https://github.com/NREL/OpenStudio-measures/commit/82086aaa083165d59a704f9696b14a674b8bf27a) for more information.
 
 # Viewing Results
 
