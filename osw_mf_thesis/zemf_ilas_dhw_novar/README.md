@@ -1,10 +1,10 @@
-# DESCRIPTION
+# Description
 The case is the full model without *any* domestic hot water systems. The absence of *any* dhw system has the benefit that air and plant loops can be removed in the EnableIdealAirLoads measure without invalidating the IDF run.
 
-# NOTES
+# Notes
 I do not recommend using the OpenStudio app (packaged with OS-3.0.1) for Ideal Air Loads. Previously, I have used the app to enable Ideal Loads and turn on the Output Variable described below.
 
-# CLUSTER VARIABLES
+# Cluster Variables
 The variable chosen for clustering is the idealized cooling load (sensible and latent) from the ZoneHVAC:IdealLoadsAirSystem objects, `Zone Ideal Loads Zone Total Cooling Energy`.
 
 ### Ideal Air Loads
@@ -16,16 +16,8 @@ This component can be thought of as an ideal unit that mixes air at the zone exh
 
 Notes: The ideal loads system uses the zone return node or an optional zone exhaust node to extract air from the zone. Every zone served by an HVAC component must have a return air node, even though this node may not be connected to anything.
 
-# BREAK
-
 ## Gas Water Heaters as a Stand-in
 After extensive testing, my knowledge of the OpenStudio SDK is not enough to solve the problem of using Ideal Air Loads in models with HPWHs. Instead I have opted for a gas heater tank to complete my comparison table for my thesis. This way, the latent and sensible zone gains of DHW use are reflected in my sizing calculations.
-
-## Notes
-I do not recommend using the OpenStudio visual application to do ideal air loads.
-
-## Cluster Variables
-The variable chosen for clustering is the idealized cooling load (sensible and latent) from the ZoneHVAC:IdealLoadsAirSystem objects, Zone Ideal Loads Zone Total Cooling Energy.
 
 ## Standards Bug
 Currently, only ASHRAE90.1-2013 is supported in Standard.build('90.1-2013') for gas-fired water heaters in the CLI embedded standards library.
